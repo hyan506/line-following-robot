@@ -1,0 +1,5 @@
+\\uoa.auckland.ac.nz\engdfs\home\jpat331\Desktop\CS301_Class.cydsn (4)\CS301_Class.cydsn\CS301_Class.cyprj|bb3496b5-639f-4239-80f4-463d38ff4cb3
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|11694af0-abbc-4771-ac90-c6a8395e96b6
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|38719d8f-8c47-489b-949e-e801bcf2a07f
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|081eb6eb-416d-4ea6-9e16-0c1d76ef7047
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|b95d2328-959b-4b06-910b-701851d92152

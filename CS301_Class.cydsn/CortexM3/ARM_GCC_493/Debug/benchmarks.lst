@@ -1,0 +1,2421 @@
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"benchmarks.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	speed_change_counter
+  19              		.bss
+  20              		.align	2
+  21              		.type	speed_change_counter, %object
+  22              		.size	speed_change_counter, 4
+  23              	speed_change_counter:
+  24 0000 00000000 		.space	4
+  25              		.global	speed_change_flag
+  26              		.align	2
+  27              		.type	speed_change_flag, %object
+  28              		.size	speed_change_flag, 4
+  29              	speed_change_flag:
+  30 0004 00000000 		.space	4
+  31              		.global	totalQcount1
+  32              		.align	2
+  33              		.type	totalQcount1, %object
+  34              		.size	totalQcount1, 4
+  35              	totalQcount1:
+  36 0008 00000000 		.space	4
+  37              		.global	totalQcount2
+  38              		.align	2
+  39              		.type	totalQcount2, %object
+  40              		.size	totalQcount2, 4
+  41              	totalQcount2:
+  42 000c 00000000 		.space	4
+  43              		.global	done
+  44              		.align	2
+  45              		.type	done, %object
+  46              		.size	done, 4
+  47              	done:
+  48 0010 00000000 		.space	4
+  49              		.global	fixedCounter
+  50              		.data
+  51              		.align	2
+  52              		.type	fixedCounter, %object
+  53              		.size	fixedCounter, 4
+  54              	fixedCounter:
+  55 0000 2C010000 		.word	300
+  56              		.global	saved1
+  57              		.align	2
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 2
+
+
+  58              		.type	saved1, %object
+  59              		.size	saved1, 4
+  60              	saved1:
+  61 0004 9F000000 		.word	159
+  62              		.global	saved2
+  63              		.align	2
+  64              		.type	saved2, %object
+  65              		.size	saved2, 4
+  66              	saved2:
+  67 0008 9F000000 		.word	159
+  68              		.global	nice1
+  69              		.align	2
+  70              		.type	nice1, %object
+  71              		.size	nice1, 4
+  72              	nice1:
+  73 000c 9F000000 		.word	159
+  74              		.global	nice2
+  75              		.align	2
+  76              		.type	nice2, %object
+  77              		.size	nice2, 4
+  78              	nice2:
+  79 0010 9F000000 		.word	159
+  80              		.section	.text.allButSquiggly,"ax",%progbits
+  81              		.align	2
+  82              		.global	allButSquiggly
+  83              		.thumb
+  84              		.thumb_func
+  85              		.type	allButSquiggly, %function
+  86              	allButSquiggly:
+  87              	.LFB63:
+  88              		.file 1 ".\\benchmarks.c"
+   1:.\benchmarks.c **** /* ========================================
+   2:.\benchmarks.c ****  *
+   3:.\benchmarks.c ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\benchmarks.c ****  * All Rights Reserved
+   5:.\benchmarks.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\benchmarks.c ****  *
+   7:.\benchmarks.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\benchmarks.c ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\benchmarks.c ****  *
+  10:.\benchmarks.c ****  * ========================================
+  11:.\benchmarks.c **** */
+  12:.\benchmarks.c **** 
+  13:.\benchmarks.c **** #include "benchmarks.h"
+  14:.\benchmarks.c **** 
+  15:.\benchmarks.c **** /*
+  16:.\benchmarks.c **** oooooooooo.                                  oooo                                             oooo 
+  17:.\benchmarks.c **** `888'   `Y8b                                 `888                                             `888 
+  18:.\benchmarks.c ****  888     888  .ooooo.  ooo. .oo.    .ooooo.   888 .oo.   ooo. .oo.  .oo.    .oooo.   oooo d8b  888 
+  19:.\benchmarks.c ****  888oooo888' d88' `88b `888P"Y88b  d88' `"Y8  888P"Y88b  `888P"Y88bP"Y88b  `P  )88b  `888""8P  888 
+  20:.\benchmarks.c ****  888    `88b 888ooo888  888   888  888        888   888   888   888   888   .oP"888   888      8888
+  21:.\benchmarks.c ****  888    .88P 888    .o  888   888  888   .o8  888   888   888   888   888  d8(  888   888      888 
+  22:.\benchmarks.c **** o888bood8P'  `Y8bod8P' o888o o888o `Y8bod8P' o888o o888o o888o o888o o888o `Y888""8o d888b    o888o
+  23:.\benchmarks.c **** */
+  24:.\benchmarks.c **** 
+  25:.\benchmarks.c **** void allButSquiggly() {
+  89              		.loc 1 25 0
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 3
+
+
+  90              		.cfi_startproc
+  91              		@ args = 0, pretend = 0, frame = 0
+  92              		@ frame_needed = 1, uses_anonymous_args = 0
+  93 0000 80B5     		push	{r7, lr}
+  94              		.cfi_def_cfa_offset 8
+  95              		.cfi_offset 7, -8
+  96              		.cfi_offset 14, -4
+  97 0002 00AF     		add	r7, sp, #0
+  98              		.cfi_def_cfa_register 7
+  26:.\benchmarks.c ****     
+  27:.\benchmarks.c ****     timeout = 20;
+  99              		.loc 1 27 0
+ 100 0004 444B     		ldr	r3, .L11
+ 101 0006 1422     		movs	r2, #20
+ 102 0008 1A60     		str	r2, [r3]
+  28:.\benchmarks.c ****     
+  29:.\benchmarks.c ****     if (turnRight == 1) {
+ 103              		.loc 1 29 0
+ 104 000a 444B     		ldr	r3, .L11+4
+ 105 000c 1B68     		ldr	r3, [r3]
+ 106 000e 012B     		cmp	r3, #1
+ 107 0010 0CD1     		bne	.L2
+  30:.\benchmarks.c ****         PWM_1_WriteCompare(60);
+ 108              		.loc 1 30 0
+ 109 0012 3C20     		movs	r0, #60
+ 110 0014 FFF7FEFF 		bl	PWM_1_WriteCompare
+  31:.\benchmarks.c ****         PWM_2_WriteCompare(60);
+ 111              		.loc 1 31 0
+ 112 0018 3C20     		movs	r0, #60
+ 113 001a FFF7FEFF 		bl	PWM_2_WriteCompare
+  32:.\benchmarks.c ****         Direction_Control_1_Write(1);
+ 114              		.loc 1 32 0
+ 115 001e 0120     		movs	r0, #1
+ 116 0020 FFF7FEFF 		bl	Direction_Control_1_Write
+  33:.\benchmarks.c ****         Direction_Control_2_Write(1);
+ 117              		.loc 1 33 0
+ 118 0024 0120     		movs	r0, #1
+ 119 0026 FFF7FEFF 		bl	Direction_Control_2_Write
+ 120 002a 5BE0     		b	.L3
+ 121              	.L2:
+  34:.\benchmarks.c ****         
+  35:.\benchmarks.c ****        
+  36:.\benchmarks.c ****     }
+  37:.\benchmarks.c ****     
+  38:.\benchmarks.c ****     else if (turnLeft == 1) {
+ 122              		.loc 1 38 0
+ 123 002c 3C4B     		ldr	r3, .L11+8
+ 124 002e 1B68     		ldr	r3, [r3]
+ 125 0030 012B     		cmp	r3, #1
+ 126 0032 0CD1     		bne	.L4
+  39:.\benchmarks.c ****         PWM_1_WriteCompare(60);
+ 127              		.loc 1 39 0
+ 128 0034 3C20     		movs	r0, #60
+ 129 0036 FFF7FEFF 		bl	PWM_1_WriteCompare
+  40:.\benchmarks.c ****         PWM_2_WriteCompare(60);
+ 130              		.loc 1 40 0
+ 131 003a 3C20     		movs	r0, #60
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 4
+
+
+ 132 003c FFF7FEFF 		bl	PWM_2_WriteCompare
+  41:.\benchmarks.c ****         Direction_Control_1_Write(2);
+ 133              		.loc 1 41 0
+ 134 0040 0220     		movs	r0, #2
+ 135 0042 FFF7FEFF 		bl	Direction_Control_1_Write
+  42:.\benchmarks.c ****         Direction_Control_2_Write(2);
+ 136              		.loc 1 42 0
+ 137 0046 0220     		movs	r0, #2
+ 138 0048 FFF7FEFF 		bl	Direction_Control_2_Write
+ 139 004c 4AE0     		b	.L3
+ 140              	.L4:
+  43:.\benchmarks.c ****     }
+  44:.\benchmarks.c ****     
+  45:.\benchmarks.c ****     else {
+  46:.\benchmarks.c ****         
+  47:.\benchmarks.c ****         // Towards right correction
+  48:.\benchmarks.c ****         if (TOP_RIGHT == 0) {
+ 141              		.loc 1 48 0
+ 142 004e 354B     		ldr	r3, .L11+12
+ 143 0050 1B68     		ldr	r3, [r3]
+ 144 0052 002B     		cmp	r3, #0
+ 145 0054 06D1     		bne	.L5
+  49:.\benchmarks.c ****             PWM_1_WriteCompare(100);
+ 146              		.loc 1 49 0
+ 147 0056 6420     		movs	r0, #100
+ 148 0058 FFF7FEFF 		bl	PWM_1_WriteCompare
+  50:.\benchmarks.c ****             PWM_2_WriteCompare(55);
+ 149              		.loc 1 50 0
+ 150 005c 3720     		movs	r0, #55
+ 151 005e FFF7FEFF 		bl	PWM_2_WriteCompare
+ 152 0062 10E0     		b	.L6
+ 153              	.L5:
+  51:.\benchmarks.c ****         }
+  52:.\benchmarks.c ****         
+  53:.\benchmarks.c ****         // Towards left correction
+  54:.\benchmarks.c ****         else if (TOP_LEFT == 0) {
+ 154              		.loc 1 54 0
+ 155 0064 304B     		ldr	r3, .L11+16
+ 156 0066 1B68     		ldr	r3, [r3]
+ 157 0068 002B     		cmp	r3, #0
+ 158 006a 06D1     		bne	.L7
+  55:.\benchmarks.c ****             PWM_1_WriteCompare(55);
+ 159              		.loc 1 55 0
+ 160 006c 3720     		movs	r0, #55
+ 161 006e FFF7FEFF 		bl	PWM_1_WriteCompare
+  56:.\benchmarks.c ****             PWM_2_WriteCompare(100);
+ 162              		.loc 1 56 0
+ 163 0072 6420     		movs	r0, #100
+ 164 0074 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 165 0078 05E0     		b	.L6
+ 166              	.L7:
+  57:.\benchmarks.c ****         }
+  58:.\benchmarks.c ****         
+  59:.\benchmarks.c ****         else {
+  60:.\benchmarks.c ****             PWM_1_WriteCompare(75);
+ 167              		.loc 1 60 0
+ 168 007a 4B20     		movs	r0, #75
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 5
+
+
+ 169 007c FFF7FEFF 		bl	PWM_1_WriteCompare
+  61:.\benchmarks.c ****             PWM_2_WriteCompare(75);
+ 170              		.loc 1 61 0
+ 171 0080 4B20     		movs	r0, #75
+ 172 0082 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 173              	.L6:
+  62:.\benchmarks.c ****         }
+  63:.\benchmarks.c ****         
+  64:.\benchmarks.c ****         // Turning right
+  65:.\benchmarks.c ****         if (TOP_LEFT == 1 && TOP_MIDDLE == 1 && TOP_RIGHT == 1 && BOTTOM_LEFT == 1 && BOTTOM_RIGHT 
+ 174              		.loc 1 65 0
+ 175 0086 284B     		ldr	r3, .L11+16
+ 176 0088 1B68     		ldr	r3, [r3]
+ 177 008a 012B     		cmp	r3, #1
+ 178 008c 13D1     		bne	.L8
+ 179              		.loc 1 65 0 is_stmt 0 discriminator 1
+ 180 008e 274B     		ldr	r3, .L11+20
+ 181 0090 1B68     		ldr	r3, [r3]
+ 182 0092 012B     		cmp	r3, #1
+ 183 0094 0FD1     		bne	.L8
+ 184              		.loc 1 65 0 discriminator 2
+ 185 0096 234B     		ldr	r3, .L11+12
+ 186 0098 1B68     		ldr	r3, [r3]
+ 187 009a 012B     		cmp	r3, #1
+ 188 009c 0BD1     		bne	.L8
+ 189              		.loc 1 65 0 discriminator 3
+ 190 009e 244B     		ldr	r3, .L11+24
+ 191 00a0 1B68     		ldr	r3, [r3]
+ 192 00a2 012B     		cmp	r3, #1
+ 193 00a4 07D1     		bne	.L8
+ 194              		.loc 1 65 0 discriminator 4
+ 195 00a6 234B     		ldr	r3, .L11+28
+ 196 00a8 1B68     		ldr	r3, [r3]
+ 197 00aa 002B     		cmp	r3, #0
+ 198 00ac 03D1     		bne	.L8
+  66:.\benchmarks.c ****             turnRight = 1;
+ 199              		.loc 1 66 0 is_stmt 1
+ 200 00ae 1B4B     		ldr	r3, .L11+4
+ 201 00b0 0122     		movs	r2, #1
+ 202 00b2 1A60     		str	r2, [r3]
+ 203 00b4 16E0     		b	.L3
+ 204              	.L8:
+  67:.\benchmarks.c ****             
+  68:.\benchmarks.c ****         }
+  69:.\benchmarks.c ****         
+  70:.\benchmarks.c ****         else if (TOP_LEFT == 1 && TOP_MIDDLE == 1 && TOP_RIGHT == 1 && BOTTOM_LEFT == 0 && BOTTOM_R
+ 205              		.loc 1 70 0
+ 206 00b6 1C4B     		ldr	r3, .L11+16
+ 207 00b8 1B68     		ldr	r3, [r3]
+ 208 00ba 012B     		cmp	r3, #1
+ 209 00bc 12D1     		bne	.L3
+ 210              		.loc 1 70 0 is_stmt 0 discriminator 1
+ 211 00be 1B4B     		ldr	r3, .L11+20
+ 212 00c0 1B68     		ldr	r3, [r3]
+ 213 00c2 012B     		cmp	r3, #1
+ 214 00c4 0ED1     		bne	.L3
+ 215              		.loc 1 70 0 discriminator 2
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 6
+
+
+ 216 00c6 174B     		ldr	r3, .L11+12
+ 217 00c8 1B68     		ldr	r3, [r3]
+ 218 00ca 012B     		cmp	r3, #1
+ 219 00cc 0AD1     		bne	.L3
+ 220              		.loc 1 70 0 discriminator 3
+ 221 00ce 184B     		ldr	r3, .L11+24
+ 222 00d0 1B68     		ldr	r3, [r3]
+ 223 00d2 002B     		cmp	r3, #0
+ 224 00d4 06D1     		bne	.L3
+ 225              		.loc 1 70 0 discriminator 4
+ 226 00d6 174B     		ldr	r3, .L11+28
+ 227 00d8 1B68     		ldr	r3, [r3]
+ 228 00da 012B     		cmp	r3, #1
+ 229 00dc 02D1     		bne	.L3
+  71:.\benchmarks.c ****             turnLeft = 1;
+ 230              		.loc 1 71 0 is_stmt 1
+ 231 00de 104B     		ldr	r3, .L11+8
+ 232 00e0 0122     		movs	r2, #1
+ 233 00e2 1A60     		str	r2, [r3]
+ 234              	.L3:
+  72:.\benchmarks.c ****         }
+  73:.\benchmarks.c ****     }
+  74:.\benchmarks.c ****     
+  75:.\benchmarks.c ****     // Resets back to straight.
+  76:.\benchmarks.c ****     if (TOP_MIDDLE == 0 && (turnRight == 1 || turnLeft == 1)) {
+ 235              		.loc 1 76 0
+ 236 00e4 114B     		ldr	r3, .L11+20
+ 237 00e6 1B68     		ldr	r3, [r3]
+ 238 00e8 002B     		cmp	r3, #0
+ 239 00ea 13D1     		bne	.L1
+ 240              		.loc 1 76 0 is_stmt 0 discriminator 1
+ 241 00ec 0B4B     		ldr	r3, .L11+4
+ 242 00ee 1B68     		ldr	r3, [r3]
+ 243 00f0 012B     		cmp	r3, #1
+ 244 00f2 03D0     		beq	.L10
+ 245              		.loc 1 76 0 discriminator 2
+ 246 00f4 0A4B     		ldr	r3, .L11+8
+ 247 00f6 1B68     		ldr	r3, [r3]
+ 248 00f8 012B     		cmp	r3, #1
+ 249 00fa 0BD1     		bne	.L1
+ 250              	.L10:
+  77:.\benchmarks.c ****         Direction_Control_1_Write(1);
+ 251              		.loc 1 77 0 is_stmt 1
+ 252 00fc 0120     		movs	r0, #1
+ 253 00fe FFF7FEFF 		bl	Direction_Control_1_Write
+  78:.\benchmarks.c ****         Direction_Control_2_Write(2);
+ 254              		.loc 1 78 0
+ 255 0102 0220     		movs	r0, #2
+ 256 0104 FFF7FEFF 		bl	Direction_Control_2_Write
+  79:.\benchmarks.c ****         turnLeft = 0;
+ 257              		.loc 1 79 0
+ 258 0108 054B     		ldr	r3, .L11+8
+ 259 010a 0022     		movs	r2, #0
+ 260 010c 1A60     		str	r2, [r3]
+  80:.\benchmarks.c ****         turnRight = 0;
+ 261              		.loc 1 80 0
+ 262 010e 034B     		ldr	r3, .L11+4
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 7
+
+
+ 263 0110 0022     		movs	r2, #0
+ 264 0112 1A60     		str	r2, [r3]
+ 265              	.L1:
+  81:.\benchmarks.c ****     }
+  82:.\benchmarks.c **** }
+ 266              		.loc 1 82 0
+ 267 0114 80BD     		pop	{r7, pc}
+ 268              	.L12:
+ 269 0116 00BF     		.align	2
+ 270              	.L11:
+ 271 0118 00000000 		.word	timeout
+ 272 011c 00000000 		.word	turnRight
+ 273 0120 00000000 		.word	turnLeft
+ 274 0124 00000000 		.word	ADC_4
+ 275 0128 00000000 		.word	ADC_0
+ 276 012c 00000000 		.word	ADC_2
+ 277 0130 00000000 		.word	ADC_1
+ 278 0134 00000000 		.word	ADC_5
+ 279              		.cfi_endproc
+ 280              	.LFE63:
+ 281              		.size	allButSquiggly, .-allButSquiggly
+ 282              		.section	.text.Squiggly,"ax",%progbits
+ 283              		.align	2
+ 284              		.global	Squiggly
+ 285              		.thumb
+ 286              		.thumb_func
+ 287              		.type	Squiggly, %function
+ 288              	Squiggly:
+ 289              	.LFB64:
+  83:.\benchmarks.c **** 
+  84:.\benchmarks.c **** 
+  85:.\benchmarks.c **** 
+  86:.\benchmarks.c **** 
+  87:.\benchmarks.c **** 
+  88:.\benchmarks.c **** void Squiggly() {
+ 290              		.loc 1 88 0
+ 291              		.cfi_startproc
+ 292              		@ args = 0, pretend = 0, frame = 0
+ 293              		@ frame_needed = 1, uses_anonymous_args = 0
+ 294 0000 80B5     		push	{r7, lr}
+ 295              		.cfi_def_cfa_offset 8
+ 296              		.cfi_offset 7, -8
+ 297              		.cfi_offset 14, -4
+ 298 0002 00AF     		add	r7, sp, #0
+ 299              		.cfi_def_cfa_register 7
+  89:.\benchmarks.c ****     
+  90:.\benchmarks.c ****     timeout = 50;
+ 300              		.loc 1 90 0
+ 301 0004 184B     		ldr	r3, .L17
+ 302 0006 3222     		movs	r2, #50
+ 303 0008 1A60     		str	r2, [r3]
+  91:.\benchmarks.c ****         
+  92:.\benchmarks.c ****     // Towards right correction
+  93:.\benchmarks.c ****     if (TOP_RIGHT == 0) {
+ 304              		.loc 1 93 0
+ 305 000a 184B     		ldr	r3, .L17+4
+ 306 000c 1B68     		ldr	r3, [r3]
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 8
+
+
+ 307 000e 002B     		cmp	r3, #0
+ 308 0010 0CD1     		bne	.L14
+  94:.\benchmarks.c ****         Direction_Control_1_Write(1);
+ 309              		.loc 1 94 0
+ 310 0012 0120     		movs	r0, #1
+ 311 0014 FFF7FEFF 		bl	Direction_Control_1_Write
+  95:.\benchmarks.c ****         Direction_Control_2_Write(1);
+ 312              		.loc 1 95 0
+ 313 0018 0120     		movs	r0, #1
+ 314 001a FFF7FEFF 		bl	Direction_Control_2_Write
+  96:.\benchmarks.c ****         PWM_1_WriteCompare(85);
+ 315              		.loc 1 96 0
+ 316 001e 5520     		movs	r0, #85
+ 317 0020 FFF7FEFF 		bl	PWM_1_WriteCompare
+  97:.\benchmarks.c ****         PWM_2_WriteCompare(60);
+ 318              		.loc 1 97 0
+ 319 0024 3C20     		movs	r0, #60
+ 320 0026 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 321 002a 1CE0     		b	.L13
+ 322              	.L14:
+  98:.\benchmarks.c ****     }
+  99:.\benchmarks.c ****     
+ 100:.\benchmarks.c ****     // Towards left correction
+ 101:.\benchmarks.c ****     else if (TOP_LEFT == 0) {
+ 323              		.loc 1 101 0
+ 324 002c 104B     		ldr	r3, .L17+8
+ 325 002e 1B68     		ldr	r3, [r3]
+ 326 0030 002B     		cmp	r3, #0
+ 327 0032 0CD1     		bne	.L16
+ 102:.\benchmarks.c ****         Direction_Control_1_Write(2);
+ 328              		.loc 1 102 0
+ 329 0034 0220     		movs	r0, #2
+ 330 0036 FFF7FEFF 		bl	Direction_Control_1_Write
+ 103:.\benchmarks.c ****         Direction_Control_2_Write(2);
+ 331              		.loc 1 103 0
+ 332 003a 0220     		movs	r0, #2
+ 333 003c FFF7FEFF 		bl	Direction_Control_2_Write
+ 104:.\benchmarks.c ****         PWM_1_WriteCompare(60);
+ 334              		.loc 1 104 0
+ 335 0040 3C20     		movs	r0, #60
+ 336 0042 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 105:.\benchmarks.c ****         PWM_2_WriteCompare(85);
+ 337              		.loc 1 105 0
+ 338 0046 5520     		movs	r0, #85
+ 339 0048 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 340 004c 0BE0     		b	.L13
+ 341              	.L16:
+ 106:.\benchmarks.c ****     }
+ 107:.\benchmarks.c ****     
+ 108:.\benchmarks.c ****     else {
+ 109:.\benchmarks.c ****         Direction_Control_1_Write(1);
+ 342              		.loc 1 109 0
+ 343 004e 0120     		movs	r0, #1
+ 344 0050 FFF7FEFF 		bl	Direction_Control_1_Write
+ 110:.\benchmarks.c ****         Direction_Control_2_Write(2);
+ 345              		.loc 1 110 0
+ 346 0054 0220     		movs	r0, #2
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 9
+
+
+ 347 0056 FFF7FEFF 		bl	Direction_Control_2_Write
+ 111:.\benchmarks.c ****         PWM_1_WriteCompare(60);
+ 348              		.loc 1 111 0
+ 349 005a 3C20     		movs	r0, #60
+ 350 005c FFF7FEFF 		bl	PWM_1_WriteCompare
+ 112:.\benchmarks.c ****         PWM_2_WriteCompare(60);
+ 351              		.loc 1 112 0
+ 352 0060 3C20     		movs	r0, #60
+ 353 0062 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 354              	.L13:
+ 113:.\benchmarks.c ****     }
+ 114:.\benchmarks.c **** }
+ 355              		.loc 1 114 0
+ 356 0066 80BD     		pop	{r7, pc}
+ 357              	.L18:
+ 358              		.align	2
+ 359              	.L17:
+ 360 0068 00000000 		.word	timeout
+ 361 006c 00000000 		.word	ADC_4
+ 362 0070 00000000 		.word	ADC_0
+ 363              		.cfi_endproc
+ 364              	.LFE64:
+ 365              		.size	Squiggly, .-Squiggly
+ 366              		.global	__aeabi_i2d
+ 367              		.global	__aeabi_dcmpgt
+ 368              		.global	__aeabi_ddiv
+ 369              		.global	__aeabi_dmul
+ 370              		.global	__aeabi_dadd
+ 371              		.global	__aeabi_d2uiz
+ 372              		.section	.rodata
+ 373              		.align	2
+ 374              	.LC0:
+ 375 0000 25642E25 		.ascii	"%d.%d%d\000"
+ 375      64256400 
+ 376              		.align	2
+ 377              	.LC1:
+ 378 0008 0D0A00   		.ascii	"\015\012\000"
+ 379              		.global	__aeabi_dcmplt
+ 380              		.global	__aeabi_dsub
+ 381              		.global	__aeabi_dcmple
+ 382              		.global	__aeabi_dcmpge
+ 383 000b 00       		.section	.text.SetSpeedSetDistance,"ax",%progbits
+ 384              		.align	2
+ 385              		.global	SetSpeedSetDistance
+ 386              		.thumb
+ 387              		.thumb_func
+ 388              		.type	SetSpeedSetDistance, %function
+ 389              	SetSpeedSetDistance:
+ 390              	.LFB65:
+ 115:.\benchmarks.c **** 
+ 116:.\benchmarks.c **** /* [] END OF FILE */
+ 117:.\benchmarks.c **** /*
+ 118:.\benchmarks.c **** oooooooooo.                                  oooo                                             oooo 
+ 119:.\benchmarks.c **** `888'   `Y8b                                 `888                                             `888 
+ 120:.\benchmarks.c ****  888     888  .ooooo.  ooo. .oo.    .ooooo.   888 .oo.   ooo. .oo.  .oo.    .oooo.   oooo d8b  888 
+ 121:.\benchmarks.c ****  888oooo888' d88' `88b `888P"Y88b  d88' `"Y8  888P"Y88b  `888P"Y88bP"Y88b  `P  )88b  `888""8P  888 
+ 122:.\benchmarks.c ****  888    `88b 888ooo888  888   888  888        888   888   888   888   888   .oP"888   888      8888
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 10
+
+
+ 123:.\benchmarks.c ****  888    .88P 888    .o  888   888  888   .o8  888   888   888   888   888  d8(  888   888      888 
+ 124:.\benchmarks.c **** o888bood8P'  `Y8bod8P' o888o o888o `Y8bod8P' o888o o888o o888o o888o o888o `Y888""8o d888b    o888o
+ 125:.\benchmarks.c ****                                                                                                    
+ 126:.\benchmarks.c **** 
+ 127:.\benchmarks.c **** void SetSpeedSetDistance() {
+ 391              		.loc 1 127 0
+ 392              		.cfi_startproc
+ 393              		@ args = 0, pretend = 0, frame = 32
+ 394              		@ frame_needed = 1, uses_anonymous_args = 0
+ 395 0000 90B5     		push	{r4, r7, lr}
+ 396              		.cfi_def_cfa_offset 12
+ 397              		.cfi_offset 4, -12
+ 398              		.cfi_offset 7, -8
+ 399              		.cfi_offset 14, -4
+ 400 0002 8BB0     		sub	sp, sp, #44
+ 401              		.cfi_def_cfa_offset 56
+ 402 0004 02AF     		add	r7, sp, #8
+ 403              		.cfi_def_cfa 7, 48
+ 128:.\benchmarks.c ****     // temporary
+ 129:.\benchmarks.c ****     char s[10];
+ 130:.\benchmarks.c ****     uint8 n1, n2, n3;
+ 131:.\benchmarks.c ****    
+ 132:.\benchmarks.c ****     // Gets the total quadrature count values.
+ 133:.\benchmarks.c ****     totalQcount1 = totalQcount1 + (~QuadDec_M1_GetCounter() + 1);
+ 404              		.loc 1 133 0
+ 405 0006 644B     		ldr	r3, .L50+16
+ 406 0008 1C68     		ldr	r4, [r3]
+ 407 000a FFF7FEFF 		bl	QuadDec_M1_GetCounter
+ 408 000e 0346     		mov	r3, r0
+ 409 0010 E31A     		subs	r3, r4, r3
+ 410 0012 614A     		ldr	r2, .L50+16
+ 411 0014 1360     		str	r3, [r2]
+ 134:.\benchmarks.c ****     totalQcount2 = totalQcount2 + QuadDec_M2_GetCounter();
+ 412              		.loc 1 134 0
+ 413 0016 FFF7FEFF 		bl	QuadDec_M2_GetCounter
+ 414 001a 0346     		mov	r3, r0
+ 415 001c 1A46     		mov	r2, r3
+ 416 001e 5F4B     		ldr	r3, .L50+20
+ 417 0020 1B68     		ldr	r3, [r3]
+ 418 0022 1344     		add	r3, r3, r2
+ 419 0024 5D4A     		ldr	r2, .L50+20
+ 420 0026 1360     		str	r3, [r2]
+ 135:.\benchmarks.c ****     
+ 136:.\benchmarks.c ****     // Stop the wheels after they reach the specified distance.
+ 137:.\benchmarks.c ****     if (totalQcount1 >= REQ_COUNT || totalQcount2 >= REQ_COUNT) {
+ 421              		.loc 1 137 0
+ 422 0028 5B4B     		ldr	r3, .L50+16
+ 423 002a 1B68     		ldr	r3, [r3]
+ 424 002c 952B     		cmp	r3, #149
+ 425 002e 03DC     		bgt	.L20
+ 426              		.loc 1 137 0 is_stmt 0 discriminator 1
+ 427 0030 5A4B     		ldr	r3, .L50+20
+ 428 0032 1B68     		ldr	r3, [r3]
+ 429 0034 952B     		cmp	r3, #149
+ 430 0036 08DD     		ble	.L21
+ 431              	.L20:
+ 138:.\benchmarks.c ****         PWM_1_WriteCompare(0);
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 11
+
+
+ 432              		.loc 1 138 0 is_stmt 1
+ 433 0038 0020     		movs	r0, #0
+ 434 003a FFF7FEFF 		bl	PWM_1_WriteCompare
+ 139:.\benchmarks.c ****         PWM_2_WriteCompare(0);
+ 435              		.loc 1 139 0
+ 436 003e 0020     		movs	r0, #0
+ 437 0040 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 140:.\benchmarks.c ****         done = 1;
+ 438              		.loc 1 140 0
+ 439 0044 564B     		ldr	r3, .L50+24
+ 440 0046 0122     		movs	r2, #1
+ 441 0048 1A60     		str	r2, [r3]
+ 442              	.L21:
+ 141:.\benchmarks.c ****         
+ 142:.\benchmarks.c ****         //LED_ON;
+ 143:.\benchmarks.c ****     }
+ 144:.\benchmarks.c **** 
+ 145:.\benchmarks.c ****     // Variable Initialisations
+ 146:.\benchmarks.c ****     double c1, c2;                     // Quadrature counter values
+ 147:.\benchmarks.c ****     
+ 148:.\benchmarks.c ****     ////////////////////////    Wheel NO.1     /////////////////////////// 
+ 149:.\benchmarks.c ****     // Gets the quadrature's counter value after one second.
+ 150:.\benchmarks.c ****     c1 = (~QuadDec_M1_GetCounter() + 1);
+ 443              		.loc 1 150 0
+ 444 004a FFF7FEFF 		bl	QuadDec_M1_GetCounter
+ 445 004e 0346     		mov	r3, r0
+ 446 0050 5B42     		negs	r3, r3
+ 447 0052 1846     		mov	r0, r3
+ 448 0054 FFF7FEFF 		bl	__aeabi_i2d
+ 449 0058 0246     		mov	r2, r0
+ 450 005a 0B46     		mov	r3, r1
+ 451 005c C7E90623 		strd	r2, [r7, #24]
+ 151:.\benchmarks.c ****     
+ 152:.\benchmarks.c ****     // Calculates the linear velocity.
+ 153:.\benchmarks.c ****     if (c1 > 0.0) {
+ 452              		.loc 1 153 0
+ 453 0060 D7E90601 		ldrd	r0, [r7, #24]
+ 454 0064 4FF00002 		mov	r2, #0
+ 455 0068 4FF00003 		mov	r3, #0
+ 456 006c FFF7FEFF 		bl	__aeabi_dcmpgt
+ 457 0070 0346     		mov	r3, r0
+ 458 0072 002B     		cmp	r3, #0
+ 459 0074 34D0     		beq	.L48
+ 154:.\benchmarks.c ****         v1 = (1.0 / ((TIMER_2 / c1) * 57.0)) * 2.0 * M_PI * 3.25;
+ 460              		.loc 1 154 0
+ 461 0076 44A1     		adr	r1, .L50
+ 462 0078 D1E90001 		ldrd	r0, [r1]
+ 463 007c D7E90623 		ldrd	r2, [r7, #24]
+ 464 0080 FFF7FEFF 		bl	__aeabi_ddiv
+ 465 0084 0246     		mov	r2, r0
+ 466 0086 0B46     		mov	r3, r1
+ 467 0088 1046     		mov	r0, r2
+ 468 008a 1946     		mov	r1, r3
+ 469 008c 4FF00002 		mov	r2, #0
+ 470 0090 444B     		ldr	r3, .L50+28
+ 471 0092 FFF7FEFF 		bl	__aeabi_dmul
+ 472 0096 0246     		mov	r2, r0
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 12
+
+
+ 473 0098 0B46     		mov	r3, r1
+ 474 009a 4FF00000 		mov	r0, #0
+ 475 009e 4249     		ldr	r1, .L50+32
+ 476 00a0 FFF7FEFF 		bl	__aeabi_ddiv
+ 477 00a4 0246     		mov	r2, r0
+ 478 00a6 0B46     		mov	r3, r1
+ 479 00a8 1046     		mov	r0, r2
+ 480 00aa 1946     		mov	r1, r3
+ 481 00ac FFF7FEFF 		bl	__aeabi_dadd
+ 482 00b0 0246     		mov	r2, r0
+ 483 00b2 0B46     		mov	r3, r1
+ 484 00b4 1046     		mov	r0, r2
+ 485 00b6 1946     		mov	r1, r3
+ 486 00b8 35A3     		adr	r3, .L50+8
+ 487 00ba D3E90023 		ldrd	r2, [r3]
+ 488 00be FFF7FEFF 		bl	__aeabi_dmul
+ 489 00c2 0246     		mov	r2, r0
+ 490 00c4 0B46     		mov	r3, r1
+ 491 00c6 1046     		mov	r0, r2
+ 492 00c8 1946     		mov	r1, r3
+ 493 00ca 4FF00002 		mov	r2, #0
+ 494 00ce 374B     		ldr	r3, .L50+36
+ 495 00d0 FFF7FEFF 		bl	__aeabi_dmul
+ 496 00d4 0246     		mov	r2, r0
+ 497 00d6 0B46     		mov	r3, r1
+ 498 00d8 3549     		ldr	r1, .L50+40
+ 499 00da C1E90023 		strd	r2, [r1]
+ 500 00de 06E0     		b	.L24
+ 501              	.L48:
+ 155:.\benchmarks.c ****     }
+ 156:.\benchmarks.c ****     else {
+ 157:.\benchmarks.c ****         v1 = 0.0;
+ 502              		.loc 1 157 0
+ 503 00e0 3349     		ldr	r1, .L50+40
+ 504 00e2 4FF00002 		mov	r2, #0
+ 505 00e6 4FF00003 		mov	r3, #0
+ 506 00ea C1E90023 		strd	r2, [r1]
+ 507              	.L24:
+ 158:.\benchmarks.c ****     }
+ 159:.\benchmarks.c ****     // Resets the quadrature's counter value.
+ 160:.\benchmarks.c ****     QuadDec_M1_SetCounter(0);
+ 508              		.loc 1 160 0
+ 509 00ee 0020     		movs	r0, #0
+ 510 00f0 FFF7FEFF 		bl	QuadDec_M1_SetCounter
+ 161:.\benchmarks.c ****    ////////////////////////    Wheel NO.2     /////////////////////////// 
+ 162:.\benchmarks.c ****     // Gets the quadrature's counter value after one second.
+ 163:.\benchmarks.c ****     c2 = QuadDec_M2_GetCounter();
+ 511              		.loc 1 163 0
+ 512 00f4 FFF7FEFF 		bl	QuadDec_M2_GetCounter
+ 513 00f8 0346     		mov	r3, r0
+ 514 00fa 1846     		mov	r0, r3
+ 515 00fc FFF7FEFF 		bl	__aeabi_i2d
+ 516 0100 0246     		mov	r2, r0
+ 517 0102 0B46     		mov	r3, r1
+ 518 0104 C7E90423 		strd	r2, [r7, #16]
+ 164:.\benchmarks.c ****     
+ 165:.\benchmarks.c ****     // Calculates the linear velocity.
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 13
+
+
+ 166:.\benchmarks.c ****     if (c2 > 0.0) {
+ 519              		.loc 1 166 0
+ 520 0108 D7E90401 		ldrd	r0, [r7, #16]
+ 521 010c 4FF00002 		mov	r2, #0
+ 522 0110 4FF00003 		mov	r3, #0
+ 523 0114 FFF7FEFF 		bl	__aeabi_dcmpgt
+ 524 0118 0346     		mov	r3, r0
+ 525 011a 002B     		cmp	r3, #0
+ 526 011c 4CD0     		beq	.L49
+ 167:.\benchmarks.c ****         v2 = (1.0 / ((TIMER_2 / c2) * 57.0)) * 2.0 * M_PI * 3.25;
+ 527              		.loc 1 167 0
+ 528 011e 1AA1     		adr	r1, .L50
+ 529 0120 D1E90001 		ldrd	r0, [r1]
+ 530 0124 D7E90423 		ldrd	r2, [r7, #16]
+ 531 0128 FFF7FEFF 		bl	__aeabi_ddiv
+ 532 012c 0246     		mov	r2, r0
+ 533 012e 0B46     		mov	r3, r1
+ 534 0130 1046     		mov	r0, r2
+ 535 0132 1946     		mov	r1, r3
+ 536 0134 4FF00002 		mov	r2, #0
+ 537 0138 1A4B     		ldr	r3, .L50+28
+ 538 013a FFF7FEFF 		bl	__aeabi_dmul
+ 539 013e 0246     		mov	r2, r0
+ 540 0140 0B46     		mov	r3, r1
+ 541 0142 4FF00000 		mov	r0, #0
+ 542 0146 1849     		ldr	r1, .L50+32
+ 543 0148 FFF7FEFF 		bl	__aeabi_ddiv
+ 544 014c 0246     		mov	r2, r0
+ 545 014e 0B46     		mov	r3, r1
+ 546 0150 1046     		mov	r0, r2
+ 547 0152 1946     		mov	r1, r3
+ 548 0154 FFF7FEFF 		bl	__aeabi_dadd
+ 549 0158 0246     		mov	r2, r0
+ 550 015a 0B46     		mov	r3, r1
+ 551 015c 1046     		mov	r0, r2
+ 552 015e 1946     		mov	r1, r3
+ 553 0160 0BA3     		adr	r3, .L50+8
+ 554 0162 D3E90023 		ldrd	r2, [r3]
+ 555 0166 FFF7FEFF 		bl	__aeabi_dmul
+ 556 016a 0246     		mov	r2, r0
+ 557 016c 0B46     		mov	r3, r1
+ 558 016e 1046     		mov	r0, r2
+ 559 0170 1946     		mov	r1, r3
+ 560 0172 4FF00002 		mov	r2, #0
+ 561 0176 0D4B     		ldr	r3, .L50+36
+ 562 0178 FFF7FEFF 		bl	__aeabi_dmul
+ 563 017c 0246     		mov	r2, r0
+ 564 017e 0B46     		mov	r3, r1
+ 565 0180 0C49     		ldr	r1, .L50+44
+ 566 0182 C1E90023 		strd	r2, [r1]
+ 567 0186 1EE0     		b	.L27
+ 568              	.L51:
+ 569              		.align	3
+ 570              	.L50:
+ 571 0188 7B14AE47 		.word	1202590843
+ 572 018c E17A843F 		.word	1065646817
+ 573 0190 182D4454 		.word	1413754136
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 14
+
+
+ 574 0194 FB210940 		.word	1074340347
+ 575 0198 00000000 		.word	totalQcount1
+ 576 019c 00000000 		.word	totalQcount2
+ 577 01a0 00000000 		.word	done
+ 578 01a4 00804C40 		.word	1078755328
+ 579 01a8 0000F03F 		.word	1072693248
+ 580 01ac 00000A40 		.word	1074397184
+ 581 01b0 00000000 		.word	v1
+ 582 01b4 00000000 		.word	v2
+ 583              	.L49:
+ 168:.\benchmarks.c ****     }
+ 169:.\benchmarks.c ****     else {
+ 170:.\benchmarks.c ****         v2 = 0.0;
+ 584              		.loc 1 170 0
+ 585 01b8 A149     		ldr	r1, .L52
+ 586 01ba 4FF00002 		mov	r2, #0
+ 587 01be 4FF00003 		mov	r3, #0
+ 588 01c2 C1E90023 		strd	r2, [r1]
+ 589              	.L27:
+ 171:.\benchmarks.c ****     }
+ 172:.\benchmarks.c ****     //temporary
+ 173:.\benchmarks.c ****     // Splits the double into decimal values.
+ 174:.\benchmarks.c ****     n1 = (uint8)((v1+v2));
+ 590              		.loc 1 174 0
+ 591 01c6 9F4B     		ldr	r3, .L52+4
+ 592 01c8 D3E90001 		ldrd	r0, [r3]
+ 593 01cc 9C4B     		ldr	r3, .L52
+ 594 01ce D3E90023 		ldrd	r2, [r3]
+ 595 01d2 FFF7FEFF 		bl	__aeabi_dadd
+ 596 01d6 0246     		mov	r2, r0
+ 597 01d8 0B46     		mov	r3, r1
+ 598 01da 1046     		mov	r0, r2
+ 599 01dc 1946     		mov	r1, r3
+ 600 01de FFF7FEFF 		bl	__aeabi_d2uiz
+ 601 01e2 0346     		mov	r3, r0
+ 602 01e4 FB73     		strb	r3, [r7, #15]
+ 175:.\benchmarks.c ****     n2 = (uint8)((v1+v2) * 10) % 10;
+ 603              		.loc 1 175 0
+ 604 01e6 974B     		ldr	r3, .L52+4
+ 605 01e8 D3E90001 		ldrd	r0, [r3]
+ 606 01ec 944B     		ldr	r3, .L52
+ 607 01ee D3E90023 		ldrd	r2, [r3]
+ 608 01f2 FFF7FEFF 		bl	__aeabi_dadd
+ 609 01f6 0246     		mov	r2, r0
+ 610 01f8 0B46     		mov	r3, r1
+ 611 01fa 1046     		mov	r0, r2
+ 612 01fc 1946     		mov	r1, r3
+ 613 01fe 4FF00002 		mov	r2, #0
+ 614 0202 914B     		ldr	r3, .L52+8
+ 615 0204 FFF7FEFF 		bl	__aeabi_dmul
+ 616 0208 0246     		mov	r2, r0
+ 617 020a 0B46     		mov	r3, r1
+ 618 020c 1046     		mov	r0, r2
+ 619 020e 1946     		mov	r1, r3
+ 620 0210 FFF7FEFF 		bl	__aeabi_d2uiz
+ 621 0214 0346     		mov	r3, r0
+ 622 0216 DAB2     		uxtb	r2, r3
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 15
+
+
+ 623 0218 8C4B     		ldr	r3, .L52+12
+ 624 021a A3FB0213 		umull	r1, r3, r3, r2
+ 625 021e D908     		lsrs	r1, r3, #3
+ 626 0220 0B46     		mov	r3, r1
+ 627 0222 9B00     		lsls	r3, r3, #2
+ 628 0224 0B44     		add	r3, r3, r1
+ 629 0226 5B00     		lsls	r3, r3, #1
+ 630 0228 D31A     		subs	r3, r2, r3
+ 631 022a BB73     		strb	r3, [r7, #14]
+ 176:.\benchmarks.c ****     n3 = (uint8)((v1+v2) * 100) % 10;
+ 632              		.loc 1 176 0
+ 633 022c 854B     		ldr	r3, .L52+4
+ 634 022e D3E90001 		ldrd	r0, [r3]
+ 635 0232 834B     		ldr	r3, .L52
+ 636 0234 D3E90023 		ldrd	r2, [r3]
+ 637 0238 FFF7FEFF 		bl	__aeabi_dadd
+ 638 023c 0246     		mov	r2, r0
+ 639 023e 0B46     		mov	r3, r1
+ 640 0240 1046     		mov	r0, r2
+ 641 0242 1946     		mov	r1, r3
+ 642 0244 4FF00002 		mov	r2, #0
+ 643 0248 814B     		ldr	r3, .L52+16
+ 644 024a FFF7FEFF 		bl	__aeabi_dmul
+ 645 024e 0246     		mov	r2, r0
+ 646 0250 0B46     		mov	r3, r1
+ 647 0252 1046     		mov	r0, r2
+ 648 0254 1946     		mov	r1, r3
+ 649 0256 FFF7FEFF 		bl	__aeabi_d2uiz
+ 650 025a 0346     		mov	r3, r0
+ 651 025c DAB2     		uxtb	r2, r3
+ 652 025e 7B4B     		ldr	r3, .L52+12
+ 653 0260 A3FB0213 		umull	r1, r3, r3, r2
+ 654 0264 D908     		lsrs	r1, r3, #3
+ 655 0266 0B46     		mov	r3, r1
+ 656 0268 9B00     		lsls	r3, r3, #2
+ 657 026a 0B44     		add	r3, r3, r1
+ 658 026c 5B00     		lsls	r3, r3, #1
+ 659 026e D31A     		subs	r3, r2, r3
+ 660 0270 7B73     		strb	r3, [r7, #13]
+ 177:.\benchmarks.c ****     
+ 178:.\benchmarks.c ****     // Outputs the linear velocity.
+ 179:.\benchmarks.c ****     sprintf(s, "%d.%d%d", n1, n2, n3);
+ 661              		.loc 1 179 0
+ 662 0272 FA7B     		ldrb	r2, [r7, #15]	@ zero_extendqisi2
+ 663 0274 BC7B     		ldrb	r4, [r7, #14]	@ zero_extendqisi2
+ 664 0276 7B7B     		ldrb	r3, [r7, #13]	@ zero_extendqisi2
+ 665 0278 3946     		mov	r1, r7
+ 666 027a 0093     		str	r3, [sp]
+ 667 027c 0846     		mov	r0, r1
+ 668 027e 7549     		ldr	r1, .L52+20
+ 669 0280 2346     		mov	r3, r4
+ 670 0282 FFF7FEFF 		bl	sprintf
+ 180:.\benchmarks.c ****     //sprintf(s3, "%d", (int)(c1)); // this will print out pure quadrature value
+ 181:.\benchmarks.c ****     strcat(s, "\r\n");
+ 671              		.loc 1 181 0
+ 672 0286 3B46     		mov	r3, r7
+ 673 0288 1846     		mov	r0, r3
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 16
+
+
+ 674 028a FFF7FEFF 		bl	strlen
+ 675 028e 0346     		mov	r3, r0
+ 676 0290 1A46     		mov	r2, r3
+ 677 0292 3B46     		mov	r3, r7
+ 678 0294 1344     		add	r3, r3, r2
+ 679 0296 704A     		ldr	r2, .L52+24
+ 680 0298 1188     		ldrh	r1, [r2]	@ unaligned
+ 681 029a 9278     		ldrb	r2, [r2, #2]
+ 682 029c 1980     		strh	r1, [r3]	@ unaligned
+ 683 029e 9A70     		strb	r2, [r3, #2]
+ 182:.\benchmarks.c ****     
+ 183:.\benchmarks.c ****     
+ 184:.\benchmarks.c ****     ++tempcount;
+ 684              		.loc 1 184 0
+ 685 02a0 6E4B     		ldr	r3, .L52+28
+ 686 02a2 1B68     		ldr	r3, [r3]
+ 687 02a4 0133     		adds	r3, r3, #1
+ 688 02a6 6D4A     		ldr	r2, .L52+28
+ 689 02a8 1360     		str	r3, [r2]
+ 185:.\benchmarks.c ****     if (tempcount == 5) {
+ 690              		.loc 1 185 0
+ 691 02aa 6C4B     		ldr	r3, .L52+28
+ 692 02ac 1B68     		ldr	r3, [r3]
+ 693 02ae 052B     		cmp	r3, #5
+ 694 02b0 02D1     		bne	.L28
+ 186:.\benchmarks.c ****         //USBUART_PutString(s);
+ 187:.\benchmarks.c ****         tempcount = 0;
+ 695              		.loc 1 187 0
+ 696 02b2 6A4B     		ldr	r3, .L52+28
+ 697 02b4 0022     		movs	r2, #0
+ 698 02b6 1A60     		str	r2, [r3]
+ 699              	.L28:
+ 188:.\benchmarks.c ****     }
+ 189:.\benchmarks.c ****     
+ 190:.\benchmarks.c **** 
+ 191:.\benchmarks.c ****     // Resets the quadrature's counter value.
+ 192:.\benchmarks.c ****     QuadDec_M2_SetCounter(0);
+ 700              		.loc 1 192 0
+ 701 02b8 0020     		movs	r0, #0
+ 702 02ba FFF7FEFF 		bl	QuadDec_M2_SetCounter
+ 193:.\benchmarks.c ****     
+ 194:.\benchmarks.c ****     
+ 195:.\benchmarks.c ****     
+ 196:.\benchmarks.c ****     
+ 197:.\benchmarks.c ****     if (done == 0 && !settled && TOP_LEFT && TOP_RIGHT) {
+ 703              		.loc 1 197 0
+ 704 02be 684B     		ldr	r3, .L52+32
+ 705 02c0 1B68     		ldr	r3, [r3]
+ 706 02c2 002B     		cmp	r3, #0
+ 707 02c4 40F08480 		bne	.L29
+ 708              		.loc 1 197 0 is_stmt 0 discriminator 1
+ 709 02c8 664B     		ldr	r3, .L52+36
+ 710 02ca 1B68     		ldr	r3, [r3]
+ 711 02cc 002B     		cmp	r3, #0
+ 712 02ce 7FD1     		bne	.L29
+ 713              		.loc 1 197 0 discriminator 2
+ 714 02d0 654B     		ldr	r3, .L52+40
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 17
+
+
+ 715 02d2 1B68     		ldr	r3, [r3]
+ 716 02d4 002B     		cmp	r3, #0
+ 717 02d6 7BD0     		beq	.L29
+ 718              		.loc 1 197 0 discriminator 3
+ 719 02d8 644B     		ldr	r3, .L52+44
+ 720 02da 1B68     		ldr	r3, [r3]
+ 721 02dc 002B     		cmp	r3, #0
+ 722 02de 77D0     		beq	.L29
+ 198:.\benchmarks.c ****         if (v1 < SET_SPEED && PWM_1_ReadCompare() <= 254) {
+ 723              		.loc 1 198 0 is_stmt 1
+ 724 02e0 584B     		ldr	r3, .L52+4
+ 725 02e2 D3E90023 		ldrd	r2, [r3]
+ 726 02e6 1046     		mov	r0, r2
+ 727 02e8 1946     		mov	r1, r3
+ 728 02ea 4FF00002 		mov	r2, #0
+ 729 02ee 604B     		ldr	r3, .L52+48
+ 730 02f0 FFF7FEFF 		bl	__aeabi_dcmplt
+ 731 02f4 0346     		mov	r3, r0
+ 732 02f6 002B     		cmp	r3, #0
+ 733 02f8 10D0     		beq	.L30
+ 734              		.loc 1 198 0 is_stmt 0 discriminator 1
+ 735 02fa FFF7FEFF 		bl	PWM_1_ReadCompare
+ 736 02fe 0346     		mov	r3, r0
+ 737 0300 FF2B     		cmp	r3, #255
+ 738 0302 0BD0     		beq	.L30
+ 199:.\benchmarks.c ****             saved1 = PWM_1_ReadCompare() + 1;
+ 739              		.loc 1 199 0 is_stmt 1
+ 740 0304 FFF7FEFF 		bl	PWM_1_ReadCompare
+ 741 0308 0346     		mov	r3, r0
+ 742 030a 0133     		adds	r3, r3, #1
+ 743 030c 594A     		ldr	r2, .L52+52
+ 744 030e 1360     		str	r3, [r2]
+ 200:.\benchmarks.c ****             PWM_1_WriteCompare(saved1);
+ 745              		.loc 1 200 0
+ 746 0310 584B     		ldr	r3, .L52+52
+ 747 0312 1B68     		ldr	r3, [r3]
+ 748 0314 DBB2     		uxtb	r3, r3
+ 749 0316 1846     		mov	r0, r3
+ 750 0318 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 751              	.L30:
+ 201:.\benchmarks.c ****         }
+ 202:.\benchmarks.c ****         if (v1 > SET_SPEED && PWM_1_ReadCompare() >= 1) {
+ 752              		.loc 1 202 0
+ 753 031c 494B     		ldr	r3, .L52+4
+ 754 031e D3E90023 		ldrd	r2, [r3]
+ 755 0322 1046     		mov	r0, r2
+ 756 0324 1946     		mov	r1, r3
+ 757 0326 4FF00002 		mov	r2, #0
+ 758 032a 514B     		ldr	r3, .L52+48
+ 759 032c FFF7FEFF 		bl	__aeabi_dcmpgt
+ 760 0330 0346     		mov	r3, r0
+ 761 0332 002B     		cmp	r3, #0
+ 762 0334 10D0     		beq	.L32
+ 763              		.loc 1 202 0 is_stmt 0 discriminator 1
+ 764 0336 FFF7FEFF 		bl	PWM_1_ReadCompare
+ 765 033a 0346     		mov	r3, r0
+ 766 033c 002B     		cmp	r3, #0
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 18
+
+
+ 767 033e 0BD0     		beq	.L32
+ 203:.\benchmarks.c ****             saved1 = PWM_1_ReadCompare() - 1;
+ 768              		.loc 1 203 0 is_stmt 1
+ 769 0340 FFF7FEFF 		bl	PWM_1_ReadCompare
+ 770 0344 0346     		mov	r3, r0
+ 771 0346 013B     		subs	r3, r3, #1
+ 772 0348 4A4A     		ldr	r2, .L52+52
+ 773 034a 1360     		str	r3, [r2]
+ 204:.\benchmarks.c ****             PWM_1_WriteCompare(saved1);
+ 774              		.loc 1 204 0
+ 775 034c 494B     		ldr	r3, .L52+52
+ 776 034e 1B68     		ldr	r3, [r3]
+ 777 0350 DBB2     		uxtb	r3, r3
+ 778 0352 1846     		mov	r0, r3
+ 779 0354 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 780              	.L32:
+ 205:.\benchmarks.c ****         }
+ 206:.\benchmarks.c ****         
+ 207:.\benchmarks.c ****         if (v2 < SET_SPEED && PWM_2_ReadCompare() <= 254) {
+ 781              		.loc 1 207 0
+ 782 0358 394B     		ldr	r3, .L52
+ 783 035a D3E90023 		ldrd	r2, [r3]
+ 784 035e 1046     		mov	r0, r2
+ 785 0360 1946     		mov	r1, r3
+ 786 0362 4FF00002 		mov	r2, #0
+ 787 0366 424B     		ldr	r3, .L52+48
+ 788 0368 FFF7FEFF 		bl	__aeabi_dcmplt
+ 789 036c 0346     		mov	r3, r0
+ 790 036e 002B     		cmp	r3, #0
+ 791 0370 10D0     		beq	.L34
+ 792              		.loc 1 207 0 is_stmt 0 discriminator 1
+ 793 0372 FFF7FEFF 		bl	PWM_2_ReadCompare
+ 794 0376 0346     		mov	r3, r0
+ 795 0378 FF2B     		cmp	r3, #255
+ 796 037a 0BD0     		beq	.L34
+ 208:.\benchmarks.c ****             saved2 = PWM_2_ReadCompare() + 1;
+ 797              		.loc 1 208 0 is_stmt 1
+ 798 037c FFF7FEFF 		bl	PWM_2_ReadCompare
+ 799 0380 0346     		mov	r3, r0
+ 800 0382 0133     		adds	r3, r3, #1
+ 801 0384 3C4A     		ldr	r2, .L52+56
+ 802 0386 1360     		str	r3, [r2]
+ 209:.\benchmarks.c ****             PWM_2_WriteCompare(saved2);
+ 803              		.loc 1 209 0
+ 804 0388 3B4B     		ldr	r3, .L52+56
+ 805 038a 1B68     		ldr	r3, [r3]
+ 806 038c DBB2     		uxtb	r3, r3
+ 807 038e 1846     		mov	r0, r3
+ 808 0390 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 809              	.L34:
+ 210:.\benchmarks.c ****         }
+ 211:.\benchmarks.c ****         if (v2 > SET_SPEED && PWM_2_ReadCompare() >= 1) {
+ 810              		.loc 1 211 0
+ 811 0394 2A4B     		ldr	r3, .L52
+ 812 0396 D3E90023 		ldrd	r2, [r3]
+ 813 039a 1046     		mov	r0, r2
+ 814 039c 1946     		mov	r1, r3
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 19
+
+
+ 815 039e 4FF00002 		mov	r2, #0
+ 816 03a2 334B     		ldr	r3, .L52+48
+ 817 03a4 FFF7FEFF 		bl	__aeabi_dcmpgt
+ 818 03a8 0346     		mov	r3, r0
+ 819 03aa 002B     		cmp	r3, #0
+ 820 03ac 10D0     		beq	.L29
+ 821              		.loc 1 211 0 is_stmt 0 discriminator 1
+ 822 03ae FFF7FEFF 		bl	PWM_2_ReadCompare
+ 823 03b2 0346     		mov	r3, r0
+ 824 03b4 002B     		cmp	r3, #0
+ 825 03b6 0BD0     		beq	.L29
+ 212:.\benchmarks.c ****             saved2 = PWM_2_ReadCompare() - 1;
+ 826              		.loc 1 212 0 is_stmt 1
+ 827 03b8 FFF7FEFF 		bl	PWM_2_ReadCompare
+ 828 03bc 0346     		mov	r3, r0
+ 829 03be 013B     		subs	r3, r3, #1
+ 830 03c0 2D4A     		ldr	r2, .L52+56
+ 831 03c2 1360     		str	r3, [r2]
+ 213:.\benchmarks.c ****             PWM_2_WriteCompare(saved2);
+ 832              		.loc 1 213 0
+ 833 03c4 2C4B     		ldr	r3, .L52+56
+ 834 03c6 1B68     		ldr	r3, [r3]
+ 835 03c8 DBB2     		uxtb	r3, r3
+ 836 03ca 1846     		mov	r0, r3
+ 837 03cc FFF7FEFF 		bl	PWM_2_WriteCompare
+ 838              	.L29:
+ 214:.\benchmarks.c ****         }
+ 215:.\benchmarks.c ****     }
+ 216:.\benchmarks.c ****     ///////// If both wheel speed settled down, set LED_ON//////////
+ 217:.\benchmarks.c ****     /*
+ 218:.\benchmarks.c ****     if(abs((int)((v1+v2)/2) - SET_SPEED )<=5 && SET_SPEED - abs((int)((v1+v2)/2))>= -5){
+ 219:.\benchmarks.c ****         LED_ON;
+ 220:.\benchmarks.c ****         nice1 = saved1;
+ 221:.\benchmarks.c ****         nice2 = saved2;
+ 222:.\benchmarks.c ****         settled = 1;
+ 223:.\benchmarks.c ****     }
+ 224:.\benchmarks.c ****     else{
+ 225:.\benchmarks.c ****         LED_OFF;
+ 226:.\benchmarks.c ****     }*/
+ 227:.\benchmarks.c ****     if(v2- SET_SPEED <=5 && SET_SPEED -v2>= -5){
+ 839              		.loc 1 227 0
+ 840 03d0 1B4B     		ldr	r3, .L52
+ 841 03d2 D3E90023 		ldrd	r2, [r3]
+ 842 03d6 1046     		mov	r0, r2
+ 843 03d8 1946     		mov	r1, r3
+ 844 03da 4FF00002 		mov	r2, #0
+ 845 03de 244B     		ldr	r3, .L52+48
+ 846 03e0 FFF7FEFF 		bl	__aeabi_dsub
+ 847 03e4 0246     		mov	r2, r0
+ 848 03e6 0B46     		mov	r3, r1
+ 849 03e8 1046     		mov	r0, r2
+ 850 03ea 1946     		mov	r1, r3
+ 851 03ec 4FF00002 		mov	r2, #0
+ 852 03f0 224B     		ldr	r3, .L52+60
+ 853 03f2 FFF7FEFF 		bl	__aeabi_dcmple
+ 854 03f6 0346     		mov	r3, r0
+ 855 03f8 002B     		cmp	r3, #0
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 20
+
+
+ 856 03fa 1ED0     		beq	.L19
+ 857              		.loc 1 227 0 is_stmt 0 discriminator 1
+ 858 03fc 104B     		ldr	r3, .L52
+ 859 03fe D3E90023 		ldrd	r2, [r3]
+ 860 0402 4FF00000 		mov	r0, #0
+ 861 0406 1A49     		ldr	r1, .L52+48
+ 862 0408 FFF7FEFF 		bl	__aeabi_dsub
+ 863 040c 0246     		mov	r2, r0
+ 864 040e 0B46     		mov	r3, r1
+ 865 0410 1046     		mov	r0, r2
+ 866 0412 1946     		mov	r1, r3
+ 867 0414 4FF00002 		mov	r2, #0
+ 868 0418 194B     		ldr	r3, .L52+64
+ 869 041a FFF7FEFF 		bl	__aeabi_dcmpge
+ 870 041e 0346     		mov	r3, r0
+ 871 0420 002B     		cmp	r3, #0
+ 872 0422 0AD0     		beq	.L19
+ 228:.\benchmarks.c ****         nice1 = saved1;
+ 873              		.loc 1 228 0 is_stmt 1
+ 874 0424 134B     		ldr	r3, .L52+52
+ 875 0426 1B68     		ldr	r3, [r3]
+ 876 0428 164A     		ldr	r2, .L52+68
+ 877 042a 1360     		str	r3, [r2]
+ 229:.\benchmarks.c ****         nice2 = saved2;
+ 878              		.loc 1 229 0
+ 879 042c 124B     		ldr	r3, .L52+56
+ 880 042e 1B68     		ldr	r3, [r3]
+ 881 0430 154A     		ldr	r2, .L52+72
+ 882 0432 1360     		str	r3, [r2]
+ 230:.\benchmarks.c ****         settled = 1;
+ 883              		.loc 1 230 0
+ 884 0434 0B4B     		ldr	r3, .L52+36
+ 885 0436 0122     		movs	r2, #1
+ 886 0438 1A60     		str	r2, [r3]
+ 887              	.L19:
+ 231:.\benchmarks.c ****     }
+ 232:.\benchmarks.c ****     else{
+ 233:.\benchmarks.c ****     }
+ 234:.\benchmarks.c ****         
+ 235:.\benchmarks.c **** }
+ 888              		.loc 1 235 0
+ 889 043a 2437     		adds	r7, r7, #36
+ 890              		.cfi_def_cfa_offset 12
+ 891 043c BD46     		mov	sp, r7
+ 892              		.cfi_def_cfa_register 13
+ 893              		@ sp needed
+ 894 043e 90BD     		pop	{r4, r7, pc}
+ 895              	.L53:
+ 896              		.align	2
+ 897              	.L52:
+ 898 0440 00000000 		.word	v2
+ 899 0444 00000000 		.word	v1
+ 900 0448 00002440 		.word	1076101120
+ 901 044c CDCCCCCC 		.word	-858993459
+ 902 0450 00005940 		.word	1079574528
+ 903 0454 00000000 		.word	.LC0
+ 904 0458 08000000 		.word	.LC1
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 21
+
+
+ 905 045c 00000000 		.word	tempcount
+ 906 0460 00000000 		.word	done
+ 907 0464 00000000 		.word	settled
+ 908 0468 00000000 		.word	ADC_0
+ 909 046c 00000000 		.word	ADC_4
+ 910 0470 00004940 		.word	1078525952
+ 911 0474 00000000 		.word	saved1
+ 912 0478 00000000 		.word	saved2
+ 913 047c 00001440 		.word	1075052544
+ 914 0480 000014C0 		.word	-1072431104
+ 915 0484 00000000 		.word	nice1
+ 916 0488 00000000 		.word	nice2
+ 917              		.cfi_endproc
+ 918              	.LFE65:
+ 919              		.size	SetSpeedSetDistance, .-SetSpeedSetDistance
+ 920 048c AFF30080 		.section	.text.SensorAddon,"ax",%progbits
+ 921              		.align	2
+ 922              		.global	SensorAddon
+ 923              		.thumb
+ 924              		.thumb_func
+ 925              		.type	SensorAddon, %function
+ 926              	SensorAddon:
+ 927              	.LFB66:
+ 236:.\benchmarks.c **** 
+ 237:.\benchmarks.c **** void SensorAddon() {
+ 928              		.loc 1 237 0
+ 929              		.cfi_startproc
+ 930              		@ args = 0, pretend = 0, frame = 0
+ 931              		@ frame_needed = 1, uses_anonymous_args = 0
+ 932 0000 80B5     		push	{r7, lr}
+ 933              		.cfi_def_cfa_offset 8
+ 934              		.cfi_offset 7, -8
+ 935              		.cfi_offset 14, -4
+ 936 0002 00AF     		add	r7, sp, #0
+ 937              		.cfi_def_cfa_register 7
+ 238:.\benchmarks.c ****     
+ 239:.\benchmarks.c ****     timeout = 20;
+ 938              		.loc 1 239 0
+ 939 0004 844B     		ldr	r3, .L63+16
+ 940 0006 1422     		movs	r2, #20
+ 941 0008 1A60     		str	r2, [r3]
+ 240:.\benchmarks.c ****     
+ 241:.\benchmarks.c ****     /*++sensorcoun;
+ 242:.\benchmarks.c ****     
+ 243:.\benchmarks.c ****     if (done == 0 && sensorcount >= 5) {
+ 244:.\benchmarks.c ****         sensorcount = 0;
+ 245:.\benchmarks.c ****         
+ 246:.\benchmarks.c ****         if (TOP_LEFT == 0) {
+ 247:.\benchmarks.c ****             if (perfect == 0) {
+ 248:.\benchmarks.c ****                 //PWM_2_WriteCompare(PWM_2_ReadCompare() + 10);
+ 249:.\benchmarks.c ****                 PWM_1_WriteCompare(PWM_1_ReadCompare() - 20);
+ 250:.\benchmarks.c ****                 perfect = 1;
+ 251:.\benchmarks.c ****             }
+ 252:.\benchmarks.c ****         }
+ 253:.\benchmarks.c ****         
+ 254:.\benchmarks.c ****         else if (TOP_RIGHT == 0) {
+ 255:.\benchmarks.c ****             if (perfect == 0) {
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 22
+
+
+ 256:.\benchmarks.c ****                 //PWM_1_WriteCompare(PWM_1_ReadCompare() + 10);
+ 257:.\benchmarks.c ****                 PWM_2_WriteCompare(PWM_2_ReadCompare() - 20);
+ 258:.\benchmarks.c ****                 perfect = 1;
+ 259:.\benchmarks.c ****             }
+ 260:.\benchmarks.c ****         }
+ 261:.\benchmarks.c ****         
+ 262:.\benchmarks.c ****         if (TOP_LEFT == 1 && TOP_RIGHT == 1) {
+ 263:.\benchmarks.c ****             perfect = 0;
+ 264:.\benchmarks.c ****         }
+ 265:.\benchmarks.c ****     }*/
+ 266:.\benchmarks.c ****     
+ 267:.\benchmarks.c ****     // Towards right correction
+ 268:.\benchmarks.c ****     if(!done){
+ 942              		.loc 1 268 0
+ 943 000a 844B     		ldr	r3, .L63+20
+ 944 000c 1B68     		ldr	r3, [r3]
+ 945 000e 002B     		cmp	r3, #0
+ 946 0010 40F0F980 		bne	.L54
+ 269:.\benchmarks.c ****         if (TOP_RIGHT == 0) {
+ 947              		.loc 1 269 0
+ 948 0014 824B     		ldr	r3, .L63+24
+ 949 0016 1B68     		ldr	r3, [r3]
+ 950 0018 002B     		cmp	r3, #0
+ 951 001a 69D1     		bne	.L56
+ 270:.\benchmarks.c ****             if(settled){
+ 952              		.loc 1 270 0
+ 953 001c 814B     		ldr	r3, .L63+28
+ 954 001e 1B68     		ldr	r3, [r3]
+ 955 0020 002B     		cmp	r3, #0
+ 956 0022 32D0     		beq	.L57
+ 271:.\benchmarks.c ****             PWM_1_WriteCompare(1.1*nice1);
+ 957              		.loc 1 271 0
+ 958 0024 804B     		ldr	r3, .L63+32
+ 959 0026 1B68     		ldr	r3, [r3]
+ 960 0028 1846     		mov	r0, r3
+ 961 002a FFF7FEFF 		bl	__aeabi_i2d
+ 962 002e 0246     		mov	r2, r0
+ 963 0030 0B46     		mov	r3, r1
+ 964 0032 1046     		mov	r0, r2
+ 965 0034 1946     		mov	r1, r3
+ 966 0036 74A3     		adr	r3, .L63
+ 967 0038 D3E90023 		ldrd	r2, [r3]
+ 968 003c FFF7FEFF 		bl	__aeabi_dmul
+ 969 0040 0246     		mov	r2, r0
+ 970 0042 0B46     		mov	r3, r1
+ 971 0044 1046     		mov	r0, r2
+ 972 0046 1946     		mov	r1, r3
+ 973 0048 FFF7FEFF 		bl	__aeabi_d2uiz
+ 974 004c 0346     		mov	r3, r0
+ 975 004e DBB2     		uxtb	r3, r3
+ 976 0050 1846     		mov	r0, r3
+ 977 0052 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 272:.\benchmarks.c ****             PWM_2_WriteCompare(0.9*nice2);
+ 978              		.loc 1 272 0
+ 979 0056 754B     		ldr	r3, .L63+36
+ 980 0058 1B68     		ldr	r3, [r3]
+ 981 005a 1846     		mov	r0, r3
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 23
+
+
+ 982 005c FFF7FEFF 		bl	__aeabi_i2d
+ 983 0060 0246     		mov	r2, r0
+ 984 0062 0B46     		mov	r3, r1
+ 985 0064 1046     		mov	r0, r2
+ 986 0066 1946     		mov	r1, r3
+ 987 0068 69A3     		adr	r3, .L63+8
+ 988 006a D3E90023 		ldrd	r2, [r3]
+ 989 006e FFF7FEFF 		bl	__aeabi_dmul
+ 990 0072 0246     		mov	r2, r0
+ 991 0074 0B46     		mov	r3, r1
+ 992 0076 1046     		mov	r0, r2
+ 993 0078 1946     		mov	r1, r3
+ 994 007a FFF7FEFF 		bl	__aeabi_d2uiz
+ 995 007e 0346     		mov	r3, r0
+ 996 0080 DBB2     		uxtb	r3, r3
+ 997 0082 1846     		mov	r0, r3
+ 998 0084 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 999 0088 BDE0     		b	.L54
+ 1000              	.L57:
+ 273:.\benchmarks.c ****             }
+ 274:.\benchmarks.c ****             else{
+ 275:.\benchmarks.c ****             PWM_1_WriteCompare(1.1*saved1);
+ 1001              		.loc 1 275 0
+ 1002 008a 694B     		ldr	r3, .L63+40
+ 1003 008c 1B68     		ldr	r3, [r3]
+ 1004 008e 1846     		mov	r0, r3
+ 1005 0090 FFF7FEFF 		bl	__aeabi_i2d
+ 1006 0094 0246     		mov	r2, r0
+ 1007 0096 0B46     		mov	r3, r1
+ 1008 0098 1046     		mov	r0, r2
+ 1009 009a 1946     		mov	r1, r3
+ 1010 009c 5AA3     		adr	r3, .L63
+ 1011 009e D3E90023 		ldrd	r2, [r3]
+ 1012 00a2 FFF7FEFF 		bl	__aeabi_dmul
+ 1013 00a6 0246     		mov	r2, r0
+ 1014 00a8 0B46     		mov	r3, r1
+ 1015 00aa 1046     		mov	r0, r2
+ 1016 00ac 1946     		mov	r1, r3
+ 1017 00ae FFF7FEFF 		bl	__aeabi_d2uiz
+ 1018 00b2 0346     		mov	r3, r0
+ 1019 00b4 DBB2     		uxtb	r3, r3
+ 1020 00b6 1846     		mov	r0, r3
+ 1021 00b8 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 276:.\benchmarks.c ****             PWM_2_WriteCompare(0.9*saved2);
+ 1022              		.loc 1 276 0
+ 1023 00bc 5D4B     		ldr	r3, .L63+44
+ 1024 00be 1B68     		ldr	r3, [r3]
+ 1025 00c0 1846     		mov	r0, r3
+ 1026 00c2 FFF7FEFF 		bl	__aeabi_i2d
+ 1027 00c6 0246     		mov	r2, r0
+ 1028 00c8 0B46     		mov	r3, r1
+ 1029 00ca 1046     		mov	r0, r2
+ 1030 00cc 1946     		mov	r1, r3
+ 1031 00ce 50A3     		adr	r3, .L63+8
+ 1032 00d0 D3E90023 		ldrd	r2, [r3]
+ 1033 00d4 FFF7FEFF 		bl	__aeabi_dmul
+ 1034 00d8 0246     		mov	r2, r0
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 24
+
+
+ 1035 00da 0B46     		mov	r3, r1
+ 1036 00dc 1046     		mov	r0, r2
+ 1037 00de 1946     		mov	r1, r3
+ 1038 00e0 FFF7FEFF 		bl	__aeabi_d2uiz
+ 1039 00e4 0346     		mov	r3, r0
+ 1040 00e6 DBB2     		uxtb	r3, r3
+ 1041 00e8 1846     		mov	r0, r3
+ 1042 00ea FFF7FEFF 		bl	PWM_2_WriteCompare
+ 1043 00ee 8AE0     		b	.L54
+ 1044              	.L56:
+ 277:.\benchmarks.c ****             }
+ 278:.\benchmarks.c ****         }
+ 279:.\benchmarks.c ****     
+ 280:.\benchmarks.c ****         // Towards left correction
+ 281:.\benchmarks.c ****         else if (TOP_LEFT == 0) {
+ 1045              		.loc 1 281 0
+ 1046 00f0 514B     		ldr	r3, .L63+48
+ 1047 00f2 1B68     		ldr	r3, [r3]
+ 1048 00f4 002B     		cmp	r3, #0
+ 1049 00f6 69D1     		bne	.L59
+ 282:.\benchmarks.c ****             if(settled){
+ 1050              		.loc 1 282 0
+ 1051 00f8 4A4B     		ldr	r3, .L63+28
+ 1052 00fa 1B68     		ldr	r3, [r3]
+ 1053 00fc 002B     		cmp	r3, #0
+ 1054 00fe 32D0     		beq	.L60
+ 283:.\benchmarks.c ****             PWM_1_WriteCompare(0.9*nice1);
+ 1055              		.loc 1 283 0
+ 1056 0100 494B     		ldr	r3, .L63+32
+ 1057 0102 1B68     		ldr	r3, [r3]
+ 1058 0104 1846     		mov	r0, r3
+ 1059 0106 FFF7FEFF 		bl	__aeabi_i2d
+ 1060 010a 0246     		mov	r2, r0
+ 1061 010c 0B46     		mov	r3, r1
+ 1062 010e 1046     		mov	r0, r2
+ 1063 0110 1946     		mov	r1, r3
+ 1064 0112 3FA3     		adr	r3, .L63+8
+ 1065 0114 D3E90023 		ldrd	r2, [r3]
+ 1066 0118 FFF7FEFF 		bl	__aeabi_dmul
+ 1067 011c 0246     		mov	r2, r0
+ 1068 011e 0B46     		mov	r3, r1
+ 1069 0120 1046     		mov	r0, r2
+ 1070 0122 1946     		mov	r1, r3
+ 1071 0124 FFF7FEFF 		bl	__aeabi_d2uiz
+ 1072 0128 0346     		mov	r3, r0
+ 1073 012a DBB2     		uxtb	r3, r3
+ 1074 012c 1846     		mov	r0, r3
+ 1075 012e FFF7FEFF 		bl	PWM_1_WriteCompare
+ 284:.\benchmarks.c ****             PWM_2_WriteCompare(1.1*nice2);
+ 1076              		.loc 1 284 0
+ 1077 0132 3E4B     		ldr	r3, .L63+36
+ 1078 0134 1B68     		ldr	r3, [r3]
+ 1079 0136 1846     		mov	r0, r3
+ 1080 0138 FFF7FEFF 		bl	__aeabi_i2d
+ 1081 013c 0246     		mov	r2, r0
+ 1082 013e 0B46     		mov	r3, r1
+ 1083 0140 1046     		mov	r0, r2
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 25
+
+
+ 1084 0142 1946     		mov	r1, r3
+ 1085 0144 30A3     		adr	r3, .L63
+ 1086 0146 D3E90023 		ldrd	r2, [r3]
+ 1087 014a FFF7FEFF 		bl	__aeabi_dmul
+ 1088 014e 0246     		mov	r2, r0
+ 1089 0150 0B46     		mov	r3, r1
+ 1090 0152 1046     		mov	r0, r2
+ 1091 0154 1946     		mov	r1, r3
+ 1092 0156 FFF7FEFF 		bl	__aeabi_d2uiz
+ 1093 015a 0346     		mov	r3, r0
+ 1094 015c DBB2     		uxtb	r3, r3
+ 1095 015e 1846     		mov	r0, r3
+ 1096 0160 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 1097 0164 4FE0     		b	.L54
+ 1098              	.L60:
+ 285:.\benchmarks.c ****             }
+ 286:.\benchmarks.c ****             else{
+ 287:.\benchmarks.c ****             PWM_1_WriteCompare(0.9*saved1);
+ 1099              		.loc 1 287 0
+ 1100 0166 324B     		ldr	r3, .L63+40
+ 1101 0168 1B68     		ldr	r3, [r3]
+ 1102 016a 1846     		mov	r0, r3
+ 1103 016c FFF7FEFF 		bl	__aeabi_i2d
+ 1104 0170 0246     		mov	r2, r0
+ 1105 0172 0B46     		mov	r3, r1
+ 1106 0174 1046     		mov	r0, r2
+ 1107 0176 1946     		mov	r1, r3
+ 1108 0178 25A3     		adr	r3, .L63+8
+ 1109 017a D3E90023 		ldrd	r2, [r3]
+ 1110 017e FFF7FEFF 		bl	__aeabi_dmul
+ 1111 0182 0246     		mov	r2, r0
+ 1112 0184 0B46     		mov	r3, r1
+ 1113 0186 1046     		mov	r0, r2
+ 1114 0188 1946     		mov	r1, r3
+ 1115 018a FFF7FEFF 		bl	__aeabi_d2uiz
+ 1116 018e 0346     		mov	r3, r0
+ 1117 0190 DBB2     		uxtb	r3, r3
+ 1118 0192 1846     		mov	r0, r3
+ 1119 0194 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 288:.\benchmarks.c ****             PWM_2_WriteCompare(1.1*saved2);
+ 1120              		.loc 1 288 0
+ 1121 0198 264B     		ldr	r3, .L63+44
+ 1122 019a 1B68     		ldr	r3, [r3]
+ 1123 019c 1846     		mov	r0, r3
+ 1124 019e FFF7FEFF 		bl	__aeabi_i2d
+ 1125 01a2 0246     		mov	r2, r0
+ 1126 01a4 0B46     		mov	r3, r1
+ 1127 01a6 1046     		mov	r0, r2
+ 1128 01a8 1946     		mov	r1, r3
+ 1129 01aa 17A3     		adr	r3, .L63
+ 1130 01ac D3E90023 		ldrd	r2, [r3]
+ 1131 01b0 FFF7FEFF 		bl	__aeabi_dmul
+ 1132 01b4 0246     		mov	r2, r0
+ 1133 01b6 0B46     		mov	r3, r1
+ 1134 01b8 1046     		mov	r0, r2
+ 1135 01ba 1946     		mov	r1, r3
+ 1136 01bc FFF7FEFF 		bl	__aeabi_d2uiz
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 26
+
+
+ 1137 01c0 0346     		mov	r3, r0
+ 1138 01c2 DBB2     		uxtb	r3, r3
+ 1139 01c4 1846     		mov	r0, r3
+ 1140 01c6 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 1141 01ca 1CE0     		b	.L54
+ 1142              	.L59:
+ 289:.\benchmarks.c ****             }
+ 290:.\benchmarks.c ****         }
+ 291:.\benchmarks.c ****     
+ 292:.\benchmarks.c ****         else {
+ 293:.\benchmarks.c ****             if(settled){
+ 1143              		.loc 1 293 0
+ 1144 01cc 154B     		ldr	r3, .L63+28
+ 1145 01ce 1B68     		ldr	r3, [r3]
+ 1146 01d0 002B     		cmp	r3, #0
+ 1147 01d2 0CD0     		beq	.L62
+ 294:.\benchmarks.c ****             PWM_1_WriteCompare(nice1);
+ 1148              		.loc 1 294 0
+ 1149 01d4 144B     		ldr	r3, .L63+32
+ 1150 01d6 1B68     		ldr	r3, [r3]
+ 1151 01d8 DBB2     		uxtb	r3, r3
+ 1152 01da 1846     		mov	r0, r3
+ 1153 01dc FFF7FEFF 		bl	PWM_1_WriteCompare
+ 295:.\benchmarks.c ****             PWM_2_WriteCompare(nice2);
+ 1154              		.loc 1 295 0
+ 1155 01e0 124B     		ldr	r3, .L63+36
+ 1156 01e2 1B68     		ldr	r3, [r3]
+ 1157 01e4 DBB2     		uxtb	r3, r3
+ 1158 01e6 1846     		mov	r0, r3
+ 1159 01e8 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 1160 01ec 0BE0     		b	.L54
+ 1161              	.L62:
+ 296:.\benchmarks.c ****             }
+ 297:.\benchmarks.c ****             else{
+ 298:.\benchmarks.c ****             PWM_1_WriteCompare(saved1);
+ 1162              		.loc 1 298 0
+ 1163 01ee 104B     		ldr	r3, .L63+40
+ 1164 01f0 1B68     		ldr	r3, [r3]
+ 1165 01f2 DBB2     		uxtb	r3, r3
+ 1166 01f4 1846     		mov	r0, r3
+ 1167 01f6 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 299:.\benchmarks.c ****             PWM_2_WriteCompare(saved2);
+ 1168              		.loc 1 299 0
+ 1169 01fa 0E4B     		ldr	r3, .L63+44
+ 1170 01fc 1B68     		ldr	r3, [r3]
+ 1171 01fe DBB2     		uxtb	r3, r3
+ 1172 0200 1846     		mov	r0, r3
+ 1173 0202 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 1174              	.L54:
+ 300:.\benchmarks.c ****             }
+ 301:.\benchmarks.c ****         }
+ 302:.\benchmarks.c ****     }
+ 303:.\benchmarks.c **** }
+ 1175              		.loc 1 303 0
+ 1176 0206 80BD     		pop	{r7, pc}
+ 1177              	.L64:
+ 1178              		.align	3
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 27
+
+
+ 1179              	.L63:
+ 1180 0208 9A999999 		.word	-1717986918
+ 1181 020c 9999F13F 		.word	1072798105
+ 1182 0210 CDCCCCCC 		.word	-858993459
+ 1183 0214 CCCCEC3F 		.word	1072483532
+ 1184 0218 00000000 		.word	timeout
+ 1185 021c 00000000 		.word	done
+ 1186 0220 00000000 		.word	ADC_4
+ 1187 0224 00000000 		.word	settled
+ 1188 0228 00000000 		.word	nice1
+ 1189 022c 00000000 		.word	nice2
+ 1190 0230 00000000 		.word	saved1
+ 1191 0234 00000000 		.word	saved2
+ 1192 0238 00000000 		.word	ADC_0
+ 1193              		.cfi_endproc
+ 1194              	.LFE66:
+ 1195              		.size	SensorAddon, .-SensorAddon
+ 1196 023c AFF30080 		.text
+ 1197              	.Letext0:
+ 1198              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 1199              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 1200              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 1201              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 1202              		.file 6 ".\\benchmarks.h"
+ 1203              		.section	.debug_info,"",%progbits
+ 1204              	.Ldebug_info0:
+ 1205 0000 90020000 		.4byte	0x290
+ 1206 0004 0400     		.2byte	0x4
+ 1207 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1208 000a 04       		.byte	0x4
+ 1209 000b 01       		.uleb128 0x1
+ 1210 000c B9000000 		.4byte	.LASF41
+ 1211 0010 01       		.byte	0x1
+ 1212 0011 73000000 		.4byte	.LASF42
+ 1213 0015 02020000 		.4byte	.LASF43
+ 1214 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 1215 001d 00000000 		.4byte	0
+ 1216 0021 00000000 		.4byte	.Ldebug_line0
+ 1217 0025 02       		.uleb128 0x2
+ 1218 0026 01       		.byte	0x1
+ 1219 0027 06       		.byte	0x6
+ 1220 0028 59000000 		.4byte	.LASF0
+ 1221 002c 02       		.uleb128 0x2
+ 1222 002d 01       		.byte	0x1
+ 1223 002e 08       		.byte	0x8
+ 1224 002f 65000000 		.4byte	.LASF1
+ 1225 0033 02       		.uleb128 0x2
+ 1226 0034 02       		.byte	0x2
+ 1227 0035 05       		.byte	0x5
+ 1228 0036 F2010000 		.4byte	.LASF2
+ 1229 003a 02       		.uleb128 0x2
+ 1230 003b 02       		.byte	0x2
+ 1231 003c 07       		.byte	0x7
+ 1232 003d 90000000 		.4byte	.LASF3
+ 1233 0041 03       		.uleb128 0x3
+ 1234 0042 14000000 		.4byte	.LASF9
+ 1235 0046 02       		.byte	0x2
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 28
+
+
+ 1236 0047 3F       		.byte	0x3f
+ 1237 0048 4C000000 		.4byte	0x4c
+ 1238 004c 02       		.uleb128 0x2
+ 1239 004d 04       		.byte	0x4
+ 1240 004e 05       		.byte	0x5
+ 1241 004f A3000000 		.4byte	.LASF4
+ 1242 0053 02       		.uleb128 0x2
+ 1243 0054 04       		.byte	0x4
+ 1244 0055 07       		.byte	0x7
+ 1245 0056 52010000 		.4byte	.LASF5
+ 1246 005a 02       		.uleb128 0x2
+ 1247 005b 08       		.byte	0x8
+ 1248 005c 05       		.byte	0x5
+ 1249 005d D7010000 		.4byte	.LASF6
+ 1250 0061 02       		.uleb128 0x2
+ 1251 0062 08       		.byte	0x8
+ 1252 0063 07       		.byte	0x7
+ 1253 0064 8B010000 		.4byte	.LASF7
+ 1254 0068 04       		.uleb128 0x4
+ 1255 0069 04       		.byte	0x4
+ 1256 006a 05       		.byte	0x5
+ 1257 006b 696E7400 		.ascii	"int\000"
+ 1258 006f 02       		.uleb128 0x2
+ 1259 0070 04       		.byte	0x4
+ 1260 0071 07       		.byte	0x7
+ 1261 0072 64010000 		.4byte	.LASF8
+ 1262 0076 03       		.uleb128 0x3
+ 1263 0077 EA010000 		.4byte	.LASF10
+ 1264 007b 03       		.byte	0x3
+ 1265 007c 2C       		.byte	0x2c
+ 1266 007d 41000000 		.4byte	0x41
+ 1267 0081 05       		.uleb128 0x5
+ 1268 0082 FC010000 		.4byte	.LASF11
+ 1269 0086 04       		.byte	0x4
+ 1270 0087 9201     		.2byte	0x192
+ 1271 0089 2C000000 		.4byte	0x2c
+ 1272 008d 02       		.uleb128 0x2
+ 1273 008e 04       		.byte	0x4
+ 1274 008f 04       		.byte	0x4
+ 1275 0090 53000000 		.4byte	.LASF12
+ 1276 0094 02       		.uleb128 0x2
+ 1277 0095 08       		.byte	0x8
+ 1278 0096 04       		.byte	0x4
+ 1279 0097 2E000000 		.4byte	.LASF13
+ 1280 009b 02       		.uleb128 0x2
+ 1281 009c 01       		.byte	0x1
+ 1282 009d 08       		.byte	0x8
+ 1283 009e E5010000 		.4byte	.LASF14
+ 1284 00a2 02       		.uleb128 0x2
+ 1285 00a3 04       		.byte	0x4
+ 1286 00a4 07       		.byte	0x7
+ 1287 00a5 CE010000 		.4byte	.LASF15
+ 1288 00a9 02       		.uleb128 0x2
+ 1289 00aa 08       		.byte	0x8
+ 1290 00ab 04       		.byte	0x4
+ 1291 00ac C2010000 		.4byte	.LASF16
+ 1292 00b0 06       		.uleb128 0x6
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 29
+
+
+ 1293 00b1 A2010000 		.4byte	.LASF17
+ 1294 00b5 01       		.byte	0x1
+ 1295 00b6 19       		.byte	0x19
+ 1296 00b7 00000000 		.4byte	.LFB63
+ 1297 00bb 38010000 		.4byte	.LFE63-.LFB63
+ 1298 00bf 01       		.uleb128 0x1
+ 1299 00c0 9C       		.byte	0x9c
+ 1300 00c1 06       		.uleb128 0x6
+ 1301 00c2 76020000 		.4byte	.LASF18
+ 1302 00c6 01       		.byte	0x1
+ 1303 00c7 58       		.byte	0x58
+ 1304 00c8 00000000 		.4byte	.LFB64
+ 1305 00cc 74000000 		.4byte	.LFE64-.LFB64
+ 1306 00d0 01       		.uleb128 0x1
+ 1307 00d1 9C       		.byte	0x9c
+ 1308 00d2 07       		.uleb128 0x7
+ 1309 00d3 8C020000 		.4byte	.LASF44
+ 1310 00d7 01       		.byte	0x1
+ 1311 00d8 7F       		.byte	0x7f
+ 1312 00d9 00000000 		.4byte	.LFB65
+ 1313 00dd 8C040000 		.4byte	.LFE65-.LFB65
+ 1314 00e1 01       		.uleb128 0x1
+ 1315 00e2 9C       		.byte	0x9c
+ 1316 00e3 35010000 		.4byte	0x135
+ 1317 00e7 08       		.uleb128 0x8
+ 1318 00e8 7300     		.ascii	"s\000"
+ 1319 00ea 01       		.byte	0x1
+ 1320 00eb 81       		.byte	0x81
+ 1321 00ec 35010000 		.4byte	0x135
+ 1322 00f0 02       		.uleb128 0x2
+ 1323 00f1 91       		.byte	0x91
+ 1324 00f2 50       		.sleb128 -48
+ 1325 00f3 08       		.uleb128 0x8
+ 1326 00f4 6E3100   		.ascii	"n1\000"
+ 1327 00f7 01       		.byte	0x1
+ 1328 00f8 82       		.byte	0x82
+ 1329 00f9 81000000 		.4byte	0x81
+ 1330 00fd 02       		.uleb128 0x2
+ 1331 00fe 91       		.byte	0x91
+ 1332 00ff 5F       		.sleb128 -33
+ 1333 0100 08       		.uleb128 0x8
+ 1334 0101 6E3200   		.ascii	"n2\000"
+ 1335 0104 01       		.byte	0x1
+ 1336 0105 82       		.byte	0x82
+ 1337 0106 81000000 		.4byte	0x81
+ 1338 010a 02       		.uleb128 0x2
+ 1339 010b 91       		.byte	0x91
+ 1340 010c 5E       		.sleb128 -34
+ 1341 010d 08       		.uleb128 0x8
+ 1342 010e 6E3300   		.ascii	"n3\000"
+ 1343 0111 01       		.byte	0x1
+ 1344 0112 82       		.byte	0x82
+ 1345 0113 81000000 		.4byte	0x81
+ 1346 0117 02       		.uleb128 0x2
+ 1347 0118 91       		.byte	0x91
+ 1348 0119 5D       		.sleb128 -35
+ 1349 011a 08       		.uleb128 0x8
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 30
+
+
+ 1350 011b 633100   		.ascii	"c1\000"
+ 1351 011e 01       		.byte	0x1
+ 1352 011f 92       		.byte	0x92
+ 1353 0120 94000000 		.4byte	0x94
+ 1354 0124 02       		.uleb128 0x2
+ 1355 0125 91       		.byte	0x91
+ 1356 0126 68       		.sleb128 -24
+ 1357 0127 08       		.uleb128 0x8
+ 1358 0128 633200   		.ascii	"c2\000"
+ 1359 012b 01       		.byte	0x1
+ 1360 012c 92       		.byte	0x92
+ 1361 012d 94000000 		.4byte	0x94
+ 1362 0131 02       		.uleb128 0x2
+ 1363 0132 91       		.byte	0x91
+ 1364 0133 60       		.sleb128 -32
+ 1365 0134 00       		.byte	0
+ 1366 0135 09       		.uleb128 0x9
+ 1367 0136 9B000000 		.4byte	0x9b
+ 1368 013a 45010000 		.4byte	0x145
+ 1369 013e 0A       		.uleb128 0xa
+ 1370 013f A2000000 		.4byte	0xa2
+ 1371 0143 09       		.byte	0x9
+ 1372 0144 00       		.byte	0
+ 1373 0145 06       		.uleb128 0x6
+ 1374 0146 35000000 		.4byte	.LASF19
+ 1375 014a 01       		.byte	0x1
+ 1376 014b ED       		.byte	0xed
+ 1377 014c 00000000 		.4byte	.LFB66
+ 1378 0150 3C020000 		.4byte	.LFE66-.LFB66
+ 1379 0154 01       		.uleb128 0x1
+ 1380 0155 9C       		.byte	0x9c
+ 1381 0156 0B       		.uleb128 0xb
+ 1382 0157 AC000000 		.4byte	.LASF20
+ 1383 015b 05       		.byte	0x5
+ 1384 015c 9606     		.2byte	0x696
+ 1385 015e 62010000 		.4byte	0x162
+ 1386 0162 0C       		.uleb128 0xc
+ 1387 0163 76000000 		.4byte	0x76
+ 1388 0167 0D       		.uleb128 0xd
+ 1389 0168 1E000000 		.4byte	.LASF21
+ 1390 016c 06       		.byte	0x6
+ 1391 016d 21       		.byte	0x21
+ 1392 016e 68000000 		.4byte	0x68
+ 1393 0172 0D       		.uleb128 0xd
+ 1394 0173 A0020000 		.4byte	.LASF22
+ 1395 0177 06       		.byte	0x6
+ 1396 0178 22       		.byte	0x22
+ 1397 0179 68000000 		.4byte	0x68
+ 1398 017d 0D       		.uleb128 0xd
+ 1399 017e A6020000 		.4byte	.LASF23
+ 1400 0182 06       		.byte	0x6
+ 1401 0183 23       		.byte	0x23
+ 1402 0184 68000000 		.4byte	0x68
+ 1403 0188 0D       		.uleb128 0xd
+ 1404 0189 AC020000 		.4byte	.LASF24
+ 1405 018d 06       		.byte	0x6
+ 1406 018e 25       		.byte	0x25
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 31
+
+
+ 1407 018f 68000000 		.4byte	0x68
+ 1408 0193 0D       		.uleb128 0xd
+ 1409 0194 06000000 		.4byte	.LASF25
+ 1410 0198 06       		.byte	0x6
+ 1411 0199 26       		.byte	0x26
+ 1412 019a 68000000 		.4byte	0x68
+ 1413 019e 0D       		.uleb128 0xd
+ 1414 019f 0C000000 		.4byte	.LASF26
+ 1415 01a3 06       		.byte	0x6
+ 1416 01a4 27       		.byte	0x27
+ 1417 01a5 68000000 		.4byte	0x68
+ 1418 01a9 0D       		.uleb128 0xd
+ 1419 01aa 24000000 		.4byte	.LASF27
+ 1420 01ae 06       		.byte	0x6
+ 1421 01af 28       		.byte	0x28
+ 1422 01b0 68000000 		.4byte	0x68
+ 1423 01b4 0D       		.uleb128 0xd
+ 1424 01b5 B9010000 		.4byte	.LASF28
+ 1425 01b9 06       		.byte	0x6
+ 1426 01ba 29       		.byte	0x29
+ 1427 01bb 68000000 		.4byte	0x68
+ 1428 01bf 0E       		.uleb128 0xe
+ 1429 01c0 B8020000 		.4byte	.LASF29
+ 1430 01c4 06       		.byte	0x6
+ 1431 01c5 2A       		.byte	0x2a
+ 1432 01c6 68000000 		.4byte	0x68
+ 1433 01ca 05       		.uleb128 0x5
+ 1434 01cb 03       		.byte	0x3
+ 1435 01cc 00000000 		.4byte	speed_change_counter
+ 1436 01d0 0E       		.uleb128 0xe
+ 1437 01d1 41000000 		.4byte	.LASF30
+ 1438 01d5 06       		.byte	0x6
+ 1439 01d6 2B       		.byte	0x2b
+ 1440 01d7 68000000 		.4byte	0x68
+ 1441 01db 05       		.uleb128 0x5
+ 1442 01dc 03       		.byte	0x3
+ 1443 01dd 00000000 		.4byte	speed_change_flag
+ 1444 01e1 0F       		.uleb128 0xf
+ 1445 01e2 763100   		.ascii	"v1\000"
+ 1446 01e5 06       		.byte	0x6
+ 1447 01e6 2C       		.byte	0x2c
+ 1448 01e7 94000000 		.4byte	0x94
+ 1449 01eb 0F       		.uleb128 0xf
+ 1450 01ec 763200   		.ascii	"v2\000"
+ 1451 01ef 06       		.byte	0x6
+ 1452 01f0 2C       		.byte	0x2c
+ 1453 01f1 94000000 		.4byte	0x94
+ 1454 01f5 0E       		.uleb128 0xe
+ 1455 01f6 71010000 		.4byte	.LASF31
+ 1456 01fa 06       		.byte	0x6
+ 1457 01fb 2D       		.byte	0x2d
+ 1458 01fc 68000000 		.4byte	0x68
+ 1459 0200 05       		.uleb128 0x5
+ 1460 0201 03       		.byte	0x3
+ 1461 0202 00000000 		.4byte	totalQcount1
+ 1462 0206 0E       		.uleb128 0xe
+ 1463 0207 7E010000 		.4byte	.LASF32
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 32
+
+
+ 1464 020b 06       		.byte	0x6
+ 1465 020c 2E       		.byte	0x2e
+ 1466 020d 68000000 		.4byte	0x68
+ 1467 0211 05       		.uleb128 0x5
+ 1468 0212 03       		.byte	0x3
+ 1469 0213 00000000 		.4byte	totalQcount2
+ 1470 0217 0E       		.uleb128 0xe
+ 1471 0218 CD020000 		.4byte	.LASF33
+ 1472 021c 06       		.byte	0x6
+ 1473 021d 2F       		.byte	0x2f
+ 1474 021e 68000000 		.4byte	0x68
+ 1475 0222 05       		.uleb128 0x5
+ 1476 0223 03       		.byte	0x3
+ 1477 0224 00000000 		.4byte	done
+ 1478 0228 0E       		.uleb128 0xe
+ 1479 0229 7F020000 		.4byte	.LASF34
+ 1480 022d 06       		.byte	0x6
+ 1481 022e 35       		.byte	0x35
+ 1482 022f 68000000 		.4byte	0x68
+ 1483 0233 05       		.uleb128 0x5
+ 1484 0234 03       		.byte	0x3
+ 1485 0235 00000000 		.4byte	fixedCounter
+ 1486 0239 0D       		.uleb128 0xd
+ 1487 023a 6C020000 		.4byte	.LASF35
+ 1488 023e 06       		.byte	0x6
+ 1489 023f 37       		.byte	0x37
+ 1490 0240 68000000 		.4byte	0x68
+ 1491 0244 0E       		.uleb128 0xe
+ 1492 0245 82000000 		.4byte	.LASF36
+ 1493 0249 06       		.byte	0x6
+ 1494 024a 3A       		.byte	0x3a
+ 1495 024b 68000000 		.4byte	0x68
+ 1496 024f 05       		.uleb128 0x5
+ 1497 0250 03       		.byte	0x3
+ 1498 0251 00000000 		.4byte	saved1
+ 1499 0255 0E       		.uleb128 0xe
+ 1500 0256 89000000 		.4byte	.LASF37
+ 1501 025a 06       		.byte	0x6
+ 1502 025b 3B       		.byte	0x3b
+ 1503 025c 68000000 		.4byte	0x68
+ 1504 0260 05       		.uleb128 0x5
+ 1505 0261 03       		.byte	0x3
+ 1506 0262 00000000 		.4byte	saved2
+ 1507 0266 0E       		.uleb128 0xe
+ 1508 0267 00000000 		.4byte	.LASF38
+ 1509 026b 06       		.byte	0x6
+ 1510 026c 3C       		.byte	0x3c
+ 1511 026d 68000000 		.4byte	0x68
+ 1512 0271 05       		.uleb128 0x5
+ 1513 0272 03       		.byte	0x3
+ 1514 0273 00000000 		.4byte	nice1
+ 1515 0277 0E       		.uleb128 0xe
+ 1516 0278 B2020000 		.4byte	.LASF39
+ 1517 027c 06       		.byte	0x6
+ 1518 027d 3D       		.byte	0x3d
+ 1519 027e 68000000 		.4byte	0x68
+ 1520 0282 05       		.uleb128 0x5
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 33
+
+
+ 1521 0283 03       		.byte	0x3
+ 1522 0284 00000000 		.4byte	nice2
+ 1523 0288 0D       		.uleb128 0xd
+ 1524 0289 B1010000 		.4byte	.LASF40
+ 1525 028d 06       		.byte	0x6
+ 1526 028e 3E       		.byte	0x3e
+ 1527 028f 68000000 		.4byte	0x68
+ 1528 0293 00       		.byte	0
+ 1529              		.section	.debug_abbrev,"",%progbits
+ 1530              	.Ldebug_abbrev0:
+ 1531 0000 01       		.uleb128 0x1
+ 1532 0001 11       		.uleb128 0x11
+ 1533 0002 01       		.byte	0x1
+ 1534 0003 25       		.uleb128 0x25
+ 1535 0004 0E       		.uleb128 0xe
+ 1536 0005 13       		.uleb128 0x13
+ 1537 0006 0B       		.uleb128 0xb
+ 1538 0007 03       		.uleb128 0x3
+ 1539 0008 0E       		.uleb128 0xe
+ 1540 0009 1B       		.uleb128 0x1b
+ 1541 000a 0E       		.uleb128 0xe
+ 1542 000b 55       		.uleb128 0x55
+ 1543 000c 17       		.uleb128 0x17
+ 1544 000d 11       		.uleb128 0x11
+ 1545 000e 01       		.uleb128 0x1
+ 1546 000f 10       		.uleb128 0x10
+ 1547 0010 17       		.uleb128 0x17
+ 1548 0011 00       		.byte	0
+ 1549 0012 00       		.byte	0
+ 1550 0013 02       		.uleb128 0x2
+ 1551 0014 24       		.uleb128 0x24
+ 1552 0015 00       		.byte	0
+ 1553 0016 0B       		.uleb128 0xb
+ 1554 0017 0B       		.uleb128 0xb
+ 1555 0018 3E       		.uleb128 0x3e
+ 1556 0019 0B       		.uleb128 0xb
+ 1557 001a 03       		.uleb128 0x3
+ 1558 001b 0E       		.uleb128 0xe
+ 1559 001c 00       		.byte	0
+ 1560 001d 00       		.byte	0
+ 1561 001e 03       		.uleb128 0x3
+ 1562 001f 16       		.uleb128 0x16
+ 1563 0020 00       		.byte	0
+ 1564 0021 03       		.uleb128 0x3
+ 1565 0022 0E       		.uleb128 0xe
+ 1566 0023 3A       		.uleb128 0x3a
+ 1567 0024 0B       		.uleb128 0xb
+ 1568 0025 3B       		.uleb128 0x3b
+ 1569 0026 0B       		.uleb128 0xb
+ 1570 0027 49       		.uleb128 0x49
+ 1571 0028 13       		.uleb128 0x13
+ 1572 0029 00       		.byte	0
+ 1573 002a 00       		.byte	0
+ 1574 002b 04       		.uleb128 0x4
+ 1575 002c 24       		.uleb128 0x24
+ 1576 002d 00       		.byte	0
+ 1577 002e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 34
+
+
+ 1578 002f 0B       		.uleb128 0xb
+ 1579 0030 3E       		.uleb128 0x3e
+ 1580 0031 0B       		.uleb128 0xb
+ 1581 0032 03       		.uleb128 0x3
+ 1582 0033 08       		.uleb128 0x8
+ 1583 0034 00       		.byte	0
+ 1584 0035 00       		.byte	0
+ 1585 0036 05       		.uleb128 0x5
+ 1586 0037 16       		.uleb128 0x16
+ 1587 0038 00       		.byte	0
+ 1588 0039 03       		.uleb128 0x3
+ 1589 003a 0E       		.uleb128 0xe
+ 1590 003b 3A       		.uleb128 0x3a
+ 1591 003c 0B       		.uleb128 0xb
+ 1592 003d 3B       		.uleb128 0x3b
+ 1593 003e 05       		.uleb128 0x5
+ 1594 003f 49       		.uleb128 0x49
+ 1595 0040 13       		.uleb128 0x13
+ 1596 0041 00       		.byte	0
+ 1597 0042 00       		.byte	0
+ 1598 0043 06       		.uleb128 0x6
+ 1599 0044 2E       		.uleb128 0x2e
+ 1600 0045 00       		.byte	0
+ 1601 0046 3F       		.uleb128 0x3f
+ 1602 0047 19       		.uleb128 0x19
+ 1603 0048 03       		.uleb128 0x3
+ 1604 0049 0E       		.uleb128 0xe
+ 1605 004a 3A       		.uleb128 0x3a
+ 1606 004b 0B       		.uleb128 0xb
+ 1607 004c 3B       		.uleb128 0x3b
+ 1608 004d 0B       		.uleb128 0xb
+ 1609 004e 11       		.uleb128 0x11
+ 1610 004f 01       		.uleb128 0x1
+ 1611 0050 12       		.uleb128 0x12
+ 1612 0051 06       		.uleb128 0x6
+ 1613 0052 40       		.uleb128 0x40
+ 1614 0053 18       		.uleb128 0x18
+ 1615 0054 9642     		.uleb128 0x2116
+ 1616 0056 19       		.uleb128 0x19
+ 1617 0057 00       		.byte	0
+ 1618 0058 00       		.byte	0
+ 1619 0059 07       		.uleb128 0x7
+ 1620 005a 2E       		.uleb128 0x2e
+ 1621 005b 01       		.byte	0x1
+ 1622 005c 3F       		.uleb128 0x3f
+ 1623 005d 19       		.uleb128 0x19
+ 1624 005e 03       		.uleb128 0x3
+ 1625 005f 0E       		.uleb128 0xe
+ 1626 0060 3A       		.uleb128 0x3a
+ 1627 0061 0B       		.uleb128 0xb
+ 1628 0062 3B       		.uleb128 0x3b
+ 1629 0063 0B       		.uleb128 0xb
+ 1630 0064 11       		.uleb128 0x11
+ 1631 0065 01       		.uleb128 0x1
+ 1632 0066 12       		.uleb128 0x12
+ 1633 0067 06       		.uleb128 0x6
+ 1634 0068 40       		.uleb128 0x40
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 35
+
+
+ 1635 0069 18       		.uleb128 0x18
+ 1636 006a 9642     		.uleb128 0x2116
+ 1637 006c 19       		.uleb128 0x19
+ 1638 006d 01       		.uleb128 0x1
+ 1639 006e 13       		.uleb128 0x13
+ 1640 006f 00       		.byte	0
+ 1641 0070 00       		.byte	0
+ 1642 0071 08       		.uleb128 0x8
+ 1643 0072 34       		.uleb128 0x34
+ 1644 0073 00       		.byte	0
+ 1645 0074 03       		.uleb128 0x3
+ 1646 0075 08       		.uleb128 0x8
+ 1647 0076 3A       		.uleb128 0x3a
+ 1648 0077 0B       		.uleb128 0xb
+ 1649 0078 3B       		.uleb128 0x3b
+ 1650 0079 0B       		.uleb128 0xb
+ 1651 007a 49       		.uleb128 0x49
+ 1652 007b 13       		.uleb128 0x13
+ 1653 007c 02       		.uleb128 0x2
+ 1654 007d 18       		.uleb128 0x18
+ 1655 007e 00       		.byte	0
+ 1656 007f 00       		.byte	0
+ 1657 0080 09       		.uleb128 0x9
+ 1658 0081 01       		.uleb128 0x1
+ 1659 0082 01       		.byte	0x1
+ 1660 0083 49       		.uleb128 0x49
+ 1661 0084 13       		.uleb128 0x13
+ 1662 0085 01       		.uleb128 0x1
+ 1663 0086 13       		.uleb128 0x13
+ 1664 0087 00       		.byte	0
+ 1665 0088 00       		.byte	0
+ 1666 0089 0A       		.uleb128 0xa
+ 1667 008a 21       		.uleb128 0x21
+ 1668 008b 00       		.byte	0
+ 1669 008c 49       		.uleb128 0x49
+ 1670 008d 13       		.uleb128 0x13
+ 1671 008e 2F       		.uleb128 0x2f
+ 1672 008f 0B       		.uleb128 0xb
+ 1673 0090 00       		.byte	0
+ 1674 0091 00       		.byte	0
+ 1675 0092 0B       		.uleb128 0xb
+ 1676 0093 34       		.uleb128 0x34
+ 1677 0094 00       		.byte	0
+ 1678 0095 03       		.uleb128 0x3
+ 1679 0096 0E       		.uleb128 0xe
+ 1680 0097 3A       		.uleb128 0x3a
+ 1681 0098 0B       		.uleb128 0xb
+ 1682 0099 3B       		.uleb128 0x3b
+ 1683 009a 05       		.uleb128 0x5
+ 1684 009b 49       		.uleb128 0x49
+ 1685 009c 13       		.uleb128 0x13
+ 1686 009d 3F       		.uleb128 0x3f
+ 1687 009e 19       		.uleb128 0x19
+ 1688 009f 3C       		.uleb128 0x3c
+ 1689 00a0 19       		.uleb128 0x19
+ 1690 00a1 00       		.byte	0
+ 1691 00a2 00       		.byte	0
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 36
+
+
+ 1692 00a3 0C       		.uleb128 0xc
+ 1693 00a4 35       		.uleb128 0x35
+ 1694 00a5 00       		.byte	0
+ 1695 00a6 49       		.uleb128 0x49
+ 1696 00a7 13       		.uleb128 0x13
+ 1697 00a8 00       		.byte	0
+ 1698 00a9 00       		.byte	0
+ 1699 00aa 0D       		.uleb128 0xd
+ 1700 00ab 34       		.uleb128 0x34
+ 1701 00ac 00       		.byte	0
+ 1702 00ad 03       		.uleb128 0x3
+ 1703 00ae 0E       		.uleb128 0xe
+ 1704 00af 3A       		.uleb128 0x3a
+ 1705 00b0 0B       		.uleb128 0xb
+ 1706 00b1 3B       		.uleb128 0x3b
+ 1707 00b2 0B       		.uleb128 0xb
+ 1708 00b3 49       		.uleb128 0x49
+ 1709 00b4 13       		.uleb128 0x13
+ 1710 00b5 3F       		.uleb128 0x3f
+ 1711 00b6 19       		.uleb128 0x19
+ 1712 00b7 3C       		.uleb128 0x3c
+ 1713 00b8 19       		.uleb128 0x19
+ 1714 00b9 00       		.byte	0
+ 1715 00ba 00       		.byte	0
+ 1716 00bb 0E       		.uleb128 0xe
+ 1717 00bc 34       		.uleb128 0x34
+ 1718 00bd 00       		.byte	0
+ 1719 00be 03       		.uleb128 0x3
+ 1720 00bf 0E       		.uleb128 0xe
+ 1721 00c0 3A       		.uleb128 0x3a
+ 1722 00c1 0B       		.uleb128 0xb
+ 1723 00c2 3B       		.uleb128 0x3b
+ 1724 00c3 0B       		.uleb128 0xb
+ 1725 00c4 49       		.uleb128 0x49
+ 1726 00c5 13       		.uleb128 0x13
+ 1727 00c6 3F       		.uleb128 0x3f
+ 1728 00c7 19       		.uleb128 0x19
+ 1729 00c8 02       		.uleb128 0x2
+ 1730 00c9 18       		.uleb128 0x18
+ 1731 00ca 00       		.byte	0
+ 1732 00cb 00       		.byte	0
+ 1733 00cc 0F       		.uleb128 0xf
+ 1734 00cd 34       		.uleb128 0x34
+ 1735 00ce 00       		.byte	0
+ 1736 00cf 03       		.uleb128 0x3
+ 1737 00d0 08       		.uleb128 0x8
+ 1738 00d1 3A       		.uleb128 0x3a
+ 1739 00d2 0B       		.uleb128 0xb
+ 1740 00d3 3B       		.uleb128 0x3b
+ 1741 00d4 0B       		.uleb128 0xb
+ 1742 00d5 49       		.uleb128 0x49
+ 1743 00d6 13       		.uleb128 0x13
+ 1744 00d7 3F       		.uleb128 0x3f
+ 1745 00d8 19       		.uleb128 0x19
+ 1746 00d9 3C       		.uleb128 0x3c
+ 1747 00da 19       		.uleb128 0x19
+ 1748 00db 00       		.byte	0
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 37
+
+
+ 1749 00dc 00       		.byte	0
+ 1750 00dd 00       		.byte	0
+ 1751              		.section	.debug_aranges,"",%progbits
+ 1752 0000 34000000 		.4byte	0x34
+ 1753 0004 0200     		.2byte	0x2
+ 1754 0006 00000000 		.4byte	.Ldebug_info0
+ 1755 000a 04       		.byte	0x4
+ 1756 000b 00       		.byte	0
+ 1757 000c 0000     		.2byte	0
+ 1758 000e 0000     		.2byte	0
+ 1759 0010 00000000 		.4byte	.LFB63
+ 1760 0014 38010000 		.4byte	.LFE63-.LFB63
+ 1761 0018 00000000 		.4byte	.LFB64
+ 1762 001c 74000000 		.4byte	.LFE64-.LFB64
+ 1763 0020 00000000 		.4byte	.LFB65
+ 1764 0024 8C040000 		.4byte	.LFE65-.LFB65
+ 1765 0028 00000000 		.4byte	.LFB66
+ 1766 002c 3C020000 		.4byte	.LFE66-.LFB66
+ 1767 0030 00000000 		.4byte	0
+ 1768 0034 00000000 		.4byte	0
+ 1769              		.section	.debug_ranges,"",%progbits
+ 1770              	.Ldebug_ranges0:
+ 1771 0000 00000000 		.4byte	.LFB63
+ 1772 0004 38010000 		.4byte	.LFE63
+ 1773 0008 00000000 		.4byte	.LFB64
+ 1774 000c 74000000 		.4byte	.LFE64
+ 1775 0010 00000000 		.4byte	.LFB65
+ 1776 0014 8C040000 		.4byte	.LFE65
+ 1777 0018 00000000 		.4byte	.LFB66
+ 1778 001c 3C020000 		.4byte	.LFE66
+ 1779 0020 00000000 		.4byte	0
+ 1780 0024 00000000 		.4byte	0
+ 1781              		.section	.debug_line,"",%progbits
+ 1782              	.Ldebug_line0:
+ 1783 0000 9C020000 		.section	.debug_str,"MS",%progbits,1
+ 1783      02006101 
+ 1783      00000201 
+ 1783      FB0E0D00 
+ 1783      01010101 
+ 1784              	.LASF38:
+ 1785 0000 6E696365 		.ascii	"nice1\000"
+ 1785      3100
+ 1786              	.LASF25:
+ 1787 0006 4144435F 		.ascii	"ADC_5\000"
+ 1787      3500
+ 1788              	.LASF26:
+ 1789 000c 74696D65 		.ascii	"timeout\000"
+ 1789      6F757400 
+ 1790              	.LASF9:
+ 1791 0014 5F5F696E 		.ascii	"__int32_t\000"
+ 1791      7433325F 
+ 1791      7400
+ 1792              	.LASF21:
+ 1793 001e 4144435F 		.ascii	"ADC_0\000"
+ 1793      3000
+ 1794              	.LASF27:
+ 1795 0024 7475726E 		.ascii	"turnRight\000"
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 38
+
+
+ 1795      52696768 
+ 1795      7400
+ 1796              	.LASF13:
+ 1797 002e 646F7562 		.ascii	"double\000"
+ 1797      6C6500
+ 1798              	.LASF19:
+ 1799 0035 53656E73 		.ascii	"SensorAddon\000"
+ 1799      6F724164 
+ 1799      646F6E00 
+ 1800              	.LASF30:
+ 1801 0041 73706565 		.ascii	"speed_change_flag\000"
+ 1801      645F6368 
+ 1801      616E6765 
+ 1801      5F666C61 
+ 1801      6700
+ 1802              	.LASF12:
+ 1803 0053 666C6F61 		.ascii	"float\000"
+ 1803      7400
+ 1804              	.LASF0:
+ 1805 0059 7369676E 		.ascii	"signed char\000"
+ 1805      65642063 
+ 1805      68617200 
+ 1806              	.LASF1:
+ 1807 0065 756E7369 		.ascii	"unsigned char\000"
+ 1807      676E6564 
+ 1807      20636861 
+ 1807      7200
+ 1808              	.LASF42:
+ 1809 0073 2E5C6265 		.ascii	".\\benchmarks.c\000"
+ 1809      6E63686D 
+ 1809      61726B73 
+ 1809      2E6300
+ 1810              	.LASF36:
+ 1811 0082 73617665 		.ascii	"saved1\000"
+ 1811      643100
+ 1812              	.LASF37:
+ 1813 0089 73617665 		.ascii	"saved2\000"
+ 1813      643200
+ 1814              	.LASF3:
+ 1815 0090 73686F72 		.ascii	"short unsigned int\000"
+ 1815      7420756E 
+ 1815      7369676E 
+ 1815      65642069 
+ 1815      6E7400
+ 1816              	.LASF4:
+ 1817 00a3 6C6F6E67 		.ascii	"long int\000"
+ 1817      20696E74 
+ 1817      00
+ 1818              	.LASF20:
+ 1819 00ac 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1819      52784275 
+ 1819      66666572 
+ 1819      00
+ 1820              	.LASF41:
+ 1821 00b9 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1821      4320342E 
+ 1821      392E3320 
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 39
+
+
+ 1821      32303135 
+ 1821      30333033 
+ 1822 00ec 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1822      20726576 
+ 1822      6973696F 
+ 1822      6E203232 
+ 1822      31323230 
+ 1823 011f 30202D73 		.ascii	"0 -std=gnu99 -ffunction-sections -ffat-lto-objects\000"
+ 1823      74643D67 
+ 1823      6E753939 
+ 1823      202D6666 
+ 1823      756E6374 
+ 1824              	.LASF5:
+ 1825 0152 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1825      20756E73 
+ 1825      69676E65 
+ 1825      6420696E 
+ 1825      7400
+ 1826              	.LASF8:
+ 1827 0164 756E7369 		.ascii	"unsigned int\000"
+ 1827      676E6564 
+ 1827      20696E74 
+ 1827      00
+ 1828              	.LASF31:
+ 1829 0171 746F7461 		.ascii	"totalQcount1\000"
+ 1829      6C51636F 
+ 1829      756E7431 
+ 1829      00
+ 1830              	.LASF32:
+ 1831 017e 746F7461 		.ascii	"totalQcount2\000"
+ 1831      6C51636F 
+ 1831      756E7432 
+ 1831      00
+ 1832              	.LASF7:
+ 1833 018b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1833      206C6F6E 
+ 1833      6720756E 
+ 1833      7369676E 
+ 1833      65642069 
+ 1834              	.LASF17:
+ 1835 01a2 616C6C42 		.ascii	"allButSquiggly\000"
+ 1835      75745371 
+ 1835      75696767 
+ 1835      6C7900
+ 1836              	.LASF40:
+ 1837 01b1 73657474 		.ascii	"settled\000"
+ 1837      6C656400 
+ 1838              	.LASF28:
+ 1839 01b9 7475726E 		.ascii	"turnLeft\000"
+ 1839      4C656674 
+ 1839      00
+ 1840              	.LASF16:
+ 1841 01c2 6C6F6E67 		.ascii	"long double\000"
+ 1841      20646F75 
+ 1841      626C6500 
+ 1842              	.LASF15:
+ 1843 01ce 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 40
+
+
+ 1843      74797065 
+ 1843      00
+ 1844              	.LASF6:
+ 1845 01d7 6C6F6E67 		.ascii	"long long int\000"
+ 1845      206C6F6E 
+ 1845      6720696E 
+ 1845      7400
+ 1846              	.LASF14:
+ 1847 01e5 63686172 		.ascii	"char\000"
+ 1847      00
+ 1848              	.LASF10:
+ 1849 01ea 696E7433 		.ascii	"int32_t\000"
+ 1849      325F7400 
+ 1850              	.LASF2:
+ 1851 01f2 73686F72 		.ascii	"short int\000"
+ 1851      7420696E 
+ 1851      7400
+ 1852              	.LASF11:
+ 1853 01fc 75696E74 		.ascii	"uint8\000"
+ 1853      3800
+ 1854              	.LASF43:
+ 1855 0202 483A5C44 		.ascii	"H:\\Documents\\1- YEAR 3 - ROBOT PAC-MAN\\psoc stud"
+ 1855      6F63756D 
+ 1855      656E7473 
+ 1855      5C312D20 
+ 1855      59454152 
+ 1856 0232 656E7420 		.ascii	"ent pack\\psoc_code_base\\CS301_techtest1\\CS301_Cl"
+ 1856      7061636B 
+ 1856      5C70736F 
+ 1856      635F636F 
+ 1856      64655F62 
+ 1857 0262 6173732E 		.ascii	"ass.cydsn\000"
+ 1857      63796473 
+ 1857      6E00
+ 1858              	.LASF35:
+ 1859 026c 74656D70 		.ascii	"tempcount\000"
+ 1859      636F756E 
+ 1859      7400
+ 1860              	.LASF18:
+ 1861 0276 53717569 		.ascii	"Squiggly\000"
+ 1861      67676C79 
+ 1861      00
+ 1862              	.LASF34:
+ 1863 027f 66697865 		.ascii	"fixedCounter\000"
+ 1863      64436F75 
+ 1863      6E746572 
+ 1863      00
+ 1864              	.LASF44:
+ 1865 028c 53657453 		.ascii	"SetSpeedSetDistance\000"
+ 1865      70656564 
+ 1865      53657444 
+ 1865      69737461 
+ 1865      6E636500 
+ 1866              	.LASF22:
+ 1867 02a0 4144435F 		.ascii	"ADC_1\000"
+ 1867      3100
+ 1868              	.LASF23:
+ARM GAS  C:\Users\mfoo431\AppData\Local\Temp\ccb0H4yR.s 			page 41
+
+
+ 1869 02a6 4144435F 		.ascii	"ADC_2\000"
+ 1869      3200
+ 1870              	.LASF24:
+ 1871 02ac 4144435F 		.ascii	"ADC_4\000"
+ 1871      3400
+ 1872              	.LASF39:
+ 1873 02b2 6E696365 		.ascii	"nice2\000"
+ 1873      3200
+ 1874              	.LASF29:
+ 1875 02b8 73706565 		.ascii	"speed_change_counter\000"
+ 1875      645F6368 
+ 1875      616E6765 
+ 1875      5F636F75 
+ 1875      6E746572 
+ 1876              	.LASF33:
+ 1877 02cd 646F6E65 		.ascii	"done\000"
+ 1877      00
+ 1878              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

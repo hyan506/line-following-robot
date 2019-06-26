@@ -1,0 +1,100 @@
+--------------- Build Started: 10/14/2018 15:02:43 Project: CS301_Class, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+The code generation step is up to date.
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -O0 -ffat-lto-objects -std=gnu99 -lm -c .\main.c -o .\CortexM3\ARM_GCC_493\Debug\main.o
+.\main.c: In function 'astar':
+.\main.c:650:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+  DistBefore.map[Start.row][Start.col] = 0;
+  ^
+.\main.c:650:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:653:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+  TotalDist.map[Start.row][Start.col] = hCost(Start, Pizza);
+  ^
+.\main.c:653:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:679:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     tentativeDist = DistBefore.map[Current.row][Current.col] + hCost(Current, neighbours[i]);
+     ^
+.\main.c:679:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:680:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     if (tentativeDist >= DistBefore.map[neighbours[i].row][neighbours[i].col]) {
+     ^
+.\main.c:680:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:683:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     CameFrom.map[neighbours[i].row][neighbours[i].col].row = Current.row;
+     ^
+.\main.c:683:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:684:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     CameFrom.map[neighbours[i].row][neighbours[i].col].col = Current.col;
+     ^
+.\main.c:684:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:685:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     DistBefore.map[neighbours[i].row][neighbours[i].col] = tentativeDist;
+     ^
+.\main.c:685:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:686:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     TotalDist.map[neighbours[i].row][neighbours[i].col] = DistBefore.map[neighbours[i].row][neighbours[i].col]
+     ^
+.\main.c:686:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:686:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:686:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:657:6: warning: unused variable 'indexN' [-Wunused-variable]
+  int indexN = 0;
+      ^
+.\main.c: In function 'TidyUpThePath':
+.\main.c:695:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+  int NextRow = CameFrom.map[Pizza.row][Pizza.col].row;
+  ^
+.\main.c:695:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:696:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+  int NextCol = CameFrom.map[Pizza.row][Pizza.col].col;
+  ^
+.\main.c:696:2: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:707:3: warning: array subscript has type 'char' [-Wchar-subscripts]
+   NextRow = CameFrom.map[temp.row][temp.col].row;
+   ^
+.\main.c:707:3: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:708:3: warning: array subscript has type 'char' [-Wchar-subscripts]
+   NextCol = CameFrom.map[temp.row][temp.col].col;
+   ^
+.\main.c:708:3: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c: In function 'findCurrentNode':
+.\main.c:720:3: warning: array subscript has type 'char' [-Wchar-subscripts]
+   if (Map.map[Array[i].row][Array[i].col] < shortest) {
+   ^
+.\main.c:720:3: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:721:4: warning: array subscript has type 'char' [-Wchar-subscripts]
+    shortest = Map.map[Array[i].row][Array[i].col];
+    ^
+.\main.c:721:4: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:716:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+.\main.c: In function 'listNeighbours':
+.\main.c:745:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     if (map[storeval.row][storeval.col] == WALKABLE) {
+     ^
+.\main.c:745:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:755:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     if (map[storeval.row][storeval.col] == WALKABLE) {
+     ^
+.\main.c:755:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c:733:12: warning: unused variable 'listNeighbours' [-Wunused-variable]
+  NodeList  listNeighbours = { {{0}},0 };
+            ^
+.\main.c: In function 'astar_and_append':
+.\main.c:822:9: warning: array subscript has type 'char' [-Wchar-subscripts]
+         food_states[PathArray[i].row][PathArray[i].col] = 1;
+         ^
+.\main.c:822:9: warning: array subscript has type 'char' [-Wchar-subscripts]
+.\main.c: In function 'findNearestFood':
+.\main.c:860:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     food_states[START_ROW][START_COL] = 1;
+     ^
+.\main.c:860:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_493\Debug\CS301_Class.a .\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_493\Debug\A0.o .\CortexM3\ARM_GCC_493\Debug\ADC.o .\CortexM3\ARM_GCC_493\Debug\ADC_PM.o .\CortexM3\ARM_GCC_493\Debug\ADC_INT.o .\CortexM3\ARM_GCC_493\Debug\A1.o .\CortexM3\ARM_GCC_493\Debug\A2.o .\CortexM3\ARM_GCC_493\Debug\A3.o .\CortexM3\ARM_GCC_493\Debug\A4.o .\CortexM3\ARM_GCC_493\Debug\A5.o .\CortexM3\ARM_GCC_493\Debug\USBUART.o .\CortexM3\ARM_GCC_493\Debug\USBUART_audio.o .\CortexM3\ARM_GCC_493\Debug\USBUART_boot.o .\CortexM3\ARM_GCC_493\Debug\USBUART_cdc.o .\CortexM3\ARM_GCC_493\Debug\USBUART_cls.o .\CortexM3\ARM_GCC_493\Debug\USBUART_descr.o .\CortexM3\ARM_GCC_493\Debug\USBUART_drv.o .\CortexM3\ARM_GCC_493\Debug\USBUART_episr.o .\CortexM3\ARM_GCC_493\Debug\USBUART_hid.o .\CortexM3\ARM_GCC_493\Debug\USBUART_pm.o .\CortexM3\ARM_GCC_493\Debug\USBUART_std.o .\CortexM3\ARM_GCC_493\Debug\USBUART_vnd.o .\CortexM3\ARM_GCC_493\Debug\USBUART_midi.o .\CortexM3\ARM_GCC_493\Debug\USBUART_msc.o .\CortexM3\ARM_GCC_493\Debug\CONTROL.o .\CortexM3\ARM_GCC_493\Debug\CONTROL_PM.o .\CortexM3\ARM_GCC_493\Debug\ADC_SAR.o .\CortexM3\ARM_GCC_493\Debug\ADC_SAR_INT.o .\CortexM3\ARM_GCC_493\Debug\ADC_SAR_PM.o .\CortexM3\ARM_GCC_493\Debug\ADC_IntClock.o .\CortexM3\ARM_GCC_493\Debug\ADC_TempBuf_dma.o .\CortexM3\ARM_GCC_493\Debug\ADC_FinalBuf_dma.o .\CortexM3\ARM_GCC_493\Debug\ADC_IRQ.o .\CortexM3\ARM_GCC_493\Debug\USBUART_Dm.o .\CortexM3\ARM_GCC_493\Debug\USBUART_Dp.o .\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o .\CortexM3\ARM_GCC_493\Debug\CyDmac.o .\CortexM3\ARM_GCC_493\Debug\CyFlash.o .\CortexM3\ARM_GCC_493\Debug\CyLib.o .\CortexM3\ARM_GCC_493\Debug\cyPm.o .\CortexM3\ARM_GCC_493\Debug\CySpc.o .\CortexM3\ARM_GCC_493\Debug\cyutils.o .\CortexM3\ARM_GCC_493\Debug\PWM_1.o .\CortexM3\ARM_GCC_493\Debug\PWM_1_PM.o .\CortexM3\ARM_GCC_493\Debug\Clock_PWM.o .\CortexM3\ARM_GCC_493\Debug\Clock_QENC.o .\CortexM3\ARM_GCC_493\Debug\M1_IN1.o .\CortexM3\ARM_GCC_493\Debug\M1_IN2.o .\CortexM3\ARM_GCC_493\Debug\M2_IN1.o .\CortexM3\ARM_GCC_493\Debug\M2_IN2.o .\CortexM3\ARM_GCC_493\Debug\M2_D1.o .\CortexM3\ARM_GCC_493\Debug\M1_QA.o .\CortexM3\ARM_GCC_493\Debug\M1_QB.o .\CortexM3\ARM_GCC_493\Debug\M2_QA.o .\CortexM3\ARM_GCC_493\Debug\M2_QB.o .\CortexM3\ARM_GCC_493\Debug\M1_D1.o .\CortexM3\ARM_GCC_493\Debug\isr_eoc.o .\CortexM3\ARM_GCC_493\Debug\PWM_2.o .\CortexM3\ARM_GCC_493\Debug\PWM_2_PM.o .\CortexM3\ARM_GCC_493\Debug\LED.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M1.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M1_PM.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M2.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M2_PM.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M1_Cnt16.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M1_Cnt16_PM.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M2_Cnt16.o .\CortexM3\ARM_GCC_493\Debug\QuadDec_M2_Cnt16_PM.o .\CortexM3\ARM_GCC_493\Debug\DB0.o .\CortexM3\ARM_GCC_493\Debug\DB1.o .\CortexM3\ARM_GCC_493\Debug\DB2.o .\CortexM3\ARM_GCC_493\Debug\isrRF_TX.o .\CortexM3\ARM_GCC_493\Debug\isrRF_RX.o .\CortexM3\ARM_GCC_493\Debug\UART.o .\CortexM3\ARM_GCC_493\Debug\UART_PM.o .\CortexM3\ARM_GCC_493\Debug\UART_INT.o .\CortexM3\ARM_GCC_493\Debug\UART_BOOT.o .\CortexM3\ARM_GCC_493\Debug\UART_IntClock.o .\CortexM3\ARM_GCC_493\Debug\RF_BT_SELECT.o .\CortexM3\ARM_GCC_493\Debug\RF_BT_SELECT_PM.o .\CortexM3\ARM_GCC_493\Debug\M1_D2.o .\CortexM3\ARM_GCC_493\Debug\M2_D2.o .\CortexM3\ARM_GCC_493\Debug\Direction_Control_1.o .\CortexM3\ARM_GCC_493\Debug\Direction_Control_1_PM.o .\CortexM3\ARM_GCC_493\Debug\Direction_Control_2.o .\CortexM3\ARM_GCC_493\Debug\Direction_Control_2_PM.o .\CortexM3\ARM_GCC_493\Debug\timer_clock.o .\CortexM3\ARM_GCC_493\Debug\Timer_1.o .\CortexM3\ARM_GCC_493\Debug\Timer_1_PM.o .\CortexM3\ARM_GCC_493\Debug\check.o .\CortexM3\ARM_GCC_493\Debug\M1_EN.o .\CortexM3\ARM_GCC_493\Debug\M2_EN.o .\CortexM3\ARM_GCC_493\Debug\DIP0.o .\CortexM3\ARM_GCC_493\Debug\DIP1.o .\CortexM3\ARM_GCC_493\Debug\timer_clock_1.o .\CortexM3\ARM_GCC_493\Debug\printing.o .\CortexM3\ARM_GCC_493\Debug\Timer_2.o .\CortexM3\ARM_GCC_493\Debug\Timer_2_PM.o .\CortexM3\ARM_GCC_493\Debug\LED_1.o .\CortexM3\ARM_GCC_493\Debug\LED_2.o
+arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_493\Debug\CS301_Class.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o .\CortexM3\ARM_GCC_493\Debug\CS301_Class.elf .\CortexM3\ARM_GCC_493\Debug\main.o .\CortexM3\ARM_GCC_493\Debug\tacho.o .\CortexM3\ARM_GCC_493\Debug\cymetadata.o .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o .\CortexM3\ARM_GCC_493\Debug\CS301_Class.a "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -g -ffunction-sections -O0 -ffat-lto-objects -l m -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_493\Debug/CS301_Class.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -Wl,--end-group
+cyelftool.exe -C "\\uoa.auckland.ac.nz\engdfs\home\jpat331\Desktop\CS301_Class.cydsn (4)\CS301_Class.cydsn\CortexM3\ARM_GCC_493\Debug\CS301_Class.elf" --flash_row_size 256 --flash_size 262144
+cyelftool.exe -S "\\uoa.auckland.ac.nz\engdfs\home\jpat331\Desktop\CS301_Class.cydsn (4)\CS301_Class.cydsn\CortexM3\ARM_GCC_493\Debug\CS301_Class.elf"
+Flash used: 25856 of 262144 bytes (9.9%).
+SRAM used: 45589 of 65536 bytes (69.6%). Stack: 32768 bytes. Heap: 4096 bytes.
+--------------- Build Succeeded: 10/14/2018 15:02:47 ---------------

@@ -1,0 +1,4771 @@
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_meta_configecc
+  19              		.section	.cyconfigecc,"a",%progbits
+  20              		.align	2
+  21              		.type	cy_meta_configecc, %object
+  22              		.size	cy_meta_configecc, 4044
+  23              	cy_meta_configecc:
+  24 0000 01       		.byte	1
+  25 0001 45       		.byte	69
+  26 0002 00       		.byte	0
+  27 0003 40       		.byte	64
+  28 0004 08       		.byte	8
+  29 0005 4F       		.byte	79
+  30 0006 00       		.byte	0
+  31 0007 40       		.byte	64
+  32 0008 0D       		.byte	13
+  33 0009 52       		.byte	82
+  34 000a 00       		.byte	0
+  35 000b 40       		.byte	64
+  36 000c 01       		.byte	1
+  37 000d 5B       		.byte	91
+  38 000e 00       		.byte	0
+  39 000f 40       		.byte	64
+  40 0010 06       		.byte	6
+  41 0011 64       		.byte	100
+  42 0012 00       		.byte	0
+  43 0013 40       		.byte	64
+  44 0014 04       		.byte	4
+  45 0015 65       		.byte	101
+  46 0016 00       		.byte	0
+  47 0017 40       		.byte	64
+  48 0018 43       		.byte	67
+  49 0019 00       		.byte	0
+  50 001a 01       		.byte	1
+  51 001b 40       		.byte	64
+  52 001c 31       		.byte	49
+  53 001d 01       		.byte	1
+  54 001e 01       		.byte	1
+  55 001f 40       		.byte	64
+  56 0020 37       		.byte	55
+  57 0021 02       		.byte	2
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 2
+
+
+  58 0022 01       		.byte	1
+  59 0023 40       		.byte	64
+  60 0024 4E       		.byte	78
+  61 0025 03       		.byte	3
+  62 0026 01       		.byte	1
+  63 0027 40       		.byte	64
+  64 0028 3B       		.byte	59
+  65 0029 04       		.byte	4
+  66 002a 01       		.byte	1
+  67 002b 40       		.byte	64
+  68 002c 54       		.byte	84
+  69 002d 05       		.byte	5
+  70 002e 01       		.byte	1
+  71 002f 40       		.byte	64
+  72 0030 3C       		.byte	60
+  73 0031 06       		.byte	6
+  74 0032 01       		.byte	1
+  75 0033 40       		.byte	64
+  76 0034 51       		.byte	81
+  77 0035 07       		.byte	7
+  78 0036 01       		.byte	1
+  79 0037 40       		.byte	64
+  80 0038 4B       		.byte	75
+  81 0039 08       		.byte	8
+  82 003a 01       		.byte	1
+  83 003b 40       		.byte	64
+  84 003c 53       		.byte	83
+  85 003d 09       		.byte	9
+  86 003e 01       		.byte	1
+  87 003f 40       		.byte	64
+  88 0040 0A       		.byte	10
+  89 0041 0A       		.byte	10
+  90 0042 01       		.byte	1
+  91 0043 40       		.byte	64
+  92 0044 5C       		.byte	92
+  93 0045 0B       		.byte	11
+  94 0046 01       		.byte	1
+  95 0047 40       		.byte	64
+  96 0048 49       		.byte	73
+  97 0049 0C       		.byte	12
+  98 004a 01       		.byte	1
+  99 004b 40       		.byte	64
+ 100 004c 50       		.byte	80
+ 101 004d 0D       		.byte	13
+ 102 004e 01       		.byte	1
+ 103 004f 40       		.byte	64
+ 104 0050 33       		.byte	51
+ 105 0051 0E       		.byte	14
+ 106 0052 01       		.byte	1
+ 107 0053 40       		.byte	64
+ 108 0054 2E       		.byte	46
+ 109 0055 0F       		.byte	15
+ 110 0056 01       		.byte	1
+ 111 0057 40       		.byte	64
+ 112 0058 5C       		.byte	92
+ 113 0059 14       		.byte	20
+ 114 005a 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 3
+
+
+ 115 005b 40       		.byte	64
+ 116 005c 4D       		.byte	77
+ 117 005d 15       		.byte	21
+ 118 005e 01       		.byte	1
+ 119 005f 40       		.byte	64
+ 120 0060 30       		.byte	48
+ 121 0061 16       		.byte	22
+ 122 0062 01       		.byte	1
+ 123 0063 40       		.byte	64
+ 124 0064 49       		.byte	73
+ 125 0065 17       		.byte	23
+ 126 0066 01       		.byte	1
+ 127 0067 40       		.byte	64
+ 128 0068 32       		.byte	50
+ 129 0069 18       		.byte	24
+ 130 006a 01       		.byte	1
+ 131 006b 40       		.byte	64
+ 132 006c 43       		.byte	67
+ 133 006d 19       		.byte	25
+ 134 006e 01       		.byte	1
+ 135 006f 40       		.byte	64
+ 136 0070 59       		.byte	89
+ 137 0071 1A       		.byte	26
+ 138 0072 01       		.byte	1
+ 139 0073 40       		.byte	64
+ 140 0074 4A       		.byte	74
+ 141 0075 1B       		.byte	27
+ 142 0076 01       		.byte	1
+ 143 0077 40       		.byte	64
+ 144 0078 0F       		.byte	15
+ 145 0079 40       		.byte	64
+ 146 007a 01       		.byte	1
+ 147 007b 40       		.byte	64
+ 148 007c 14       		.byte	20
+ 149 007d 41       		.byte	65
+ 150 007e 01       		.byte	1
+ 151 007f 40       		.byte	64
+ 152 0080 15       		.byte	21
+ 153 0081 42       		.byte	66
+ 154 0082 01       		.byte	1
+ 155 0083 40       		.byte	64
+ 156 0084 12       		.byte	18
+ 157 0085 43       		.byte	67
+ 158 0086 01       		.byte	1
+ 159 0087 40       		.byte	64
+ 160 0088 05       		.byte	5
+ 161 0089 44       		.byte	68
+ 162 008a 01       		.byte	1
+ 163 008b 40       		.byte	64
+ 164 008c 0E       		.byte	14
+ 165 008d 45       		.byte	69
+ 166 008e 01       		.byte	1
+ 167 008f 40       		.byte	64
+ 168 0090 0D       		.byte	13
+ 169 0091 46       		.byte	70
+ 170 0092 01       		.byte	1
+ 171 0093 40       		.byte	64
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 4
+
+
+ 172 0094 11       		.byte	17
+ 173 0095 47       		.byte	71
+ 174 0096 01       		.byte	1
+ 175 0097 40       		.byte	64
+ 176 0098 11       		.byte	17
+ 177 0099 48       		.byte	72
+ 178 009a 01       		.byte	1
+ 179 009b 40       		.byte	64
+ 180 009c 0D       		.byte	13
+ 181 009d 49       		.byte	73
+ 182 009e 01       		.byte	1
+ 183 009f 40       		.byte	64
+ 184 00a0 11       		.byte	17
+ 185 00a1 4C       		.byte	76
+ 186 00a2 01       		.byte	1
+ 187 00a3 40       		.byte	64
+ 188 00a4 08       		.byte	8
+ 189 00a5 4D       		.byte	77
+ 190 00a6 01       		.byte	1
+ 191 00a7 40       		.byte	64
+ 192 00a8 05       		.byte	5
+ 193 00a9 50       		.byte	80
+ 194 00aa 01       		.byte	1
+ 195 00ab 40       		.byte	64
+ 196 00ac 03       		.byte	3
+ 197 00ad 51       		.byte	81
+ 198 00ae 01       		.byte	1
+ 199 00af 40       		.byte	64
+ 200 00b0 7E       		.byte	126
+ 201 00b1 02       		.byte	2
+ 202 00b2 01       		.byte	1
+ 203 00b3 30       		.byte	48
+ 204 00b4 0A       		.byte	10
+ 205 00b5 4B       		.byte	75
+ 206 00b6 0D       		.byte	13
+ 207 00b7 30       		.byte	48
+ 208 00b8 16       		.byte	22
+ 209 00b9 4B       		.byte	75
+ 210 00ba 19       		.byte	25
+ 211 00bb 50       		.byte	80
+ 212 00bc 22       		.byte	34
+ 213 00bd 4B       		.byte	75
+ 214 00be 25       		.byte	37
+ 215 00bf 40       		.byte	64
+ 216 00c0 2E       		.byte	46
+ 217 00c1 4B       		.byte	75
+ 218 00c2 00       		.byte	0
+ 219 00c3 08       		.byte	8
+ 220 00c4 01       		.byte	1
+ 221 00c5 18       		.byte	24
+ 222 00c6 08       		.byte	8
+ 223 00c7 14       		.byte	20
+ 224 00c8 09       		.byte	9
+ 225 00c9 14       		.byte	20
+ 226 00ca 10       		.byte	16
+ 227 00cb 20       		.byte	32
+ 228 00cc 11       		.byte	17
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 5
+
+
+ 229 00cd A0       		.byte	-96
+ 230 00ce 18       		.byte	24
+ 231 00cf 01       		.byte	1
+ 232 00d0 19       		.byte	25
+ 233 00d1 82       		.byte	-126
+ 234 00d2 60       		.byte	96
+ 235 00d3 10       		.byte	16
+ 236 00d4 61       		.byte	97
+ 237 00d5 80       		.byte	-128
+ 238 00d6 78       		.byte	120
+ 239 00d7 0D       		.byte	13
+ 240 00d8 79       		.byte	121
+ 241 00d9 01       		.byte	1
+ 242 00da 7C       		.byte	124
+ 243 00db 40       		.byte	64
+ 244 00dc 27       		.byte	39
+ 245 00dd 84       		.byte	-124
+ 246 00de 72       		.byte	114
+ 247 00df 02       		.byte	2
+ 248 00e0 79       		.byte	121
+ 249 00e1 01       		.byte	1
+ 250 00e2 84       		.byte	-124
+ 251 00e3 05       		.byte	5
+ 252 00e4 89       		.byte	-119
+ 253 00e5 38       		.byte	56
+ 254 00e6 8D       		.byte	-115
+ 255 00e7 0F       		.byte	15
+ 256 00e8 8E       		.byte	-114
+ 257 00e9 72       		.byte	114
+ 258 00ea 86       		.byte	-122
+ 259 00eb 6F       		.byte	111
+ 260 00ec 88       		.byte	-120
+ 261 00ed 0F       		.byte	15
+ 262 00ee 89       		.byte	-119
+ 263 00ef 6F       		.byte	111
+ 264 00f0 8A       		.byte	-118
+ 265 00f1 0F       		.byte	15
+ 266 00f2 01       		.byte	1
+ 267 00f3 20       		.byte	32
+ 268 00f4 02       		.byte	2
+ 269 00f5 04       		.byte	4
+ 270 00f6 03       		.byte	3
+ 271 00f7 04       		.byte	4
+ 272 00f8 04       		.byte	4
+ 273 00f9 10       		.byte	16
+ 274 00fa 05       		.byte	5
+ 275 00fb 2C       		.byte	44
+ 276 00fc 06       		.byte	6
+ 277 00fd 08       		.byte	8
+ 278 00fe 07       		.byte	7
+ 279 00ff 10       		.byte	16
+ 280 0100 09       		.byte	9
+ 281 0101 30       		.byte	48
+ 282 0102 0B       		.byte	11
+ 283 0103 08       		.byte	8
+ 284 0104 0C       		.byte	12
+ 285 0105 08       		.byte	8
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 6
+
+
+ 286 0106 0E       		.byte	14
+ 287 0107 10       		.byte	16
+ 288 0108 0F       		.byte	15
+ 289 0109 80       		.byte	-128
+ 290 010a 11       		.byte	17
+ 291 010b 01       		.byte	1
+ 292 010c 13       		.byte	19
+ 293 010d 02       		.byte	2
+ 294 010e 14       		.byte	20
+ 295 010f 08       		.byte	8
+ 296 0110 15       		.byte	21
+ 297 0111 02       		.byte	2
+ 298 0112 16       		.byte	22
+ 299 0113 10       		.byte	16
+ 300 0114 17       		.byte	23
+ 301 0115 01       		.byte	1
+ 302 0116 1B       		.byte	27
+ 303 0117 40       		.byte	64
+ 304 0118 1D       		.byte	29
+ 305 0119 01       		.byte	1
+ 306 011a 1E       		.byte	30
+ 307 011b 02       		.byte	2
+ 308 011c 1F       		.byte	31
+ 309 011d 02       		.byte	2
+ 310 011e 21       		.byte	33
+ 311 011f 30       		.byte	48
+ 312 0120 22       		.byte	34
+ 313 0121 01       		.byte	1
+ 314 0122 23       		.byte	35
+ 315 0123 04       		.byte	4
+ 316 0124 24       		.byte	36
+ 317 0125 08       		.byte	8
+ 318 0126 26       		.byte	38
+ 319 0127 10       		.byte	16
+ 320 0128 27       		.byte	39
+ 321 0129 3C       		.byte	60
+ 322 012a 29       		.byte	41
+ 323 012b 1C       		.byte	28
+ 324 012c 2D       		.byte	45
+ 325 012d 01       		.byte	1
+ 326 012e 2F       		.byte	47
+ 327 012f 02       		.byte	2
+ 328 0130 30       		.byte	48
+ 329 0131 02       		.byte	2
+ 330 0132 31       		.byte	49
+ 331 0133 40       		.byte	64
+ 332 0134 32       		.byte	50
+ 333 0135 01       		.byte	1
+ 334 0136 33       		.byte	51
+ 335 0137 03       		.byte	3
+ 336 0138 34       		.byte	52
+ 337 0139 18       		.byte	24
+ 338 013a 35       		.byte	53
+ 339 013b 80       		.byte	-128
+ 340 013c 36       		.byte	54
+ 341 013d 04       		.byte	4
+ 342 013e 37       		.byte	55
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 7
+
+
+ 343 013f 3C       		.byte	60
+ 344 0140 3A       		.byte	58
+ 345 0141 20       		.byte	32
+ 346 0142 3B       		.byte	59
+ 347 0143 08       		.byte	8
+ 348 0144 56       		.byte	86
+ 349 0145 08       		.byte	8
+ 350 0146 58       		.byte	88
+ 351 0147 04       		.byte	4
+ 352 0148 59       		.byte	89
+ 353 0149 04       		.byte	4
+ 354 014a 5B       		.byte	91
+ 355 014b 04       		.byte	4
+ 356 014c 5D       		.byte	93
+ 357 014d 90       		.byte	-112
+ 358 014e 5F       		.byte	95
+ 359 014f 01       		.byte	1
+ 360 0150 84       		.byte	-124
+ 361 0151 0C       		.byte	12
+ 362 0152 86       		.byte	-122
+ 363 0153 02       		.byte	2
+ 364 0154 8C       		.byte	-116
+ 365 0155 0E       		.byte	14
+ 366 0156 94       		.byte	-108
+ 367 0157 04       		.byte	4
+ 368 0158 96       		.byte	-106
+ 369 0159 08       		.byte	8
+ 370 015a 9A       		.byte	-102
+ 371 015b 02       		.byte	2
+ 372 015c 9C       		.byte	-100
+ 373 015d 0C       		.byte	12
+ 374 015e A2       		.byte	-94
+ 375 015f 01       		.byte	1
+ 376 0160 A4       		.byte	-92
+ 377 0161 06       		.byte	6
+ 378 0162 AC       		.byte	-84
+ 379 0163 0A       		.byte	10
+ 380 0164 AE       		.byte	-82
+ 381 0165 04       		.byte	4
+ 382 0166 B4       		.byte	-76
+ 383 0167 0E       		.byte	14
+ 384 0168 B6       		.byte	-74
+ 385 0169 01       		.byte	1
+ 386 016a D6       		.byte	-42
+ 387 016b 08       		.byte	8
+ 388 016c D8       		.byte	-40
+ 389 016d 04       		.byte	4
+ 390 016e D9       		.byte	-39
+ 391 016f 04       		.byte	4
+ 392 0170 DB       		.byte	-37
+ 393 0171 04       		.byte	4
+ 394 0172 DC       		.byte	-36
+ 395 0173 10       		.byte	16
+ 396 0174 DD       		.byte	-35
+ 397 0175 90       		.byte	-112
+ 398 0176 DF       		.byte	-33
+ 399 0177 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 8
+
+
+ 400 0178 00       		.byte	0
+ 401 0179 40       		.byte	64
+ 402 017a 03       		.byte	3
+ 403 017b A0       		.byte	-96
+ 404 017c 04       		.byte	4
+ 405 017d 08       		.byte	8
+ 406 017e 06       		.byte	6
+ 407 017f 02       		.byte	2
+ 408 0180 0A       		.byte	10
+ 409 0181 22       		.byte	34
+ 410 0182 0E       		.byte	14
+ 411 0183 04       		.byte	4
+ 412 0184 0F       		.byte	15
+ 413 0185 21       		.byte	33
+ 414 0186 12       		.byte	18
+ 415 0187 40       		.byte	64
+ 416 0188 13       		.byte	19
+ 417 0189 08       		.byte	8
+ 418 018a 15       		.byte	21
+ 419 018b 80       		.byte	-128
+ 420 018c 16       		.byte	22
+ 421 018d A0       		.byte	-96
+ 422 018e 1A       		.byte	26
+ 423 018f A2       		.byte	-94
+ 424 0190 1B       		.byte	27
+ 425 0191 30       		.byte	48
+ 426 0192 1D       		.byte	29
+ 427 0193 40       		.byte	64
+ 428 0194 1E       		.byte	30
+ 429 0195 04       		.byte	4
+ 430 0196 1F       		.byte	31
+ 431 0197 80       		.byte	-128
+ 432 0198 20       		.byte	32
+ 433 0199 40       		.byte	64
+ 434 019a 21       		.byte	33
+ 435 019b 48       		.byte	72
+ 436 019c 22       		.byte	34
+ 437 019d 80       		.byte	-128
+ 438 019e 23       		.byte	35
+ 439 019f 08       		.byte	8
+ 440 01a0 29       		.byte	41
+ 441 01a1 40       		.byte	64
+ 442 01a2 2A       		.byte	42
+ 443 01a3 22       		.byte	34
+ 444 01a4 2B       		.byte	43
+ 445 01a5 64       		.byte	100
+ 446 01a6 2F       		.byte	47
+ 447 01a7 48       		.byte	72
+ 448 01a8 31       		.byte	49
+ 449 01a9 08       		.byte	8
+ 450 01aa 32       		.byte	50
+ 451 01ab 51       		.byte	81
+ 452 01ac 34       		.byte	52
+ 453 01ad 84       		.byte	-124
+ 454 01ae 38       		.byte	56
+ 455 01af 48       		.byte	72
+ 456 01b0 39       		.byte	57
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 9
+
+
+ 457 01b1 10       		.byte	16
+ 458 01b2 3B       		.byte	59
+ 459 01b3 03       		.byte	3
+ 460 01b4 3C       		.byte	60
+ 461 01b5 06       		.byte	6
+ 462 01b6 3F       		.byte	63
+ 463 01b7 10       		.byte	16
+ 464 01b8 58       		.byte	88
+ 465 01b9 40       		.byte	64
+ 466 01ba 5E       		.byte	94
+ 467 01bb 40       		.byte	64
+ 468 01bc 62       		.byte	98
+ 469 01bd 40       		.byte	64
+ 470 01be 66       		.byte	102
+ 471 01bf 80       		.byte	-128
+ 472 01c0 85       		.byte	-123
+ 473 01c1 10       		.byte	16
+ 474 01c2 86       		.byte	-122
+ 475 01c3 80       		.byte	-128
+ 476 01c4 8B       		.byte	-117
+ 477 01c5 02       		.byte	2
+ 478 01c6 C0       		.byte	-64
+ 479 01c7 AD       		.byte	-83
+ 480 01c8 C2       		.byte	-62
+ 481 01c9 E5       		.byte	-27
+ 482 01ca C4       		.byte	-60
+ 483 01cb BC       		.byte	-68
+ 484 01cc CA       		.byte	-54
+ 485 01cd AF       		.byte	-81
+ 486 01ce CC       		.byte	-52
+ 487 01cf 5F       		.byte	95
+ 488 01d0 CE       		.byte	-50
+ 489 01d1 EF       		.byte	-17
+ 490 01d2 D6       		.byte	-42
+ 491 01d3 18       		.byte	24
+ 492 01d4 D8       		.byte	-40
+ 493 01d5 18       		.byte	24
+ 494 01d6 E2       		.byte	-30
+ 495 01d7 20       		.byte	32
+ 496 01d8 E6       		.byte	-26
+ 497 01d9 02       		.byte	2
+ 498 01da 02       		.byte	2
+ 499 01db 04       		.byte	4
+ 500 01dc 07       		.byte	7
+ 501 01dd 08       		.byte	8
+ 502 01de 0B       		.byte	11
+ 503 01df 04       		.byte	4
+ 504 01e0 0C       		.byte	12
+ 505 01e1 01       		.byte	1
+ 506 01e2 12       		.byte	18
+ 507 01e3 04       		.byte	4
+ 508 01e4 13       		.byte	19
+ 509 01e5 08       		.byte	8
+ 510 01e6 15       		.byte	21
+ 511 01e7 01       		.byte	1
+ 512 01e8 16       		.byte	22
+ 513 01e9 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 10
+
+
+ 514 01ea 1B       		.byte	27
+ 515 01eb 03       		.byte	3
+ 516 01ec 22       		.byte	34
+ 517 01ed 02       		.byte	2
+ 518 01ee 25       		.byte	37
+ 519 01ef 08       		.byte	8
+ 520 01f0 2F       		.byte	47
+ 521 01f1 04       		.byte	4
+ 522 01f2 31       		.byte	49
+ 523 01f3 04       		.byte	4
+ 524 01f4 32       		.byte	50
+ 525 01f5 03       		.byte	3
+ 526 01f6 33       		.byte	51
+ 527 01f7 08       		.byte	8
+ 528 01f8 35       		.byte	53
+ 529 01f9 02       		.byte	2
+ 530 01fa 36       		.byte	54
+ 531 01fb 04       		.byte	4
+ 532 01fc 37       		.byte	55
+ 533 01fd 01       		.byte	1
+ 534 01fe 3E       		.byte	62
+ 535 01ff 40       		.byte	64
+ 536 0200 3F       		.byte	63
+ 537 0201 05       		.byte	5
+ 538 0202 56       		.byte	86
+ 539 0203 08       		.byte	8
+ 540 0204 58       		.byte	88
+ 541 0205 04       		.byte	4
+ 542 0206 59       		.byte	89
+ 543 0207 0C       		.byte	12
+ 544 0208 5B       		.byte	91
+ 545 0209 04       		.byte	4
+ 546 020a 5C       		.byte	92
+ 547 020b 19       		.byte	25
+ 548 020c 5D       		.byte	93
+ 549 020d 90       		.byte	-112
+ 550 020e 5F       		.byte	95
+ 551 020f 01       		.byte	1
+ 552 0210 84       		.byte	-124
+ 553 0211 01       		.byte	1
+ 554 0212 88       		.byte	-120
+ 555 0213 06       		.byte	6
+ 556 0214 8C       		.byte	-116
+ 557 0215 01       		.byte	1
+ 558 0216 8F       		.byte	-113
+ 559 0217 02       		.byte	2
+ 560 0218 90       		.byte	-112
+ 561 0219 06       		.byte	6
+ 562 021a 94       		.byte	-108
+ 563 021b 04       		.byte	4
+ 564 021c 96       		.byte	-106
+ 565 021d 02       		.byte	2
+ 566 021e 97       		.byte	-105
+ 567 021f 01       		.byte	1
+ 568 0220 9C       		.byte	-100
+ 569 0221 06       		.byte	6
+ 570 0222 A2       		.byte	-94
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 11
+
+
+ 571 0223 08       		.byte	8
+ 572 0224 A4       		.byte	-92
+ 573 0225 06       		.byte	6
+ 574 0226 AA       		.byte	-86
+ 575 0227 06       		.byte	6
+ 576 0228 AC       		.byte	-84
+ 577 0229 04       		.byte	4
+ 578 022a AE       		.byte	-82
+ 579 022b 02       		.byte	2
+ 580 022c B0       		.byte	-80
+ 581 022d 04       		.byte	4
+ 582 022e B2       		.byte	-78
+ 583 022f 08       		.byte	8
+ 584 0230 B3       		.byte	-77
+ 585 0231 02       		.byte	2
+ 586 0232 B4       		.byte	-76
+ 587 0233 01       		.byte	1
+ 588 0234 B6       		.byte	-74
+ 589 0235 02       		.byte	2
+ 590 0236 B7       		.byte	-73
+ 591 0237 01       		.byte	1
+ 592 0238 B8       		.byte	-72
+ 593 0239 20       		.byte	32
+ 594 023a BE       		.byte	-66
+ 595 023b 10       		.byte	16
+ 596 023c D2       		.byte	-46
+ 597 023d 80       		.byte	-128
+ 598 023e D8       		.byte	-40
+ 599 023f 04       		.byte	4
+ 600 0240 D9       		.byte	-39
+ 601 0241 04       		.byte	4
+ 602 0242 DB       		.byte	-37
+ 603 0243 04       		.byte	4
+ 604 0244 DC       		.byte	-36
+ 605 0245 11       		.byte	17
+ 606 0246 DF       		.byte	-33
+ 607 0247 01       		.byte	1
+ 608 0248 00       		.byte	0
+ 609 0249 18       		.byte	24
+ 610 024a 03       		.byte	3
+ 611 024b 01       		.byte	1
+ 612 024c 04       		.byte	4
+ 613 024d 42       		.byte	66
+ 614 024e 07       		.byte	7
+ 615 024f 02       		.byte	2
+ 616 0250 08       		.byte	8
+ 617 0251 80       		.byte	-128
+ 618 0252 09       		.byte	9
+ 619 0253 08       		.byte	8
+ 620 0254 0A       		.byte	10
+ 621 0255 80       		.byte	-128
+ 622 0256 0C       		.byte	12
+ 623 0257 01       		.byte	1
+ 624 0258 0E       		.byte	14
+ 625 0259 20       		.byte	32
+ 626 025a 10       		.byte	16
+ 627 025b 12       		.byte	18
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 12
+
+
+ 628 025c 12       		.byte	18
+ 629 025d 40       		.byte	64
+ 630 025e 13       		.byte	19
+ 631 025f 20       		.byte	32
+ 632 0260 16       		.byte	22
+ 633 0261 80       		.byte	-128
+ 634 0262 18       		.byte	24
+ 635 0263 90       		.byte	-112
+ 636 0264 1A       		.byte	26
+ 637 0265 02       		.byte	2
+ 638 0266 1B       		.byte	27
+ 639 0267 18       		.byte	24
+ 640 0268 1D       		.byte	29
+ 641 0269 40       		.byte	64
+ 642 026a 1E       		.byte	30
+ 643 026b 20       		.byte	32
+ 644 026c 20       		.byte	32
+ 645 026d 02       		.byte	2
+ 646 026e 21       		.byte	33
+ 647 026f 0C       		.byte	12
+ 648 0270 23       		.byte	35
+ 649 0271 11       		.byte	17
+ 650 0272 25       		.byte	37
+ 651 0273 01       		.byte	1
+ 652 0274 27       		.byte	39
+ 653 0275 1A       		.byte	26
+ 654 0276 28       		.byte	40
+ 655 0277 94       		.byte	-108
+ 656 0278 2A       		.byte	42
+ 657 0279 08       		.byte	8
+ 658 027a 2C       		.byte	44
+ 659 027b 01       		.byte	1
+ 660 027c 2F       		.byte	47
+ 661 027d 10       		.byte	16
+ 662 027e 30       		.byte	48
+ 663 027f 08       		.byte	8
+ 664 0280 32       		.byte	50
+ 665 0281 40       		.byte	64
+ 666 0282 35       		.byte	53
+ 667 0283 01       		.byte	1
+ 668 0284 36       		.byte	54
+ 669 0285 10       		.byte	16
+ 670 0286 37       		.byte	55
+ 671 0287 08       		.byte	8
+ 672 0288 38       		.byte	56
+ 673 0289 10       		.byte	16
+ 674 028a 39       		.byte	57
+ 675 028b 88       		.byte	-120
+ 676 028c 3B       		.byte	59
+ 677 028d 01       		.byte	1
+ 678 028e 3D       		.byte	61
+ 679 028f 20       		.byte	32
+ 680 0290 3E       		.byte	62
+ 681 0291 04       		.byte	4
+ 682 0292 40       		.byte	64
+ 683 0293 04       		.byte	4
+ 684 0294 42       		.byte	66
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 13
+
+
+ 685 0295 08       		.byte	8
+ 686 0296 48       		.byte	72
+ 687 0297 03       		.byte	3
+ 688 0298 5D       		.byte	93
+ 689 0299 80       		.byte	-128
+ 690 029a 66       		.byte	102
+ 691 029b 80       		.byte	-128
+ 692 029c 6C       		.byte	108
+ 693 029d 01       		.byte	1
+ 694 029e 6D       		.byte	109
+ 695 029f 20       		.byte	32
+ 696 02a0 71       		.byte	113
+ 697 02a1 01       		.byte	1
+ 698 02a2 7A       		.byte	122
+ 699 02a3 08       		.byte	8
+ 700 02a4 7B       		.byte	123
+ 701 02a5 04       		.byte	4
+ 702 02a6 7D       		.byte	125
+ 703 02a7 40       		.byte	64
+ 704 02a8 85       		.byte	-123
+ 705 02a9 41       		.byte	65
+ 706 02aa 87       		.byte	-121
+ 707 02ab 01       		.byte	1
+ 708 02ac 8A       		.byte	-118
+ 709 02ad 01       		.byte	1
+ 710 02ae 8C       		.byte	-116
+ 711 02af 10       		.byte	16
+ 712 02b0 8E       		.byte	-114
+ 713 02b1 88       		.byte	-120
+ 714 02b2 92       		.byte	-110
+ 715 02b3 04       		.byte	4
+ 716 02b4 94       		.byte	-108
+ 717 02b5 0C       		.byte	12
+ 718 02b6 96       		.byte	-106
+ 719 02b7 40       		.byte	64
+ 720 02b8 97       		.byte	-105
+ 721 02b9 92       		.byte	-110
+ 722 02ba 9C       		.byte	-100
+ 723 02bb C4       		.byte	-60
+ 724 02bc 9F       		.byte	-97
+ 725 02bd 02       		.byte	2
+ 726 02be A2       		.byte	-94
+ 727 02bf 80       		.byte	-128
+ 728 02c0 A3       		.byte	-93
+ 729 02c1 20       		.byte	32
+ 730 02c2 A4       		.byte	-92
+ 731 02c3 01       		.byte	1
+ 732 02c4 A7       		.byte	-89
+ 733 02c5 4C       		.byte	76
+ 734 02c6 AC       		.byte	-84
+ 735 02c7 01       		.byte	1
+ 736 02c8 B1       		.byte	-79
+ 737 02c9 08       		.byte	8
+ 738 02ca B4       		.byte	-76
+ 739 02cb 04       		.byte	4
+ 740 02cc C0       		.byte	-64
+ 741 02cd 97       		.byte	-105
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 14
+
+
+ 742 02ce C2       		.byte	-62
+ 743 02cf 3D       		.byte	61
+ 744 02d0 C4       		.byte	-60
+ 745 02d1 1F       		.byte	31
+ 746 02d2 CA       		.byte	-54
+ 747 02d3 57       		.byte	87
+ 748 02d4 CC       		.byte	-52
+ 749 02d5 EA       		.byte	-22
+ 750 02d6 CE       		.byte	-50
+ 751 02d7 6F       		.byte	111
+ 752 02d8 D6       		.byte	-42
+ 753 02d9 10       		.byte	16
+ 754 02da D8       		.byte	-40
+ 755 02db 10       		.byte	16
+ 756 02dc DE       		.byte	-34
+ 757 02dd 10       		.byte	16
+ 758 02de E2       		.byte	-30
+ 759 02df 2B       		.byte	43
+ 760 02e0 E4       		.byte	-28
+ 761 02e1 0A       		.byte	10
+ 762 02e2 EC       		.byte	-20
+ 763 02e3 08       		.byte	8
+ 764 02e4 00       		.byte	0
+ 765 02e5 10       		.byte	16
+ 766 02e6 01       		.byte	1
+ 767 02e7 01       		.byte	1
+ 768 02e8 02       		.byte	2
+ 769 02e9 20       		.byte	32
+ 770 02ea 05       		.byte	5
+ 771 02eb 01       		.byte	1
+ 772 02ec 06       		.byte	6
+ 773 02ed 01       		.byte	1
+ 774 02ee 09       		.byte	9
+ 775 02ef 01       		.byte	1
+ 776 02f0 0A       		.byte	10
+ 777 02f1 04       		.byte	4
+ 778 02f2 0C       		.byte	12
+ 779 02f3 02       		.byte	2
+ 780 02f4 12       		.byte	18
+ 781 02f5 02       		.byte	2
+ 782 02f6 14       		.byte	20
+ 783 02f7 40       		.byte	64
+ 784 02f8 15       		.byte	21
+ 785 02f9 01       		.byte	1
+ 786 02fa 16       		.byte	22
+ 787 02fb 80       		.byte	-128
+ 788 02fc 18       		.byte	24
+ 789 02fd 01       		.byte	1
+ 790 02fe 1D       		.byte	29
+ 791 02ff 01       		.byte	1
+ 792 0300 1E       		.byte	30
+ 793 0301 08       		.byte	8
+ 794 0302 20       		.byte	32
+ 795 0303 04       		.byte	4
+ 796 0304 23       		.byte	35
+ 797 0305 01       		.byte	1
+ 798 0306 24       		.byte	36
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 15
+
+
+ 799 0307 08       		.byte	8
+ 800 0308 28       		.byte	40
+ 801 0309 20       		.byte	32
+ 802 030a 2A       		.byte	42
+ 803 030b 10       		.byte	16
+ 804 030c 2B       		.byte	43
+ 805 030d 01       		.byte	1
+ 806 030e 2C       		.byte	44
+ 807 030f 80       		.byte	-128
+ 808 0310 2E       		.byte	46
+ 809 0311 40       		.byte	64
+ 810 0312 30       		.byte	48
+ 811 0313 FF       		.byte	-1
+ 812 0314 31       		.byte	49
+ 813 0315 01       		.byte	1
+ 814 0316 3E       		.byte	62
+ 815 0317 01       		.byte	1
+ 816 0318 56       		.byte	86
+ 817 0319 02       		.byte	2
+ 818 031a 57       		.byte	87
+ 819 031b 39       		.byte	57
+ 820 031c 58       		.byte	88
+ 821 031d 04       		.byte	4
+ 822 031e 59       		.byte	89
+ 823 031f 04       		.byte	4
+ 824 0320 5B       		.byte	91
+ 825 0321 0C       		.byte	12
+ 826 0322 5C       		.byte	92
+ 827 0323 10       		.byte	16
+ 828 0324 5D       		.byte	93
+ 829 0325 10       		.byte	16
+ 830 0326 5F       		.byte	95
+ 831 0327 01       		.byte	1
+ 832 0328 84       		.byte	-124
+ 833 0329 01       		.byte	1
+ 834 032a 85       		.byte	-123
+ 835 032b CC       		.byte	-52
+ 836 032c 87       		.byte	-121
+ 837 032d 32       		.byte	50
+ 838 032e 89       		.byte	-119
+ 839 032f FB       		.byte	-5
+ 840 0330 8B       		.byte	-117
+ 841 0331 04       		.byte	4
+ 842 0332 95       		.byte	-107
+ 843 0333 77       		.byte	119
+ 844 0334 9D       		.byte	-99
+ 845 0335 AC       		.byte	-84
+ 846 0336 9F       		.byte	-97
+ 847 0337 51       		.byte	81
+ 848 0338 A5       		.byte	-91
+ 849 0339 58       		.byte	88
+ 850 033a A7       		.byte	-89
+ 851 033b A1       		.byte	-95
+ 852 033c AD       		.byte	-83
+ 853 033d 30       		.byte	48
+ 854 033e AF       		.byte	-81
+ 855 033f CF       		.byte	-49
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 16
+
+
+ 856 0340 B2       		.byte	-78
+ 857 0341 01       		.byte	1
+ 858 0342 B3       		.byte	-77
+ 859 0343 0F       		.byte	15
+ 860 0344 B5       		.byte	-75
+ 861 0345 F0       		.byte	-16
+ 862 0346 B9       		.byte	-71
+ 863 0347 80       		.byte	-128
+ 864 0348 BE       		.byte	-66
+ 865 0349 04       		.byte	4
+ 866 034a BF       		.byte	-65
+ 867 034b 40       		.byte	64
+ 868 034c D4       		.byte	-44
+ 869 034d 01       		.byte	1
+ 870 034e D8       		.byte	-40
+ 871 034f 04       		.byte	4
+ 872 0350 D9       		.byte	-39
+ 873 0351 04       		.byte	4
+ 874 0352 DB       		.byte	-37
+ 875 0353 0C       		.byte	12
+ 876 0354 DC       		.byte	-36
+ 877 0355 01       		.byte	1
+ 878 0356 DD       		.byte	-35
+ 879 0357 10       		.byte	16
+ 880 0358 DF       		.byte	-33
+ 881 0359 01       		.byte	1
+ 882 035a 00       		.byte	0
+ 883 035b 16       		.byte	22
+ 884 035c 01       		.byte	1
+ 885 035d 20       		.byte	32
+ 886 035e 02       		.byte	2
+ 887 035f 01       		.byte	1
+ 888 0360 04       		.byte	4
+ 889 0361 10       		.byte	16
+ 890 0362 06       		.byte	6
+ 891 0363 23       		.byte	35
+ 892 0364 07       		.byte	7
+ 893 0365 01       		.byte	1
+ 894 0366 08       		.byte	8
+ 895 0367 80       		.byte	-128
+ 896 0368 09       		.byte	9
+ 897 0369 28       		.byte	40
+ 898 036a 0A       		.byte	10
+ 899 036b C2       		.byte	-62
+ 900 036c 0B       		.byte	11
+ 901 036d 90       		.byte	-112
+ 902 036e 0C       		.byte	12
+ 903 036f 10       		.byte	16
+ 904 0370 0D       		.byte	13
+ 905 0371 08       		.byte	8
+ 906 0372 0E       		.byte	14
+ 907 0373 40       		.byte	64
+ 908 0374 0F       		.byte	15
+ 909 0375 01       		.byte	1
+ 910 0376 10       		.byte	16
+ 911 0377 AA       		.byte	-86
+ 912 0378 12       		.byte	18
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 17
+
+
+ 913 0379 40       		.byte	64
+ 914 037a 13       		.byte	19
+ 915 037b 04       		.byte	4
+ 916 037c 14       		.byte	20
+ 917 037d 84       		.byte	-124
+ 918 037e 17       		.byte	23
+ 919 037f 20       		.byte	32
+ 920 0380 18       		.byte	24
+ 921 0381 80       		.byte	-128
+ 922 0382 1E       		.byte	30
+ 923 0383 20       		.byte	32
+ 924 0384 21       		.byte	33
+ 925 0385 01       		.byte	1
+ 926 0386 24       		.byte	36
+ 927 0387 08       		.byte	8
+ 928 0388 25       		.byte	37
+ 929 0389 54       		.byte	84
+ 930 038a 28       		.byte	40
+ 931 038b 84       		.byte	-124
+ 932 038c 2F       		.byte	47
+ 933 038d 21       		.byte	33
+ 934 038e 31       		.byte	49
+ 935 038f 08       		.byte	8
+ 936 0390 32       		.byte	50
+ 937 0391 40       		.byte	64
+ 938 0392 36       		.byte	54
+ 939 0393 88       		.byte	-120
+ 940 0394 38       		.byte	56
+ 941 0395 14       		.byte	20
+ 942 0396 3B       		.byte	59
+ 943 0397 01       		.byte	1
+ 944 0398 3D       		.byte	61
+ 945 0399 28       		.byte	40
+ 946 039a 48       		.byte	72
+ 947 039b 04       		.byte	4
+ 948 039c 49       		.byte	73
+ 949 039d 10       		.byte	16
+ 950 039e 59       		.byte	89
+ 951 039f 10       		.byte	16
+ 952 03a0 5C       		.byte	92
+ 953 03a1 40       		.byte	64
+ 954 03a2 63       		.byte	99
+ 955 03a3 20       		.byte	32
+ 956 03a4 68       		.byte	104
+ 957 03a5 AA       		.byte	-86
+ 958 03a6 69       		.byte	105
+ 959 03a7 80       		.byte	-128
+ 960 03a8 71       		.byte	113
+ 961 03a9 20       		.byte	32
+ 962 03aa 72       		.byte	114
+ 963 03ab 02       		.byte	2
+ 964 03ac 79       		.byte	121
+ 965 03ad 40       		.byte	64
+ 966 03ae 7D       		.byte	125
+ 967 03af 40       		.byte	64
+ 968 03b0 81       		.byte	-127
+ 969 03b1 08       		.byte	8
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 18
+
+
+ 970 03b2 85       		.byte	-123
+ 971 03b3 40       		.byte	64
+ 972 03b4 8A       		.byte	-118
+ 973 03b5 10       		.byte	16
+ 974 03b6 8D       		.byte	-115
+ 975 03b7 14       		.byte	20
+ 976 03b8 8E       		.byte	-114
+ 977 03b9 40       		.byte	64
+ 978 03ba 8F       		.byte	-113
+ 979 03bb 40       		.byte	64
+ 980 03bc 90       		.byte	-112
+ 981 03bd 50       		.byte	80
+ 982 03be 92       		.byte	-110
+ 983 03bf 04       		.byte	4
+ 984 03c0 94       		.byte	-108
+ 985 03c1 0C       		.byte	12
+ 986 03c2 95       		.byte	-107
+ 987 03c3 C2       		.byte	-62
+ 988 03c4 96       		.byte	-106
+ 989 03c5 80       		.byte	-128
+ 990 03c6 97       		.byte	-105
+ 991 03c7 A2       		.byte	-94
+ 992 03c8 98       		.byte	-104
+ 993 03c9 10       		.byte	16
+ 994 03ca 9B       		.byte	-101
+ 995 03cb 10       		.byte	16
+ 996 03cc 9C       		.byte	-100
+ 997 03cd C5       		.byte	-59
+ 998 03ce 9E       		.byte	-98
+ 999 03cf 40       		.byte	64
+ 1000 03d0 9F       		.byte	-97
+ 1001 03d1 20       		.byte	32
+ 1002 03d2 A0       		.byte	-96
+ 1003 03d3 01       		.byte	1
+ 1004 03d4 A1       		.byte	-95
+ 1005 03d5 08       		.byte	8
+ 1006 03d6 A2       		.byte	-94
+ 1007 03d7 88       		.byte	-120
+ 1008 03d8 A3       		.byte	-93
+ 1009 03d9 30       		.byte	48
+ 1010 03da A4       		.byte	-92
+ 1011 03db 0C       		.byte	12
+ 1012 03dc A7       		.byte	-89
+ 1013 03dd 40       		.byte	64
+ 1014 03de AA       		.byte	-86
+ 1015 03df 40       		.byte	64
+ 1016 03e0 B1       		.byte	-79
+ 1017 03e1 80       		.byte	-128
+ 1018 03e2 B3       		.byte	-77
+ 1019 03e3 20       		.byte	32
+ 1020 03e4 B4       		.byte	-76
+ 1021 03e5 40       		.byte	64
+ 1022 03e6 B5       		.byte	-75
+ 1023 03e7 01       		.byte	1
+ 1024 03e8 C0       		.byte	-64
+ 1025 03e9 6F       		.byte	111
+ 1026 03ea C2       		.byte	-62
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 19
+
+
+ 1027 03eb FF       		.byte	-1
+ 1028 03ec C4       		.byte	-60
+ 1029 03ed 5F       		.byte	95
+ 1030 03ee CA       		.byte	-54
+ 1031 03ef 55       		.byte	85
+ 1032 03f0 CC       		.byte	-52
+ 1033 03f1 5A       		.byte	90
+ 1034 03f2 CE       		.byte	-50
+ 1035 03f3 67       		.byte	103
+ 1036 03f4 D6       		.byte	-42
+ 1037 03f5 14       		.byte	20
+ 1038 03f6 D8       		.byte	-40
+ 1039 03f7 02       		.byte	2
+ 1040 03f8 DE       		.byte	-34
+ 1041 03f9 18       		.byte	24
+ 1042 03fa E0       		.byte	-32
+ 1043 03fb 01       		.byte	1
+ 1044 03fc E2       		.byte	-30
+ 1045 03fd 80       		.byte	-128
+ 1046 03fe EC       		.byte	-20
+ 1047 03ff 80       		.byte	-128
+ 1048 0400 EE       		.byte	-18
+ 1049 0401 10       		.byte	16
+ 1050 0402 02       		.byte	2
+ 1051 0403 20       		.byte	32
+ 1052 0404 05       		.byte	5
+ 1053 0405 CF       		.byte	-49
+ 1054 0406 06       		.byte	6
+ 1055 0407 03       		.byte	3
+ 1056 0408 07       		.byte	7
+ 1057 0409 30       		.byte	48
+ 1058 040a 08       		.byte	8
+ 1059 040b 1C       		.byte	28
+ 1060 040c 09       		.byte	9
+ 1061 040d FD       		.byte	-3
+ 1062 040e 0B       		.byte	11
+ 1063 040f 02       		.byte	2
+ 1064 0410 0C       		.byte	12
+ 1065 0411 01       		.byte	1
+ 1066 0412 0D       		.byte	13
+ 1067 0413 94       		.byte	-108
+ 1068 0414 0F       		.byte	15
+ 1069 0415 60       		.byte	96
+ 1070 0416 10       		.byte	16
+ 1071 0417 04       		.byte	4
+ 1072 0418 12       		.byte	18
+ 1073 0419 08       		.byte	8
+ 1074 041a 15       		.byte	21
+ 1075 041b 73       		.byte	115
+ 1076 041c 16       		.byte	22
+ 1077 041d 1C       		.byte	28
+ 1078 041e 1A       		.byte	26
+ 1079 041f 40       		.byte	64
+ 1080 0420 1C       		.byte	28
+ 1081 0421 10       		.byte	16
+ 1082 0422 1D       		.byte	29
+ 1083 0423 9E       		.byte	-98
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 20
+
+
+ 1084 0424 1F       		.byte	31
+ 1085 0425 60       		.byte	96
+ 1086 0426 20       		.byte	32
+ 1087 0427 04       		.byte	4
+ 1088 0428 22       		.byte	34
+ 1089 0429 08       		.byte	8
+ 1090 042a 24       		.byte	36
+ 1091 042b 1C       		.byte	28
+ 1092 042c 25       		.byte	37
+ 1093 042d 30       		.byte	48
+ 1094 042e 27       		.byte	39
+ 1095 042f C9       		.byte	-55
+ 1096 0430 2A       		.byte	42
+ 1097 0431 10       		.byte	16
+ 1098 0432 2B       		.byte	43
+ 1099 0433 0F       		.byte	15
+ 1100 0434 30       		.byte	48
+ 1101 0435 01       		.byte	1
+ 1102 0436 31       		.byte	49
+ 1103 0437 FF       		.byte	-1
+ 1104 0438 32       		.byte	50
+ 1105 0439 3C       		.byte	60
+ 1106 043a 34       		.byte	52
+ 1107 043b 40       		.byte	64
+ 1108 043c 36       		.byte	54
+ 1109 043d 02       		.byte	2
+ 1110 043e 3E       		.byte	62
+ 1111 043f 01       		.byte	1
+ 1112 0440 3F       		.byte	63
+ 1113 0441 01       		.byte	1
+ 1114 0442 58       		.byte	88
+ 1115 0443 04       		.byte	4
+ 1116 0444 59       		.byte	89
+ 1117 0445 04       		.byte	4
+ 1118 0446 5F       		.byte	95
+ 1119 0447 01       		.byte	1
+ 1120 0448 87       		.byte	-121
+ 1121 0449 08       		.byte	8
+ 1122 044a 8E       		.byte	-114
+ 1123 044b 01       		.byte	1
+ 1124 044c 8F       		.byte	-113
+ 1125 044d 10       		.byte	16
+ 1126 044e 93       		.byte	-109
+ 1127 044f 02       		.byte	2
+ 1128 0450 9B       		.byte	-101
+ 1129 0451 21       		.byte	33
+ 1130 0452 9D       		.byte	-99
+ 1131 0453 02       		.byte	2
+ 1132 0454 A1       		.byte	-95
+ 1133 0455 08       		.byte	8
+ 1134 0456 A5       		.byte	-91
+ 1135 0457 01       		.byte	1
+ 1136 0458 A6       		.byte	-90
+ 1137 0459 02       		.byte	2
+ 1138 045a A9       		.byte	-87
+ 1139 045b 04       		.byte	4
+ 1140 045c AF       		.byte	-81
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 21
+
+
+ 1141 045d 04       		.byte	4
+ 1142 045e B0       		.byte	-80
+ 1143 045f 01       		.byte	1
+ 1144 0460 B3       		.byte	-77
+ 1145 0461 1F       		.byte	31
+ 1146 0462 B5       		.byte	-75
+ 1147 0463 20       		.byte	32
+ 1148 0464 B6       		.byte	-74
+ 1149 0465 02       		.byte	2
+ 1150 0466 B9       		.byte	-71
+ 1151 0467 08       		.byte	8
+ 1152 0468 BF       		.byte	-65
+ 1153 0469 04       		.byte	4
+ 1154 046a D2       		.byte	-46
+ 1155 046b 03       		.byte	3
+ 1156 046c D3       		.byte	-45
+ 1157 046d 02       		.byte	2
+ 1158 046e D8       		.byte	-40
+ 1159 046f 04       		.byte	4
+ 1160 0470 D9       		.byte	-39
+ 1161 0471 04       		.byte	4
+ 1162 0472 DB       		.byte	-37
+ 1163 0473 04       		.byte	4
+ 1164 0474 DC       		.byte	-36
+ 1165 0475 11       		.byte	17
+ 1166 0476 DD       		.byte	-35
+ 1167 0477 10       		.byte	16
+ 1168 0478 DF       		.byte	-33
+ 1169 0479 01       		.byte	1
+ 1170 047a 00       		.byte	0
+ 1171 047b 06       		.byte	6
+ 1172 047c 01       		.byte	1
+ 1173 047d 20       		.byte	32
+ 1174 047e 03       		.byte	3
+ 1175 047f 01       		.byte	1
+ 1176 0480 06       		.byte	6
+ 1177 0481 16       		.byte	22
+ 1178 0482 07       		.byte	7
+ 1179 0483 40       		.byte	64
+ 1180 0484 0A       		.byte	10
+ 1181 0485 82       		.byte	-126
+ 1182 0486 0D       		.byte	13
+ 1183 0487 08       		.byte	8
+ 1184 0488 0E       		.byte	14
+ 1185 0489 04       		.byte	4
+ 1186 048a 0F       		.byte	15
+ 1187 048b 42       		.byte	66
+ 1188 048c 12       		.byte	18
+ 1189 048d 02       		.byte	2
+ 1190 048e 13       		.byte	19
+ 1191 048f 24       		.byte	36
+ 1192 0490 14       		.byte	20
+ 1193 0491 80       		.byte	-128
+ 1194 0492 16       		.byte	22
+ 1195 0493 08       		.byte	8
+ 1196 0494 17       		.byte	23
+ 1197 0495 08       		.byte	8
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 22
+
+
+ 1198 0496 1A       		.byte	26
+ 1199 0497 82       		.byte	-126
+ 1200 0498 1B       		.byte	27
+ 1201 0499 40       		.byte	64
+ 1202 049a 1D       		.byte	29
+ 1203 049b 08       		.byte	8
+ 1204 049c 1E       		.byte	30
+ 1205 049d 40       		.byte	64
+ 1206 049e 1F       		.byte	31
+ 1207 049f 58       		.byte	88
+ 1208 04a0 20       		.byte	32
+ 1209 04a1 04       		.byte	4
+ 1210 04a2 23       		.byte	35
+ 1211 04a3 20       		.byte	32
+ 1212 04a4 27       		.byte	39
+ 1213 04a5 40       		.byte	64
+ 1214 04a6 29       		.byte	41
+ 1215 04a7 28       		.byte	40
+ 1216 04a8 2A       		.byte	42
+ 1217 04a9 40       		.byte	64
+ 1218 04aa 2B       		.byte	43
+ 1219 04ab 40       		.byte	64
+ 1220 04ac 2E       		.byte	46
+ 1221 04ad 02       		.byte	2
+ 1222 04ae 2F       		.byte	47
+ 1223 04af 68       		.byte	104
+ 1224 04b0 30       		.byte	48
+ 1225 04b1 84       		.byte	-124
+ 1226 04b2 31       		.byte	49
+ 1227 04b3 20       		.byte	32
+ 1228 04b4 32       		.byte	50
+ 1229 04b5 40       		.byte	64
+ 1230 04b6 33       		.byte	51
+ 1231 04b7 01       		.byte	1
+ 1232 04b8 34       		.byte	52
+ 1233 04b9 80       		.byte	-128
+ 1234 04ba 36       		.byte	54
+ 1235 04bb 88       		.byte	-120
+ 1236 04bc 37       		.byte	55
+ 1237 04bd 08       		.byte	8
+ 1238 04be 38       		.byte	56
+ 1239 04bf 80       		.byte	-128
+ 1240 04c0 3B       		.byte	59
+ 1241 04c1 15       		.byte	21
+ 1242 04c2 3C       		.byte	60
+ 1243 04c3 02       		.byte	2
+ 1244 04c4 3D       		.byte	61
+ 1245 04c5 A8       		.byte	-88
+ 1246 04c6 3E       		.byte	62
+ 1247 04c7 08       		.byte	8
+ 1248 04c8 3F       		.byte	63
+ 1249 04c9 41       		.byte	65
+ 1250 04ca 5C       		.byte	92
+ 1251 04cb 04       		.byte	4
+ 1252 04cc 5D       		.byte	93
+ 1253 04cd 08       		.byte	8
+ 1254 04ce 68       		.byte	104
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 23
+
+
+ 1255 04cf 04       		.byte	4
+ 1256 04d0 69       		.byte	105
+ 1257 04d1 40       		.byte	64
+ 1258 04d2 7D       		.byte	125
+ 1259 04d3 80       		.byte	-128
+ 1260 04d4 7F       		.byte	127
+ 1261 04d5 01       		.byte	1
+ 1262 04d6 85       		.byte	-123
+ 1263 04d7 20       		.byte	32
+ 1264 04d8 86       		.byte	-122
+ 1265 04d9 20       		.byte	32
+ 1266 04da 88       		.byte	-120
+ 1267 04db 01       		.byte	1
+ 1268 04dc 8A       		.byte	-118
+ 1269 04dd 01       		.byte	1
+ 1270 04de 8B       		.byte	-117
+ 1271 04df 21       		.byte	33
+ 1272 04e0 8C       		.byte	-116
+ 1273 04e1 04       		.byte	4
+ 1274 04e2 90       		.byte	-112
+ 1275 04e3 80       		.byte	-128
+ 1276 04e4 92       		.byte	-110
+ 1277 04e5 04       		.byte	4
+ 1278 04e6 93       		.byte	-109
+ 1279 04e7 14       		.byte	20
+ 1280 04e8 94       		.byte	-108
+ 1281 04e9 04       		.byte	4
+ 1282 04ea 95       		.byte	-107
+ 1283 04eb 40       		.byte	64
+ 1284 04ec 96       		.byte	-106
+ 1285 04ed 82       		.byte	-126
+ 1286 04ee 97       		.byte	-105
+ 1287 04ef 23       		.byte	35
+ 1288 04f0 98       		.byte	-104
+ 1289 04f1 04       		.byte	4
+ 1290 04f2 99       		.byte	-103
+ 1291 04f3 20       		.byte	32
+ 1292 04f4 9A       		.byte	-102
+ 1293 04f5 40       		.byte	64
+ 1294 04f6 9B       		.byte	-101
+ 1295 04f7 11       		.byte	17
+ 1296 04f8 9C       		.byte	-100
+ 1297 04f9 41       		.byte	65
+ 1298 04fa 9E       		.byte	-98
+ 1299 04fb 20       		.byte	32
+ 1300 04fc 9F       		.byte	-97
+ 1301 04fd 20       		.byte	32
+ 1302 04fe A0       		.byte	-96
+ 1303 04ff 01       		.byte	1
+ 1304 0500 A1       		.byte	-95
+ 1305 0501 34       		.byte	52
+ 1306 0502 A2       		.byte	-94
+ 1307 0503 88       		.byte	-120
+ 1308 0504 A3       		.byte	-93
+ 1309 0505 20       		.byte	32
+ 1310 0506 A4       		.byte	-92
+ 1311 0507 04       		.byte	4
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 24
+
+
+ 1312 0508 C0       		.byte	-64
+ 1313 0509 FF       		.byte	-1
+ 1314 050a C2       		.byte	-62
+ 1315 050b F9       		.byte	-7
+ 1316 050c C4       		.byte	-60
+ 1317 050d 77       		.byte	119
+ 1318 050e CA       		.byte	-54
+ 1319 050f 6F       		.byte	111
+ 1320 0510 CC       		.byte	-52
+ 1321 0511 5F       		.byte	95
+ 1322 0512 CE       		.byte	-50
+ 1323 0513 7F       		.byte	127
+ 1324 0514 E2       		.byte	-30
+ 1325 0515 0D       		.byte	13
+ 1326 0516 E4       		.byte	-28
+ 1327 0517 2A       		.byte	42
+ 1328 0518 E6       		.byte	-26
+ 1329 0519 04       		.byte	4
+ 1330 051a EE       		.byte	-18
+ 1331 051b 04       		.byte	4
+ 1332 051c 00       		.byte	0
+ 1333 051d 9E       		.byte	-98
+ 1334 051e 02       		.byte	2
+ 1335 051f 60       		.byte	96
+ 1336 0520 06       		.byte	6
+ 1337 0521 0F       		.byte	15
+ 1338 0522 07       		.byte	7
+ 1339 0523 07       		.byte	7
+ 1340 0524 09       		.byte	9
+ 1341 0525 C0       		.byte	-64
+ 1342 0526 0B       		.byte	11
+ 1343 0527 24       		.byte	36
+ 1344 0528 0D       		.byte	13
+ 1345 0529 B7       		.byte	-73
+ 1346 052a 0F       		.byte	15
+ 1347 052b 40       		.byte	64
+ 1348 052c 10       		.byte	16
+ 1349 052d FD       		.byte	-3
+ 1350 052e 11       		.byte	17
+ 1351 052f 84       		.byte	-124
+ 1352 0530 12       		.byte	18
+ 1353 0531 02       		.byte	2
+ 1354 0532 13       		.byte	19
+ 1355 0533 10       		.byte	16
+ 1356 0534 14       		.byte	20
+ 1357 0535 73       		.byte	115
+ 1358 0536 15       		.byte	21
+ 1359 0537 01       		.byte	1
+ 1360 0538 17       		.byte	23
+ 1361 0539 F2       		.byte	-14
+ 1362 053a 18       		.byte	24
+ 1363 053b 94       		.byte	-108
+ 1364 053c 19       		.byte	25
+ 1365 053d 77       		.byte	119
+ 1366 053e 1A       		.byte	26
+ 1367 053f 60       		.byte	96
+ 1368 0540 20       		.byte	32
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 25
+
+
+ 1369 0541 30       		.byte	48
+ 1370 0542 22       		.byte	34
+ 1371 0543 C9       		.byte	-55
+ 1372 0544 24       		.byte	36
+ 1373 0545 CF       		.byte	-49
+ 1374 0546 26       		.byte	38
+ 1375 0547 30       		.byte	48
+ 1376 0548 27       		.byte	39
+ 1377 0549 08       		.byte	8
+ 1378 054a 2D       		.byte	45
+ 1379 054b C1       		.byte	-63
+ 1380 054c 2F       		.byte	47
+ 1381 054d 12       		.byte	18
+ 1382 054e 33       		.byte	51
+ 1383 054f 0F       		.byte	15
+ 1384 0550 34       		.byte	52
+ 1385 0551 FF       		.byte	-1
+ 1386 0552 35       		.byte	53
+ 1387 0553 F0       		.byte	-16
+ 1388 0554 3E       		.byte	62
+ 1389 0555 10       		.byte	16
+ 1390 0556 58       		.byte	88
+ 1391 0557 04       		.byte	4
+ 1392 0558 59       		.byte	89
+ 1393 0559 04       		.byte	4
+ 1394 055a 5B       		.byte	91
+ 1395 055b 04       		.byte	4
+ 1396 055c 5F       		.byte	95
+ 1397 055d 01       		.byte	1
+ 1398 055e 82       		.byte	-126
+ 1399 055f 03       		.byte	3
+ 1400 0560 86       		.byte	-122
+ 1401 0561 02       		.byte	2
+ 1402 0562 88       		.byte	-120
+ 1403 0563 0C       		.byte	12
+ 1404 0564 8A       		.byte	-118
+ 1405 0565 20       		.byte	32
+ 1406 0566 92       		.byte	-110
+ 1407 0567 44       		.byte	68
+ 1408 0568 96       		.byte	-106
+ 1409 0569 30       		.byte	48
+ 1410 056a 9A       		.byte	-102
+ 1411 056b 88       		.byte	-120
+ 1412 056c 9E       		.byte	-98
+ 1413 056d 0C       		.byte	12
+ 1414 056e A2       		.byte	-94
+ 1415 056f 01       		.byte	1
+ 1416 0570 A4       		.byte	-92
+ 1417 0571 0C       		.byte	12
+ 1418 0572 A6       		.byte	-90
+ 1419 0573 10       		.byte	16
+ 1420 0574 AC       		.byte	-84
+ 1421 0575 44       		.byte	68
+ 1422 0576 AE       		.byte	-82
+ 1423 0577 88       		.byte	-120
+ 1424 0578 B0       		.byte	-80
+ 1425 0579 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 26
+
+
+ 1426 057a B2       		.byte	-78
+ 1427 057b 3C       		.byte	60
+ 1428 057c B4       		.byte	-76
+ 1429 057d 02       		.byte	2
+ 1430 057e B6       		.byte	-74
+ 1431 057f C0       		.byte	-64
+ 1432 0580 BA       		.byte	-70
+ 1433 0581 08       		.byte	8
+ 1434 0582 BE       		.byte	-66
+ 1435 0583 11       		.byte	17
+ 1436 0584 C0       		.byte	-64
+ 1437 0585 05       		.byte	5
+ 1438 0586 C5       		.byte	-59
+ 1439 0587 04       		.byte	4
+ 1440 0588 C9       		.byte	-55
+ 1441 0589 FF       		.byte	-1
+ 1442 058a CA       		.byte	-54
+ 1443 058b 07       		.byte	7
+ 1444 058c CB       		.byte	-53
+ 1445 058d FF       		.byte	-1
+ 1446 058e CC       		.byte	-52
+ 1447 058f 40       		.byte	64
+ 1448 0590 CD       		.byte	-51
+ 1449 0591 20       		.byte	32
+ 1450 0592 CE       		.byte	-50
+ 1451 0593 F0       		.byte	-16
+ 1452 0594 CF       		.byte	-49
+ 1453 0595 05       		.byte	5
+ 1454 0596 D0       		.byte	-48
+ 1455 0597 08       		.byte	8
+ 1456 0598 D4       		.byte	-44
+ 1457 0599 18       		.byte	24
+ 1458 059a D6       		.byte	-42
+ 1459 059b 04       		.byte	4
+ 1460 059c D8       		.byte	-40
+ 1461 059d 04       		.byte	4
+ 1462 059e D9       		.byte	-39
+ 1463 059f 04       		.byte	4
+ 1464 05a0 DA       		.byte	-38
+ 1465 05a1 04       		.byte	4
+ 1466 05a2 DB       		.byte	-37
+ 1467 05a3 04       		.byte	4
+ 1468 05a4 DC       		.byte	-36
+ 1469 05a5 12       		.byte	18
+ 1470 05a6 DD       		.byte	-35
+ 1471 05a7 22       		.byte	34
+ 1472 05a8 DF       		.byte	-33
+ 1473 05a9 01       		.byte	1
+ 1474 05aa E0       		.byte	-32
+ 1475 05ab 40       		.byte	64
+ 1476 05ac E1       		.byte	-31
+ 1477 05ad A8       		.byte	-88
+ 1478 05ae E2       		.byte	-30
+ 1479 05af 40       		.byte	64
+ 1480 05b0 E3       		.byte	-29
+ 1481 05b1 20       		.byte	32
+ 1482 05b2 00       		.byte	0
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 27
+
+
+ 1483 05b3 08       		.byte	8
+ 1484 05b4 02       		.byte	2
+ 1485 05b5 80       		.byte	-128
+ 1486 05b6 03       		.byte	3
+ 1487 05b7 04       		.byte	4
+ 1488 05b8 04       		.byte	4
+ 1489 05b9 02       		.byte	2
+ 1490 05ba 07       		.byte	7
+ 1491 05bb 10       		.byte	16
+ 1492 05bc 08       		.byte	8
+ 1493 05bd 42       		.byte	66
+ 1494 05be 0A       		.byte	10
+ 1495 05bf 10       		.byte	16
+ 1496 05c0 0B       		.byte	11
+ 1497 05c1 04       		.byte	4
+ 1498 05c2 0D       		.byte	13
+ 1499 05c3 20       		.byte	32
+ 1500 05c4 0E       		.byte	14
+ 1501 05c5 A0       		.byte	-96
+ 1502 05c6 0F       		.byte	15
+ 1503 05c7 80       		.byte	-128
+ 1504 05c8 10       		.byte	16
+ 1505 05c9 02       		.byte	2
+ 1506 05ca 11       		.byte	17
+ 1507 05cb 04       		.byte	4
+ 1508 05cc 13       		.byte	19
+ 1509 05cd 02       		.byte	2
+ 1510 05ce 15       		.byte	21
+ 1511 05cf 01       		.byte	1
+ 1512 05d0 17       		.byte	23
+ 1513 05d1 09       		.byte	9
+ 1514 05d2 18       		.byte	24
+ 1515 05d3 20       		.byte	32
+ 1516 05d4 19       		.byte	25
+ 1517 05d5 11       		.byte	17
+ 1518 05d6 1A       		.byte	26
+ 1519 05d7 11       		.byte	17
+ 1520 05d8 1F       		.byte	31
+ 1521 05d9 10       		.byte	16
+ 1522 05da 25       		.byte	37
+ 1523 05db 14       		.byte	20
+ 1524 05dc 27       		.byte	39
+ 1525 05dd 18       		.byte	24
+ 1526 05de 2A       		.byte	42
+ 1527 05df 05       		.byte	5
+ 1528 05e0 2D       		.byte	45
+ 1529 05e1 40       		.byte	64
+ 1530 05e2 2F       		.byte	47
+ 1531 05e3 10       		.byte	16
+ 1532 05e4 32       		.byte	50
+ 1533 05e5 22       		.byte	34
+ 1534 05e6 34       		.byte	52
+ 1535 05e7 04       		.byte	4
+ 1536 05e8 36       		.byte	54
+ 1537 05e9 10       		.byte	16
+ 1538 05ea 37       		.byte	55
+ 1539 05eb 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 28
+
+
+ 1540 05ec 39       		.byte	57
+ 1541 05ed 12       		.byte	18
+ 1542 05ee 3A       		.byte	58
+ 1543 05ef 08       		.byte	8
+ 1544 05f0 3B       		.byte	59
+ 1545 05f1 02       		.byte	2
+ 1546 05f2 3D       		.byte	61
+ 1547 05f3 28       		.byte	40
+ 1548 05f4 3F       		.byte	63
+ 1549 05f5 80       		.byte	-128
+ 1550 05f6 48       		.byte	72
+ 1551 05f7 20       		.byte	32
+ 1552 05f8 4B       		.byte	75
+ 1553 05f9 80       		.byte	-128
+ 1554 05fa 51       		.byte	81
+ 1555 05fb 10       		.byte	16
+ 1556 05fc 5A       		.byte	90
+ 1557 05fd 02       		.byte	2
+ 1558 05fe 60       		.byte	96
+ 1559 05ff 04       		.byte	4
+ 1560 0600 61       		.byte	97
+ 1561 0601 82       		.byte	-126
+ 1562 0602 68       		.byte	104
+ 1563 0603 04       		.byte	4
+ 1564 0604 6B       		.byte	107
+ 1565 0605 02       		.byte	2
+ 1566 0606 6C       		.byte	108
+ 1567 0607 04       		.byte	4
+ 1568 0608 6F       		.byte	111
+ 1569 0609 02       		.byte	2
+ 1570 060a 81       		.byte	-127
+ 1571 060b 11       		.byte	17
+ 1572 060c 86       		.byte	-122
+ 1573 060d A0       		.byte	-96
+ 1574 060e 87       		.byte	-121
+ 1575 060f 02       		.byte	2
+ 1576 0610 8A       		.byte	-118
+ 1577 0611 08       		.byte	8
+ 1578 0612 8C       		.byte	-116
+ 1579 0613 04       		.byte	4
+ 1580 0614 8E       		.byte	-114
+ 1581 0615 01       		.byte	1
+ 1582 0616 90       		.byte	-112
+ 1583 0617 04       		.byte	4
+ 1584 0618 91       		.byte	-111
+ 1585 0619 14       		.byte	20
+ 1586 061a 92       		.byte	-110
+ 1587 061b 02       		.byte	2
+ 1588 061c 93       		.byte	-109
+ 1589 061d 86       		.byte	-122
+ 1590 061e 94       		.byte	-108
+ 1591 061f 28       		.byte	40
+ 1592 0620 95       		.byte	-107
+ 1593 0621 20       		.byte	32
+ 1594 0622 96       		.byte	-106
+ 1595 0623 01       		.byte	1
+ 1596 0624 98       		.byte	-104
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 29
+
+
+ 1597 0625 4A       		.byte	74
+ 1598 0626 9A       		.byte	-102
+ 1599 0627 04       		.byte	4
+ 1600 0628 9B       		.byte	-101
+ 1601 0629 05       		.byte	5
+ 1602 062a 9E       		.byte	-98
+ 1603 062b 08       		.byte	8
+ 1604 062c A0       		.byte	-96
+ 1605 062d 02       		.byte	2
+ 1606 062e A1       		.byte	-95
+ 1607 062f 80       		.byte	-128
+ 1608 0630 A2       		.byte	-94
+ 1609 0631 02       		.byte	2
+ 1610 0632 A4       		.byte	-92
+ 1611 0633 20       		.byte	32
+ 1612 0634 AA       		.byte	-86
+ 1613 0635 40       		.byte	64
+ 1614 0636 AC       		.byte	-84
+ 1615 0637 10       		.byte	16
+ 1616 0638 B6       		.byte	-74
+ 1617 0639 22       		.byte	34
+ 1618 063a B7       		.byte	-73
+ 1619 063b 44       		.byte	68
+ 1620 063c C0       		.byte	-64
+ 1621 063d 3E       		.byte	62
+ 1622 063e C2       		.byte	-62
+ 1623 063f 7F       		.byte	127
+ 1624 0640 C4       		.byte	-60
+ 1625 0641 3D       		.byte	61
+ 1626 0642 CA       		.byte	-54
+ 1627 0643 53       		.byte	83
+ 1628 0644 CC       		.byte	-52
+ 1629 0645 E5       		.byte	-27
+ 1630 0646 CE       		.byte	-50
+ 1631 0647 77       		.byte	119
+ 1632 0648 D2       		.byte	-46
+ 1633 0649 08       		.byte	8
+ 1634 064a D6       		.byte	-42
+ 1635 064b 01       		.byte	1
+ 1636 064c D8       		.byte	-40
+ 1637 064d 0D       		.byte	13
+ 1638 064e E0       		.byte	-32
+ 1639 064f 20       		.byte	32
+ 1640 0650 E2       		.byte	-30
+ 1641 0651 01       		.byte	1
+ 1642 0652 E4       		.byte	-28
+ 1643 0653 40       		.byte	64
+ 1644 0654 EA       		.byte	-22
+ 1645 0655 04       		.byte	4
+ 1646 0656 EE       		.byte	-18
+ 1647 0657 06       		.byte	6
+ 1648 0658 84       		.byte	-124
+ 1649 0659 02       		.byte	2
+ 1650 065a 96       		.byte	-106
+ 1651 065b 01       		.byte	1
+ 1652 065c 9E       		.byte	-98
+ 1653 065d 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 30
+
+
+ 1654 065e B2       		.byte	-78
+ 1655 065f 02       		.byte	2
+ 1656 0660 B4       		.byte	-76
+ 1657 0661 01       		.byte	1
+ 1658 0662 BE       		.byte	-66
+ 1659 0663 14       		.byte	20
+ 1660 0664 D8       		.byte	-40
+ 1661 0665 04       		.byte	4
+ 1662 0666 D9       		.byte	-39
+ 1663 0667 04       		.byte	4
+ 1664 0668 DC       		.byte	-36
+ 1665 0669 10       		.byte	16
+ 1666 066a DF       		.byte	-33
+ 1667 066b 01       		.byte	1
+ 1668 066c 02       		.byte	2
+ 1669 066d 10       		.byte	16
+ 1670 066e 03       		.byte	3
+ 1671 066f 02       		.byte	2
+ 1672 0670 04       		.byte	4
+ 1673 0671 08       		.byte	8
+ 1674 0672 09       		.byte	9
+ 1675 0673 08       		.byte	8
+ 1676 0674 0A       		.byte	10
+ 1677 0675 88       		.byte	-120
+ 1678 0676 0B       		.byte	11
+ 1679 0677 80       		.byte	-128
+ 1680 0678 0E       		.byte	14
+ 1681 0679 20       		.byte	32
+ 1682 067a 0F       		.byte	15
+ 1683 067b 01       		.byte	1
+ 1684 067c 10       		.byte	16
+ 1685 067d 20       		.byte	32
+ 1686 067e 11       		.byte	17
+ 1687 067f 01       		.byte	1
+ 1688 0680 13       		.byte	19
+ 1689 0681 10       		.byte	16
+ 1690 0682 14       		.byte	20
+ 1691 0683 20       		.byte	32
+ 1692 0684 15       		.byte	21
+ 1693 0685 08       		.byte	8
+ 1694 0686 18       		.byte	24
+ 1695 0687 80       		.byte	-128
+ 1696 0688 19       		.byte	25
+ 1697 0689 50       		.byte	80
+ 1698 068a 1A       		.byte	26
+ 1699 068b 08       		.byte	8
+ 1700 068c 1B       		.byte	27
+ 1701 068d 06       		.byte	6
+ 1702 068e 1C       		.byte	28
+ 1703 068f 24       		.byte	36
+ 1704 0690 20       		.byte	32
+ 1705 0691 40       		.byte	64
+ 1706 0692 21       		.byte	33
+ 1707 0693 0C       		.byte	12
+ 1708 0694 22       		.byte	34
+ 1709 0695 60       		.byte	96
+ 1710 0696 28       		.byte	40
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 31
+
+
+ 1711 0697 20       		.byte	32
+ 1712 0698 2A       		.byte	42
+ 1713 0699 10       		.byte	16
+ 1714 069a 2B       		.byte	43
+ 1715 069b 42       		.byte	66
+ 1716 069c 2C       		.byte	44
+ 1717 069d 01       		.byte	1
+ 1718 069e 2F       		.byte	47
+ 1719 069f 01       		.byte	1
+ 1720 06a0 30       		.byte	48
+ 1721 06a1 80       		.byte	-128
+ 1722 06a2 31       		.byte	49
+ 1723 06a3 10       		.byte	16
+ 1724 06a4 33       		.byte	51
+ 1725 06a5 04       		.byte	4
+ 1726 06a6 35       		.byte	53
+ 1727 06a7 20       		.byte	32
+ 1728 06a8 36       		.byte	54
+ 1729 06a9 03       		.byte	3
+ 1730 06aa 37       		.byte	55
+ 1731 06ab 08       		.byte	8
+ 1732 06ac 39       		.byte	57
+ 1733 06ad 65       		.byte	101
+ 1734 06ae 3A       		.byte	58
+ 1735 06af 02       		.byte	2
+ 1736 06b0 3B       		.byte	59
+ 1737 06b1 10       		.byte	16
+ 1738 06b2 3D       		.byte	61
+ 1739 06b3 10       		.byte	16
+ 1740 06b4 3E       		.byte	62
+ 1741 06b5 88       		.byte	-120
+ 1742 06b6 40       		.byte	64
+ 1743 06b7 40       		.byte	64
+ 1744 06b8 41       		.byte	65
+ 1745 06b9 20       		.byte	32
+ 1746 06ba 42       		.byte	66
+ 1747 06bb 20       		.byte	32
+ 1748 06bc 43       		.byte	67
+ 1749 06bd 80       		.byte	-128
+ 1750 06be 48       		.byte	72
+ 1751 06bf 01       		.byte	1
+ 1752 06c0 4A       		.byte	74
+ 1753 06c1 10       		.byte	16
+ 1754 06c2 50       		.byte	80
+ 1755 06c3 80       		.byte	-128
+ 1756 06c4 58       		.byte	88
+ 1757 06c5 10       		.byte	16
+ 1758 06c6 5A       		.byte	90
+ 1759 06c7 40       		.byte	64
+ 1760 06c8 60       		.byte	96
+ 1761 06c9 02       		.byte	2
+ 1762 06ca 63       		.byte	99
+ 1763 06cb 04       		.byte	4
+ 1764 06cc 68       		.byte	104
+ 1765 06cd 02       		.byte	2
+ 1766 06ce 82       		.byte	-126
+ 1767 06cf 84       		.byte	-124
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 32
+
+
+ 1768 06d0 84       		.byte	-124
+ 1769 06d1 10       		.byte	16
+ 1770 06d2 89       		.byte	-119
+ 1771 06d3 80       		.byte	-128
+ 1772 06d4 8A       		.byte	-118
+ 1773 06d5 20       		.byte	32
+ 1774 06d6 8E       		.byte	-114
+ 1775 06d7 01       		.byte	1
+ 1776 06d8 8F       		.byte	-113
+ 1777 06d9 90       		.byte	-112
+ 1778 06da 91       		.byte	-111
+ 1779 06db 54       		.byte	84
+ 1780 06dc 92       		.byte	-110
+ 1781 06dd 02       		.byte	2
+ 1782 06de 93       		.byte	-109
+ 1783 06df 01       		.byte	1
+ 1784 06e0 94       		.byte	-108
+ 1785 06e1 E0       		.byte	-32
+ 1786 06e2 95       		.byte	-107
+ 1787 06e3 28       		.byte	40
+ 1788 06e4 96       		.byte	-106
+ 1789 06e5 01       		.byte	1
+ 1790 06e6 97       		.byte	-105
+ 1791 06e7 04       		.byte	4
+ 1792 06e8 98       		.byte	-104
+ 1793 06e9 49       		.byte	73
+ 1794 06ea 99       		.byte	-103
+ 1795 06eb 20       		.byte	32
+ 1796 06ec 9A       		.byte	-102
+ 1797 06ed 10       		.byte	16
+ 1798 06ee 9B       		.byte	-101
+ 1799 06ef 0D       		.byte	13
+ 1800 06f0 9C       		.byte	-100
+ 1801 06f1 22       		.byte	34
+ 1802 06f2 9D       		.byte	-99
+ 1803 06f3 50       		.byte	80
+ 1804 06f4 9E       		.byte	-98
+ 1805 06f5 8A       		.byte	-118
+ 1806 06f6 9F       		.byte	-97
+ 1807 06f7 90       		.byte	-112
+ 1808 06f8 A0       		.byte	-96
+ 1809 06f9 01       		.byte	1
+ 1810 06fa A1       		.byte	-95
+ 1811 06fb 20       		.byte	32
+ 1812 06fc A3       		.byte	-93
+ 1813 06fd C0       		.byte	-64
+ 1814 06fe A4       		.byte	-92
+ 1815 06ff 22       		.byte	34
+ 1816 0700 A6       		.byte	-90
+ 1817 0701 01       		.byte	1
+ 1818 0702 A7       		.byte	-89
+ 1819 0703 02       		.byte	2
+ 1820 0704 B0       		.byte	-80
+ 1821 0705 01       		.byte	1
+ 1822 0706 B4       		.byte	-76
+ 1823 0707 84       		.byte	-124
+ 1824 0708 C0       		.byte	-64
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 33
+
+
+ 1825 0709 25       		.byte	37
+ 1826 070a C2       		.byte	-62
+ 1827 070b A6       		.byte	-90
+ 1828 070c C4       		.byte	-60
+ 1829 070d 0E       		.byte	14
+ 1830 070e CA       		.byte	-54
+ 1831 070f 1F       		.byte	31
+ 1832 0710 CC       		.byte	-52
+ 1833 0711 EE       		.byte	-18
+ 1834 0712 CE       		.byte	-50
+ 1835 0713 7F       		.byte	127
+ 1836 0714 D0       		.byte	-48
+ 1837 0715 0F       		.byte	15
+ 1838 0716 D2       		.byte	-46
+ 1839 0717 08       		.byte	8
+ 1840 0718 D6       		.byte	-42
+ 1841 0719 0C       		.byte	12
+ 1842 071a D8       		.byte	-40
+ 1843 071b 0C       		.byte	12
+ 1844 071c E0       		.byte	-32
+ 1845 071d 18       		.byte	24
+ 1846 071e E4       		.byte	-28
+ 1847 071f 50       		.byte	80
+ 1848 0720 E8       		.byte	-24
+ 1849 0721 10       		.byte	16
+ 1850 0722 EC       		.byte	-20
+ 1851 0723 20       		.byte	32
+ 1852 0724 05       		.byte	5
+ 1853 0725 0C       		.byte	12
+ 1854 0726 15       		.byte	21
+ 1855 0727 06       		.byte	6
+ 1856 0728 19       		.byte	25
+ 1857 0729 0C       		.byte	12
+ 1858 072a 1D       		.byte	29
+ 1859 072b 0A       		.byte	10
+ 1860 072c 21       		.byte	33
+ 1861 072d 01       		.byte	1
+ 1862 072e 31       		.byte	49
+ 1863 072f 01       		.byte	1
+ 1864 0730 33       		.byte	51
+ 1865 0731 0E       		.byte	14
+ 1866 0732 39       		.byte	57
+ 1867 0733 08       		.byte	8
+ 1868 0734 3F       		.byte	63
+ 1869 0735 01       		.byte	1
+ 1870 0736 58       		.byte	88
+ 1871 0737 04       		.byte	4
+ 1872 0738 59       		.byte	89
+ 1873 0739 04       		.byte	4
+ 1874 073a 5C       		.byte	92
+ 1875 073b 01       		.byte	1
+ 1876 073c 5F       		.byte	95
+ 1877 073d 01       		.byte	1
+ 1878 073e 81       		.byte	-127
+ 1879 073f 09       		.byte	9
+ 1880 0740 83       		.byte	-125
+ 1881 0741 10       		.byte	16
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 34
+
+
+ 1882 0742 87       		.byte	-121
+ 1883 0743 80       		.byte	-128
+ 1884 0744 88       		.byte	-120
+ 1885 0745 1E       		.byte	30
+ 1886 0746 8B       		.byte	-117
+ 1887 0747 20       		.byte	32
+ 1888 0748 8D       		.byte	-115
+ 1889 0749 0C       		.byte	12
+ 1890 074a 8F       		.byte	-113
+ 1891 074b 11       		.byte	17
+ 1892 074c 90       		.byte	-112
+ 1893 074d 08       		.byte	8
+ 1894 074e 91       		.byte	-111
+ 1895 074f 40       		.byte	64
+ 1896 0750 92       		.byte	-110
+ 1897 0751 02       		.byte	2
+ 1898 0752 93       		.byte	-109
+ 1899 0753 80       		.byte	-128
+ 1900 0754 95       		.byte	-107
+ 1901 0755 14       		.byte	20
+ 1902 0756 98       		.byte	-104
+ 1903 0757 10       		.byte	16
+ 1904 0758 99       		.byte	-103
+ 1905 0759 10       		.byte	16
+ 1906 075a 9A       		.byte	-102
+ 1907 075b 04       		.byte	4
+ 1908 075c 9C       		.byte	-100
+ 1909 075d 06       		.byte	6
+ 1910 075e 9E       		.byte	-98
+ 1911 075f 18       		.byte	24
+ 1912 0760 9F       		.byte	-97
+ 1913 0761 03       		.byte	3
+ 1914 0762 A0       		.byte	-96
+ 1915 0763 01       		.byte	1
+ 1916 0764 A3       		.byte	-93
+ 1917 0765 C0       		.byte	-64
+ 1918 0766 A4       		.byte	-92
+ 1919 0767 1E       		.byte	30
+ 1920 0768 A5       		.byte	-91
+ 1921 0769 10       		.byte	16
+ 1922 076a A7       		.byte	-89
+ 1923 076b 0C       		.byte	12
+ 1924 076c A9       		.byte	-87
+ 1925 076d 1C       		.byte	28
+ 1926 076e AB       		.byte	-85
+ 1927 076f 02       		.byte	2
+ 1928 0770 AC       		.byte	-84
+ 1929 0771 0A       		.byte	10
+ 1930 0772 AE       		.byte	-82
+ 1931 0773 14       		.byte	20
+ 1932 0774 AF       		.byte	-81
+ 1933 0775 40       		.byte	64
+ 1934 0776 B0       		.byte	-80
+ 1935 0777 1E       		.byte	30
+ 1936 0778 B1       		.byte	-79
+ 1937 0779 E0       		.byte	-32
+ 1938 077a B2       		.byte	-78
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 35
+
+
+ 1939 077b 01       		.byte	1
+ 1940 077c B5       		.byte	-75
+ 1941 077d 1F       		.byte	31
+ 1942 077e B7       		.byte	-73
+ 1943 077f E0       		.byte	-32
+ 1944 0780 BA       		.byte	-70
+ 1945 0781 80       		.byte	-128
+ 1946 0782 BE       		.byte	-66
+ 1947 0783 04       		.byte	4
+ 1948 0784 BF       		.byte	-65
+ 1949 0785 41       		.byte	65
+ 1950 0786 C0       		.byte	-64
+ 1951 0787 32       		.byte	50
+ 1952 0788 C1       		.byte	-63
+ 1953 0789 04       		.byte	4
+ 1954 078a C5       		.byte	-59
+ 1955 078b E0       		.byte	-32
+ 1956 078c C6       		.byte	-58
+ 1957 078d C0       		.byte	-64
+ 1958 078e C7       		.byte	-57
+ 1959 078f 0B       		.byte	11
+ 1960 0790 C8       		.byte	-56
+ 1961 0791 1A       		.byte	26
+ 1962 0792 C9       		.byte	-55
+ 1963 0793 FF       		.byte	-1
+ 1964 0794 CA       		.byte	-54
+ 1965 0795 FF       		.byte	-1
+ 1966 0796 CB       		.byte	-53
+ 1967 0797 FF       		.byte	-1
+ 1968 0798 CE       		.byte	-50
+ 1969 0799 F0       		.byte	-16
+ 1970 079a CF       		.byte	-49
+ 1971 079b 44       		.byte	68
+ 1972 079c D0       		.byte	-48
+ 1973 079d 0C       		.byte	12
+ 1974 079e D4       		.byte	-44
+ 1975 079f 01       		.byte	1
+ 1976 07a0 D6       		.byte	-42
+ 1977 07a1 04       		.byte	4
+ 1978 07a2 D8       		.byte	-40
+ 1979 07a3 04       		.byte	4
+ 1980 07a4 D9       		.byte	-39
+ 1981 07a5 04       		.byte	4
+ 1982 07a6 DA       		.byte	-38
+ 1983 07a7 04       		.byte	4
+ 1984 07a8 DB       		.byte	-37
+ 1985 07a9 04       		.byte	4
+ 1986 07aa DC       		.byte	-36
+ 1987 07ab 22       		.byte	34
+ 1988 07ac DD       		.byte	-35
+ 1989 07ad 22       		.byte	34
+ 1990 07ae DF       		.byte	-33
+ 1991 07af 01       		.byte	1
+ 1992 07b0 E6       		.byte	-26
+ 1993 07b1 C0       		.byte	-64
+ 1994 07b2 EA       		.byte	-22
+ 1995 07b3 40       		.byte	64
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 36
+
+
+ 1996 07b4 EB       		.byte	-21
+ 1997 07b5 02       		.byte	2
+ 1998 07b6 03       		.byte	3
+ 1999 07b7 04       		.byte	4
+ 2000 07b8 06       		.byte	6
+ 2001 07b9 88       		.byte	-120
+ 2002 07ba 07       		.byte	7
+ 2003 07bb 02       		.byte	2
+ 2004 07bc 08       		.byte	8
+ 2005 07bd 42       		.byte	66
+ 2006 07be 0B       		.byte	11
+ 2007 07bf 04       		.byte	4
+ 2008 07c0 0F       		.byte	15
+ 2009 07c1 20       		.byte	32
+ 2010 07c2 10       		.byte	16
+ 2011 07c3 02       		.byte	2
+ 2012 07c4 11       		.byte	17
+ 2013 07c5 04       		.byte	4
+ 2014 07c6 12       		.byte	18
+ 2015 07c7 80       		.byte	-128
+ 2016 07c8 14       		.byte	20
+ 2017 07c9 01       		.byte	1
+ 2018 07ca 15       		.byte	21
+ 2019 07cb 10       		.byte	16
+ 2020 07cc 16       		.byte	22
+ 2021 07cd 20       		.byte	32
+ 2022 07ce 17       		.byte	23
+ 2023 07cf 08       		.byte	8
+ 2024 07d0 19       		.byte	25
+ 2025 07d1 06       		.byte	6
+ 2026 07d2 1B       		.byte	27
+ 2027 07d3 80       		.byte	-128
+ 2028 07d4 20       		.byte	32
+ 2029 07d5 06       		.byte	6
+ 2030 07d6 21       		.byte	33
+ 2031 07d7 02       		.byte	2
+ 2032 07d8 25       		.byte	37
+ 2033 07d9 04       		.byte	4
+ 2034 07da 26       		.byte	38
+ 2035 07db 08       		.byte	8
+ 2036 07dc 27       		.byte	39
+ 2037 07dd 40       		.byte	64
+ 2038 07de 28       		.byte	40
+ 2039 07df 62       		.byte	98
+ 2040 07e0 29       		.byte	41
+ 2041 07e1 12       		.byte	18
+ 2042 07e2 2C       		.byte	44
+ 2043 07e3 80       		.byte	-128
+ 2044 07e4 30       		.byte	48
+ 2045 07e5 AA       		.byte	-86
+ 2046 07e6 34       		.byte	52
+ 2047 07e7 08       		.byte	8
+ 2048 07e8 36       		.byte	54
+ 2049 07e9 08       		.byte	8
+ 2050 07ea 37       		.byte	55
+ 2051 07eb 90       		.byte	-112
+ 2052 07ec 38       		.byte	56
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 37
+
+
+ 2053 07ed A0       		.byte	-96
+ 2054 07ee 3A       		.byte	58
+ 2055 07ef 06       		.byte	6
+ 2056 07f0 3B       		.byte	59
+ 2057 07f1 04       		.byte	4
+ 2058 07f2 3F       		.byte	63
+ 2059 07f3 08       		.byte	8
+ 2060 07f4 41       		.byte	65
+ 2061 07f5 14       		.byte	20
+ 2062 07f6 43       		.byte	67
+ 2063 07f7 02       		.byte	2
+ 2064 07f8 44       		.byte	68
+ 2065 07f9 10       		.byte	16
+ 2066 07fa 46       		.byte	70
+ 2067 07fb 10       		.byte	16
+ 2068 07fc 49       		.byte	73
+ 2069 07fd 01       		.byte	1
+ 2070 07fe 4A       		.byte	74
+ 2071 07ff 80       		.byte	-128
+ 2072 0800 50       		.byte	80
+ 2073 0801 08       		.byte	8
+ 2074 0802 52       		.byte	82
+ 2075 0803 10       		.byte	16
+ 2076 0804 58       		.byte	88
+ 2077 0805 10       		.byte	16
+ 2078 0806 59       		.byte	89
+ 2079 0807 45       		.byte	69
+ 2080 0808 62       		.byte	98
+ 2081 0809 02       		.byte	2
+ 2082 080a 82       		.byte	-126
+ 2083 080b 02       		.byte	2
+ 2084 080c 83       		.byte	-125
+ 2085 080d 40       		.byte	64
+ 2086 080e 8D       		.byte	-115
+ 2087 080f 24       		.byte	36
+ 2088 0810 8F       		.byte	-113
+ 2089 0811 14       		.byte	20
+ 2090 0812 91       		.byte	-111
+ 2091 0813 54       		.byte	84
+ 2092 0814 92       		.byte	-110
+ 2093 0815 02       		.byte	2
+ 2094 0816 93       		.byte	-109
+ 2095 0817 01       		.byte	1
+ 2096 0818 94       		.byte	-108
+ 2097 0819 40       		.byte	64
+ 2098 081a 96       		.byte	-106
+ 2099 081b 01       		.byte	1
+ 2100 081c 9A       		.byte	-102
+ 2101 081d 20       		.byte	32
+ 2102 081e 9B       		.byte	-101
+ 2103 081f 07       		.byte	7
+ 2104 0820 9C       		.byte	-100
+ 2105 0821 03       		.byte	3
+ 2106 0822 9D       		.byte	-99
+ 2107 0823 20       		.byte	32
+ 2108 0824 9E       		.byte	-98
+ 2109 0825 8C       		.byte	-116
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 38
+
+
+ 2110 0826 A1       		.byte	-95
+ 2111 0827 20       		.byte	32
+ 2112 0828 A3       		.byte	-93
+ 2113 0829 40       		.byte	64
+ 2114 082a A4       		.byte	-92
+ 2115 082b 02       		.byte	2
+ 2116 082c A5       		.byte	-91
+ 2117 082d 02       		.byte	2
+ 2118 082e A6       		.byte	-90
+ 2119 082f 01       		.byte	1
+ 2120 0830 A7       		.byte	-89
+ 2121 0831 80       		.byte	-128
+ 2122 0832 AC       		.byte	-84
+ 2123 0833 40       		.byte	64
+ 2124 0834 AD       		.byte	-83
+ 2125 0835 10       		.byte	16
+ 2126 0836 B3       		.byte	-77
+ 2127 0837 01       		.byte	1
+ 2128 0838 B6       		.byte	-74
+ 2129 0839 20       		.byte	32
+ 2130 083a C0       		.byte	-64
+ 2131 083b D2       		.byte	-46
+ 2132 083c C2       		.byte	-62
+ 2133 083d 2B       		.byte	43
+ 2134 083e C4       		.byte	-60
+ 2135 083f ED       		.byte	-19
+ 2136 0840 CA       		.byte	-54
+ 2137 0841 8F       		.byte	-113
+ 2138 0842 CC       		.byte	-52
+ 2139 0843 7F       		.byte	127
+ 2140 0844 CE       		.byte	-50
+ 2141 0845 4F       		.byte	79
+ 2142 0846 D0       		.byte	-48
+ 2143 0847 07       		.byte	7
+ 2144 0848 D6       		.byte	-42
+ 2145 0849 0F       		.byte	15
+ 2146 084a D8       		.byte	-40
+ 2147 084b 01       		.byte	1
+ 2148 084c E0       		.byte	-32
+ 2149 084d 50       		.byte	80
+ 2150 084e E2       		.byte	-30
+ 2151 084f 0A       		.byte	10
+ 2152 0850 E4       		.byte	-28
+ 2153 0851 0B       		.byte	11
+ 2154 0852 E6       		.byte	-26
+ 2155 0853 40       		.byte	64
+ 2156 0854 EC       		.byte	-20
+ 2157 0855 60       		.byte	96
+ 2158 0856 00       		.byte	0
+ 2159 0857 FF       		.byte	-1
+ 2160 0858 01       		.byte	1
+ 2161 0859 04       		.byte	4
+ 2162 085a 04       		.byte	4
+ 2163 085b 7C       		.byte	124
+ 2164 085c 05       		.byte	5
+ 2165 085d 06       		.byte	6
+ 2166 085e 06       		.byte	6
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 39
+
+
+ 2167 085f 82       		.byte	-126
+ 2168 0860 08       		.byte	8
+ 2169 0861 08       		.byte	8
+ 2170 0862 09       		.byte	9
+ 2171 0863 02       		.byte	2
+ 2172 0864 0E       		.byte	14
+ 2173 0865 C3       		.byte	-61
+ 2174 0866 0F       		.byte	15
+ 2175 0867 11       		.byte	17
+ 2176 0868 10       		.byte	16
+ 2177 0869 04       		.byte	4
+ 2178 086a 11       		.byte	17
+ 2179 086b 11       		.byte	17
+ 2180 086c 14       		.byte	20
+ 2181 086d 3C       		.byte	60
+ 2182 086e 16       		.byte	22
+ 2183 086f C1       		.byte	-63
+ 2184 0870 18       		.byte	24
+ 2185 0871 CF       		.byte	-49
+ 2186 0872 19       		.byte	25
+ 2187 0873 39       		.byte	57
+ 2188 0874 1A       		.byte	26
+ 2189 0875 30       		.byte	48
+ 2190 0876 1B       		.byte	27
+ 2191 0877 06       		.byte	6
+ 2192 0878 1D       		.byte	29
+ 2193 0879 3F       		.byte	63
+ 2194 087a 1E       		.byte	30
+ 2195 087b 0C       		.byte	12
+ 2196 087c 20       		.byte	32
+ 2197 087d 20       		.byte	32
+ 2198 087e 21       		.byte	33
+ 2199 087f 0F       		.byte	15
+ 2200 0880 23       		.byte	35
+ 2201 0881 30       		.byte	48
+ 2202 0882 24       		.byte	36
+ 2203 0883 10       		.byte	16
+ 2204 0884 28       		.byte	40
+ 2205 0885 30       		.byte	48
+ 2206 0886 29       		.byte	41
+ 2207 0887 0E       		.byte	14
+ 2208 0888 2B       		.byte	43
+ 2209 0889 31       		.byte	49
+ 2210 088a 2C       		.byte	44
+ 2211 088b 04       		.byte	4
+ 2212 088c 2E       		.byte	46
+ 2213 088d 08       		.byte	8
+ 2214 088e 30       		.byte	48
+ 2215 088f B0       		.byte	-80
+ 2216 0890 31       		.byte	49
+ 2217 0891 10       		.byte	16
+ 2218 0892 33       		.byte	51
+ 2219 0893 08       		.byte	8
+ 2220 0894 34       		.byte	52
+ 2221 0895 3F       		.byte	63
+ 2222 0896 35       		.byte	53
+ 2223 0897 07       		.byte	7
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 40
+
+
+ 2224 0898 36       		.byte	54
+ 2225 0899 70       		.byte	112
+ 2226 089a 37       		.byte	55
+ 2227 089b 20       		.byte	32
+ 2228 089c 39       		.byte	57
+ 2229 089d 80       		.byte	-128
+ 2230 089e 3A       		.byte	58
+ 2231 089f 22       		.byte	34
+ 2232 08a0 3B       		.byte	59
+ 2233 08a1 20       		.byte	32
+ 2234 08a2 3F       		.byte	63
+ 2235 08a3 04       		.byte	4
+ 2236 08a4 56       		.byte	86
+ 2237 08a5 02       		.byte	2
+ 2238 08a6 57       		.byte	87
+ 2239 08a7 11       		.byte	17
+ 2240 08a8 58       		.byte	88
+ 2241 08a9 04       		.byte	4
+ 2242 08aa 59       		.byte	89
+ 2243 08ab 04       		.byte	4
+ 2244 08ac 5B       		.byte	91
+ 2245 08ad 04       		.byte	4
+ 2246 08ae 5C       		.byte	92
+ 2247 08af 22       		.byte	34
+ 2248 08b0 5D       		.byte	93
+ 2249 08b1 20       		.byte	32
+ 2250 08b2 5F       		.byte	95
+ 2251 08b3 01       		.byte	1
+ 2252 08b4 D8       		.byte	-40
+ 2253 08b5 04       		.byte	4
+ 2254 08b6 D9       		.byte	-39
+ 2255 08b7 04       		.byte	4
+ 2256 08b8 DC       		.byte	-36
+ 2257 08b9 11       		.byte	17
+ 2258 08ba DF       		.byte	-33
+ 2259 08bb 01       		.byte	1
+ 2260 08bc 00       		.byte	0
+ 2261 08bd 44       		.byte	68
+ 2262 08be 02       		.byte	2
+ 2263 08bf 04       		.byte	4
+ 2264 08c0 03       		.byte	3
+ 2265 08c1 80       		.byte	-128
+ 2266 08c2 05       		.byte	5
+ 2267 08c3 20       		.byte	32
+ 2268 08c4 06       		.byte	6
+ 2269 08c5 80       		.byte	-128
+ 2270 08c6 07       		.byte	7
+ 2271 08c7 02       		.byte	2
+ 2272 08c8 08       		.byte	8
+ 2273 08c9 0A       		.byte	10
+ 2274 08ca 09       		.byte	9
+ 2275 08cb 20       		.byte	32
+ 2276 08cc 0A       		.byte	10
+ 2277 08cd 01       		.byte	1
+ 2278 08ce 0C       		.byte	12
+ 2279 08cf 40       		.byte	64
+ 2280 08d0 10       		.byte	16
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 41
+
+
+ 2281 08d1 82       		.byte	-126
+ 2282 08d2 13       		.byte	19
+ 2283 08d3 14       		.byte	20
+ 2284 08d4 14       		.byte	20
+ 2285 08d5 01       		.byte	1
+ 2286 08d6 16       		.byte	22
+ 2287 08d7 28       		.byte	40
+ 2288 08d8 18       		.byte	24
+ 2289 08d9 04       		.byte	4
+ 2290 08da 19       		.byte	25
+ 2291 08db 13       		.byte	19
+ 2292 08dc 1B       		.byte	27
+ 2293 08dd 40       		.byte	64
+ 2294 08de 21       		.byte	33
+ 2295 08df 20       		.byte	32
+ 2296 08e0 22       		.byte	34
+ 2297 08e1 01       		.byte	1
+ 2298 08e2 23       		.byte	35
+ 2299 08e3 21       		.byte	33
+ 2300 08e4 29       		.byte	41
+ 2301 08e5 11       		.byte	17
+ 2302 08e6 2C       		.byte	44
+ 2303 08e7 41       		.byte	65
+ 2304 08e8 31       		.byte	49
+ 2305 08e9 22       		.byte	34
+ 2306 08ea 33       		.byte	51
+ 2307 08eb 80       		.byte	-128
+ 2308 08ec 35       		.byte	53
+ 2309 08ed 20       		.byte	32
+ 2310 08ee 36       		.byte	54
+ 2311 08ef 01       		.byte	1
+ 2312 08f0 37       		.byte	55
+ 2313 08f1 02       		.byte	2
+ 2314 08f2 38       		.byte	56
+ 2315 08f3 68       		.byte	104
+ 2316 08f4 3A       		.byte	58
+ 2317 08f5 02       		.byte	2
+ 2318 08f6 3E       		.byte	62
+ 2319 08f7 A8       		.byte	-88
+ 2320 08f8 5B       		.byte	91
+ 2321 08f9 20       		.byte	32
+ 2322 08fa 69       		.byte	105
+ 2323 08fb 44       		.byte	68
+ 2324 08fc 6B       		.byte	107
+ 2325 08fd 04       		.byte	4
+ 2326 08fe 70       		.byte	112
+ 2327 08ff 94       		.byte	-108
+ 2328 0900 72       		.byte	114
+ 2329 0901 02       		.byte	2
+ 2330 0902 73       		.byte	115
+ 2331 0903 14       		.byte	20
+ 2332 0904 88       		.byte	-120
+ 2333 0905 08       		.byte	8
+ 2334 0906 89       		.byte	-119
+ 2335 0907 02       		.byte	2
+ 2336 0908 C0       		.byte	-64
+ 2337 0909 DF       		.byte	-33
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 42
+
+
+ 2338 090a C2       		.byte	-62
+ 2339 090b 8F       		.byte	-113
+ 2340 090c C4       		.byte	-60
+ 2341 090d EF       		.byte	-17
+ 2342 090e CA       		.byte	-54
+ 2343 090f 95       		.byte	-107
+ 2344 0910 CC       		.byte	-52
+ 2345 0911 AD       		.byte	-83
+ 2346 0912 CE       		.byte	-50
+ 2347 0913 7F       		.byte	127
+ 2348 0914 D6       		.byte	-42
+ 2349 0915 04       		.byte	4
+ 2350 0916 E6       		.byte	-26
+ 2351 0917 02       		.byte	2
+ 2352 0918 05       		.byte	5
+ 2353 0919 03       		.byte	3
+ 2354 091a 0D       		.byte	13
+ 2355 091b 01       		.byte	1
+ 2356 091c 0F       		.byte	15
+ 2357 091d 02       		.byte	2
+ 2358 091e 11       		.byte	17
+ 2359 091f 01       		.byte	1
+ 2360 0920 13       		.byte	19
+ 2361 0921 02       		.byte	2
+ 2362 0922 17       		.byte	23
+ 2363 0923 03       		.byte	3
+ 2364 0924 1D       		.byte	29
+ 2365 0925 03       		.byte	3
+ 2366 0926 29       		.byte	41
+ 2367 0927 03       		.byte	3
+ 2368 0928 2D       		.byte	45
+ 2369 0929 02       		.byte	2
+ 2370 092a 2F       		.byte	47
+ 2371 092b 01       		.byte	1
+ 2372 092c 33       		.byte	51
+ 2373 092d 02       		.byte	2
+ 2374 092e 35       		.byte	53
+ 2375 092f 01       		.byte	1
+ 2376 0930 40       		.byte	64
+ 2377 0931 26       		.byte	38
+ 2378 0932 41       		.byte	65
+ 2379 0933 03       		.byte	3
+ 2380 0934 49       		.byte	73
+ 2381 0935 FF       		.byte	-1
+ 2382 0936 4A       		.byte	74
+ 2383 0937 FF       		.byte	-1
+ 2384 0938 4B       		.byte	75
+ 2385 0939 FF       		.byte	-1
+ 2386 093a 4D       		.byte	77
+ 2387 093b A0       		.byte	-96
+ 2388 093c 4F       		.byte	79
+ 2389 093d 01       		.byte	1
+ 2390 093e 50       		.byte	80
+ 2391 093f 18       		.byte	24
+ 2392 0940 58       		.byte	88
+ 2393 0941 04       		.byte	4
+ 2394 0942 59       		.byte	89
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 43
+
+
+ 2395 0943 04       		.byte	4
+ 2396 0944 5A       		.byte	90
+ 2397 0945 04       		.byte	4
+ 2398 0946 5C       		.byte	92
+ 2399 0947 11       		.byte	17
+ 2400 0948 5F       		.byte	95
+ 2401 0949 01       		.byte	1
+ 2402 094a 60       		.byte	96
+ 2403 094b 40       		.byte	64
+ 2404 094c 62       		.byte	98
+ 2405 094d 80       		.byte	-128
+ 2406 094e 64       		.byte	100
+ 2407 094f 40       		.byte	64
+ 2408 0950 65       		.byte	101
+ 2409 0951 40       		.byte	64
+ 2410 0952 66       		.byte	102
+ 2411 0953 80       		.byte	-128
+ 2412 0954 68       		.byte	104
+ 2413 0955 40       		.byte	64
+ 2414 0956 6A       		.byte	106
+ 2415 0957 80       		.byte	-128
+ 2416 0958 6C       		.byte	108
+ 2417 0959 40       		.byte	64
+ 2418 095a 6D       		.byte	109
+ 2419 095b 20       		.byte	32
+ 2420 095c 6E       		.byte	110
+ 2421 095d 80       		.byte	-128
+ 2422 095e 82       		.byte	-126
+ 2423 095f 03       		.byte	3
+ 2424 0960 83       		.byte	-125
+ 2425 0961 04       		.byte	4
+ 2426 0962 8C       		.byte	-116
+ 2427 0963 04       		.byte	4
+ 2428 0964 8E       		.byte	-114
+ 2429 0965 08       		.byte	8
+ 2430 0966 91       		.byte	-111
+ 2431 0967 08       		.byte	8
+ 2432 0968 94       		.byte	-108
+ 2433 0969 01       		.byte	1
+ 2434 096a 95       		.byte	-107
+ 2435 096b 08       		.byte	8
+ 2436 096c 9B       		.byte	-101
+ 2437 096d 02       		.byte	2
+ 2438 096e 9C       		.byte	-100
+ 2439 096f 08       		.byte	8
+ 2440 0970 9E       		.byte	-98
+ 2441 0971 04       		.byte	4
+ 2442 0972 9F       		.byte	-97
+ 2443 0973 01       		.byte	1
+ 2444 0974 A1       		.byte	-95
+ 2445 0975 08       		.byte	8
+ 2446 0976 A4       		.byte	-92
+ 2447 0977 04       		.byte	4
+ 2448 0978 A6       		.byte	-90
+ 2449 0979 08       		.byte	8
+ 2450 097a AC       		.byte	-84
+ 2451 097b 04       		.byte	4
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 44
+
+
+ 2452 097c AE       		.byte	-82
+ 2453 097d 08       		.byte	8
+ 2454 097e B1       		.byte	-79
+ 2455 097f 02       		.byte	2
+ 2456 0980 B2       		.byte	-78
+ 2457 0981 02       		.byte	2
+ 2458 0982 B3       		.byte	-77
+ 2459 0983 08       		.byte	8
+ 2460 0984 B4       		.byte	-76
+ 2461 0985 01       		.byte	1
+ 2462 0986 B5       		.byte	-75
+ 2463 0987 04       		.byte	4
+ 2464 0988 B6       		.byte	-74
+ 2465 0989 0C       		.byte	12
+ 2466 098a B7       		.byte	-73
+ 2467 098b 01       		.byte	1
+ 2468 098c B9       		.byte	-71
+ 2469 098d 08       		.byte	8
+ 2470 098e BA       		.byte	-70
+ 2471 098f 80       		.byte	-128
+ 2472 0990 BE       		.byte	-66
+ 2473 0991 10       		.byte	16
+ 2474 0992 BF       		.byte	-65
+ 2475 0993 04       		.byte	4
+ 2476 0994 C0       		.byte	-64
+ 2477 0995 26       		.byte	38
+ 2478 0996 C1       		.byte	-63
+ 2479 0997 03       		.byte	3
+ 2480 0998 C5       		.byte	-59
+ 2481 0999 3C       		.byte	60
+ 2482 099a C6       		.byte	-58
+ 2483 099b 40       		.byte	64
+ 2484 099c C7       		.byte	-57
+ 2485 099d 2E       		.byte	46
+ 2486 099e C8       		.byte	-56
+ 2487 099f 3B       		.byte	59
+ 2488 09a0 C9       		.byte	-55
+ 2489 09a1 FF       		.byte	-1
+ 2490 09a2 CA       		.byte	-54
+ 2491 09a3 FF       		.byte	-1
+ 2492 09a4 CB       		.byte	-53
+ 2493 09a5 FF       		.byte	-1
+ 2494 09a6 CD       		.byte	-51
+ 2495 09a7 AF       		.byte	-81
+ 2496 09a8 CE       		.byte	-50
+ 2497 09a9 07       		.byte	7
+ 2498 09aa CF       		.byte	-49
+ 2499 09ab 01       		.byte	1
+ 2500 09ac D0       		.byte	-48
+ 2501 09ad 18       		.byte	24
+ 2502 09ae D6       		.byte	-42
+ 2503 09af 08       		.byte	8
+ 2504 09b0 D8       		.byte	-40
+ 2505 09b1 04       		.byte	4
+ 2506 09b2 D9       		.byte	-39
+ 2507 09b3 04       		.byte	4
+ 2508 09b4 DA       		.byte	-38
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 45
+
+
+ 2509 09b5 04       		.byte	4
+ 2510 09b6 DB       		.byte	-37
+ 2511 09b7 04       		.byte	4
+ 2512 09b8 DD       		.byte	-35
+ 2513 09b9 90       		.byte	-112
+ 2514 09ba DF       		.byte	-33
+ 2515 09bb 01       		.byte	1
+ 2516 09bc E0       		.byte	-32
+ 2517 09bd 40       		.byte	64
+ 2518 09be E2       		.byte	-30
+ 2519 09bf 80       		.byte	-128
+ 2520 09c0 E4       		.byte	-28
+ 2521 09c1 40       		.byte	64
+ 2522 09c2 E5       		.byte	-27
+ 2523 09c3 40       		.byte	64
+ 2524 09c4 E6       		.byte	-26
+ 2525 09c5 80       		.byte	-128
+ 2526 09c6 E8       		.byte	-24
+ 2527 09c7 40       		.byte	64
+ 2528 09c8 EA       		.byte	-22
+ 2529 09c9 80       		.byte	-128
+ 2530 09ca EC       		.byte	-20
+ 2531 09cb 40       		.byte	64
+ 2532 09cc ED       		.byte	-19
+ 2533 09cd 20       		.byte	32
+ 2534 09ce EE       		.byte	-18
+ 2535 09cf 80       		.byte	-128
+ 2536 09d0 00       		.byte	0
+ 2537 09d1 06       		.byte	6
+ 2538 09d2 01       		.byte	1
+ 2539 09d3 20       		.byte	32
+ 2540 09d4 02       		.byte	2
+ 2541 09d5 42       		.byte	66
+ 2542 09d6 05       		.byte	5
+ 2543 09d7 02       		.byte	2
+ 2544 09d8 07       		.byte	7
+ 2545 09d9 01       		.byte	1
+ 2546 09da 08       		.byte	8
+ 2547 09db 04       		.byte	4
+ 2548 09dc 0A       		.byte	10
+ 2549 09dd 02       		.byte	2
+ 2550 09de 0E       		.byte	14
+ 2551 09df 21       		.byte	33
+ 2552 09e0 10       		.byte	16
+ 2553 09e1 80       		.byte	-128
+ 2554 09e2 17       		.byte	23
+ 2555 09e3 48       		.byte	72
+ 2556 09e4 1E       		.byte	30
+ 2557 09e5 25       		.byte	37
+ 2558 09e6 20       		.byte	32
+ 2559 09e7 20       		.byte	32
+ 2560 09e8 21       		.byte	33
+ 2561 09e9 10       		.byte	16
+ 2562 09ea 26       		.byte	38
+ 2563 09eb 24       		.byte	36
+ 2564 09ec 27       		.byte	39
+ 2565 09ed 49       		.byte	73
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 46
+
+
+ 2566 09ee 29       		.byte	41
+ 2567 09ef 20       		.byte	32
+ 2568 09f0 2A       		.byte	42
+ 2569 09f1 40       		.byte	64
+ 2570 09f2 2E       		.byte	46
+ 2571 09f3 02       		.byte	2
+ 2572 09f4 30       		.byte	48
+ 2573 09f5 84       		.byte	-124
+ 2574 09f6 32       		.byte	50
+ 2575 09f7 01       		.byte	1
+ 2576 09f8 35       		.byte	53
+ 2577 09f9 02       		.byte	2
+ 2578 09fa 36       		.byte	54
+ 2579 09fb 28       		.byte	40
+ 2580 09fc 37       		.byte	55
+ 2581 09fd 40       		.byte	64
+ 2582 09fe 38       		.byte	56
+ 2583 09ff 04       		.byte	4
+ 2584 0a00 39       		.byte	57
+ 2585 0a01 80       		.byte	-128
+ 2586 0a02 3F       		.byte	63
+ 2587 0a03 01       		.byte	1
+ 2588 0a04 41       		.byte	65
+ 2589 0a05 08       		.byte	8
+ 2590 0a06 43       		.byte	67
+ 2591 0a07 10       		.byte	16
+ 2592 0a08 45       		.byte	69
+ 2593 0a09 08       		.byte	8
+ 2594 0a0a 47       		.byte	71
+ 2595 0a0b 10       		.byte	16
+ 2596 0a0c 48       		.byte	72
+ 2597 0a0d 08       		.byte	8
+ 2598 0a0e 4A       		.byte	74
+ 2599 0a0f 04       		.byte	4
+ 2600 0a10 4C       		.byte	76
+ 2601 0a11 08       		.byte	8
+ 2602 0a12 4D       		.byte	77
+ 2603 0a13 02       		.byte	2
+ 2604 0a14 4F       		.byte	79
+ 2605 0a15 04       		.byte	4
+ 2606 0a16 56       		.byte	86
+ 2607 0a17 1A       		.byte	26
+ 2608 0a18 5D       		.byte	93
+ 2609 0a19 80       		.byte	-128
+ 2610 0a1a 67       		.byte	103
+ 2611 0a1b 01       		.byte	1
+ 2612 0a1c 81       		.byte	-127
+ 2613 0a1d 80       		.byte	-128
+ 2614 0a1e 84       		.byte	-124
+ 2615 0a1f 01       		.byte	1
+ 2616 0a20 85       		.byte	-123
+ 2617 0a21 10       		.byte	16
+ 2618 0a22 86       		.byte	-122
+ 2619 0a23 01       		.byte	1
+ 2620 0a24 8D       		.byte	-115
+ 2621 0a25 40       		.byte	64
+ 2622 0a26 8E       		.byte	-114
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 47
+
+
+ 2623 0a27 02       		.byte	2
+ 2624 0a28 90       		.byte	-112
+ 2625 0a29 04       		.byte	4
+ 2626 0a2a 92       		.byte	-110
+ 2627 0a2b 02       		.byte	2
+ 2628 0a2c 96       		.byte	-106
+ 2629 0a2d 04       		.byte	4
+ 2630 0a2e 97       		.byte	-105
+ 2631 0a2f 04       		.byte	4
+ 2632 0a30 98       		.byte	-104
+ 2633 0a31 04       		.byte	4
+ 2634 0a32 99       		.byte	-103
+ 2635 0a33 20       		.byte	32
+ 2636 0a34 9B       		.byte	-101
+ 2637 0a35 10       		.byte	16
+ 2638 0a36 9D       		.byte	-99
+ 2639 0a37 02       		.byte	2
+ 2640 0a38 9E       		.byte	-98
+ 2641 0a39 5A       		.byte	90
+ 2642 0a3a A0       		.byte	-96
+ 2643 0a3b 81       		.byte	-127
+ 2644 0a3c A1       		.byte	-95
+ 2645 0a3d 08       		.byte	8
+ 2646 0a3e A2       		.byte	-94
+ 2647 0a3f 08       		.byte	8
+ 2648 0a40 A4       		.byte	-92
+ 2649 0a41 10       		.byte	16
+ 2650 0a42 A6       		.byte	-90
+ 2651 0a43 02       		.byte	2
+ 2652 0a44 A8       		.byte	-88
+ 2653 0a45 20       		.byte	32
+ 2654 0a46 AA       		.byte	-86
+ 2655 0a47 02       		.byte	2
+ 2656 0a48 AD       		.byte	-83
+ 2657 0a49 04       		.byte	4
+ 2658 0a4a AF       		.byte	-81
+ 2659 0a4b 12       		.byte	18
+ 2660 0a4c B5       		.byte	-75
+ 2661 0a4d 04       		.byte	4
+ 2662 0a4e C0       		.byte	-64
+ 2663 0a4f 9F       		.byte	-97
+ 2664 0a50 C2       		.byte	-62
+ 2665 0a51 A5       		.byte	-91
+ 2666 0a52 C4       		.byte	-60
+ 2667 0a53 A8       		.byte	-88
+ 2668 0a54 CA       		.byte	-54
+ 2669 0a55 8C       		.byte	-116
+ 2670 0a56 CC       		.byte	-52
+ 2671 0a57 FB       		.byte	-5
+ 2672 0a58 CE       		.byte	-50
+ 2673 0a59 8A       		.byte	-118
+ 2674 0a5a D0       		.byte	-48
+ 2675 0a5b 66       		.byte	102
+ 2676 0a5c D2       		.byte	-46
+ 2677 0a5d 24       		.byte	36
+ 2678 0a5e D6       		.byte	-42
+ 2679 0a5f 10       		.byte	16
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 48
+
+
+ 2680 0a60 D8       		.byte	-40
+ 2681 0a61 10       		.byte	16
+ 2682 0a62 E0       		.byte	-32
+ 2683 0a63 08       		.byte	8
+ 2684 0a64 E4       		.byte	-28
+ 2685 0a65 08       		.byte	8
+ 2686 0a66 E8       		.byte	-24
+ 2687 0a67 08       		.byte	8
+ 2688 0a68 EC       		.byte	-20
+ 2689 0a69 20       		.byte	32
+ 2690 0a6a 01       		.byte	1
+ 2691 0a6b 08       		.byte	8
+ 2692 0a6c 02       		.byte	2
+ 2693 0a6d 02       		.byte	2
+ 2694 0a6e 03       		.byte	3
+ 2695 0a6f 01       		.byte	1
+ 2696 0a70 0D       		.byte	13
+ 2697 0a71 04       		.byte	4
+ 2698 0a72 0E       		.byte	14
+ 2699 0a73 01       		.byte	1
+ 2700 0a74 0F       		.byte	15
+ 2701 0a75 02       		.byte	2
+ 2702 0a76 11       		.byte	17
+ 2703 0a77 08       		.byte	8
+ 2704 0a78 1D       		.byte	29
+ 2705 0a79 02       		.byte	2
+ 2706 0a7a 1E       		.byte	30
+ 2707 0a7b 08       		.byte	8
+ 2708 0a7c 1F       		.byte	31
+ 2709 0a7d 04       		.byte	4
+ 2710 0a7e 22       		.byte	34
+ 2711 0a7f 04       		.byte	4
+ 2712 0a80 28       		.byte	40
+ 2713 0a81 01       		.byte	1
+ 2714 0a82 29       		.byte	41
+ 2715 0a83 02       		.byte	2
+ 2716 0a84 2B       		.byte	43
+ 2717 0a85 04       		.byte	4
+ 2718 0a86 2D       		.byte	45
+ 2719 0a87 02       		.byte	2
+ 2720 0a88 2F       		.byte	47
+ 2721 0a89 04       		.byte	4
+ 2722 0a8a 30       		.byte	48
+ 2723 0a8b 04       		.byte	4
+ 2724 0a8c 32       		.byte	50
+ 2725 0a8d 02       		.byte	2
+ 2726 0a8e 33       		.byte	51
+ 2727 0a8f 01       		.byte	1
+ 2728 0a90 34       		.byte	52
+ 2729 0a91 01       		.byte	1
+ 2730 0a92 35       		.byte	53
+ 2731 0a93 08       		.byte	8
+ 2732 0a94 36       		.byte	54
+ 2733 0a95 08       		.byte	8
+ 2734 0a96 37       		.byte	55
+ 2735 0a97 06       		.byte	6
+ 2736 0a98 39       		.byte	57
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 49
+
+
+ 2737 0a99 20       		.byte	32
+ 2738 0a9a 3B       		.byte	59
+ 2739 0a9b 80       		.byte	-128
+ 2740 0a9c 3E       		.byte	62
+ 2741 0a9d 10       		.byte	16
+ 2742 0a9e 54       		.byte	84
+ 2743 0a9f 0F       		.byte	15
+ 2744 0aa0 58       		.byte	88
+ 2745 0aa1 04       		.byte	4
+ 2746 0aa2 59       		.byte	89
+ 2747 0aa3 04       		.byte	4
+ 2748 0aa4 5B       		.byte	91
+ 2749 0aa5 04       		.byte	4
+ 2750 0aa6 5F       		.byte	95
+ 2751 0aa7 05       		.byte	5
+ 2752 0aa8 87       		.byte	-121
+ 2753 0aa9 01       		.byte	1
+ 2754 0aaa 8A       		.byte	-118
+ 2755 0aab 01       		.byte	1
+ 2756 0aac 8D       		.byte	-115
+ 2757 0aad 01       		.byte	1
+ 2758 0aae 90       		.byte	-112
+ 2759 0aaf 01       		.byte	1
+ 2760 0ab0 95       		.byte	-107
+ 2761 0ab1 01       		.byte	1
+ 2762 0ab2 A6       		.byte	-90
+ 2763 0ab3 01       		.byte	1
+ 2764 0ab4 B2       		.byte	-78
+ 2765 0ab5 01       		.byte	1
+ 2766 0ab6 B3       		.byte	-77
+ 2767 0ab7 01       		.byte	1
+ 2768 0ab8 BE       		.byte	-66
+ 2769 0ab9 04       		.byte	4
+ 2770 0aba BF       		.byte	-65
+ 2771 0abb 04       		.byte	4
+ 2772 0abc D6       		.byte	-42
+ 2773 0abd 08       		.byte	8
+ 2774 0abe D8       		.byte	-40
+ 2775 0abf 04       		.byte	4
+ 2776 0ac0 D9       		.byte	-39
+ 2777 0ac1 04       		.byte	4
+ 2778 0ac2 DB       		.byte	-37
+ 2779 0ac3 04       		.byte	4
+ 2780 0ac4 DC       		.byte	-36
+ 2781 0ac5 11       		.byte	17
+ 2782 0ac6 DD       		.byte	-35
+ 2783 0ac7 90       		.byte	-112
+ 2784 0ac8 DF       		.byte	-33
+ 2785 0ac9 01       		.byte	1
+ 2786 0aca 00       		.byte	0
+ 2787 0acb 06       		.byte	6
+ 2788 0acc 03       		.byte	3
+ 2789 0acd 04       		.byte	4
+ 2790 0ace 05       		.byte	5
+ 2791 0acf 21       		.byte	33
+ 2792 0ad0 06       		.byte	6
+ 2793 0ad1 06       		.byte	6
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 50
+
+
+ 2794 0ad2 08       		.byte	8
+ 2795 0ad3 04       		.byte	4
+ 2796 0ad4 0A       		.byte	10
+ 2797 0ad5 22       		.byte	34
+ 2798 0ad6 0B       		.byte	11
+ 2799 0ad7 80       		.byte	-128
+ 2800 0ad8 0F       		.byte	15
+ 2801 0ad9 02       		.byte	2
+ 2802 0ada 10       		.byte	16
+ 2803 0adb 80       		.byte	-128
+ 2804 0adc 12       		.byte	18
+ 2805 0add 26       		.byte	38
+ 2806 0ade 14       		.byte	20
+ 2807 0adf 80       		.byte	-128
+ 2808 0ae0 17       		.byte	23
+ 2809 0ae1 20       		.byte	32
+ 2810 0ae2 19       		.byte	25
+ 2811 0ae3 04       		.byte	4
+ 2812 0ae4 1D       		.byte	29
+ 2813 0ae5 41       		.byte	65
+ 2814 0ae6 1F       		.byte	31
+ 2815 0ae7 19       		.byte	25
+ 2816 0ae8 21       		.byte	33
+ 2817 0ae9 04       		.byte	4
+ 2818 0aea 24       		.byte	36
+ 2819 0aeb 08       		.byte	8
+ 2820 0aec 25       		.byte	37
+ 2821 0aed 40       		.byte	64
+ 2822 0aee 26       		.byte	38
+ 2823 0aef 20       		.byte	32
+ 2824 0af0 27       		.byte	39
+ 2825 0af1 20       		.byte	32
+ 2826 0af2 29       		.byte	41
+ 2827 0af3 28       		.byte	40
+ 2828 0af4 2A       		.byte	42
+ 2829 0af5 40       		.byte	64
+ 2830 0af6 2B       		.byte	43
+ 2831 0af7 40       		.byte	64
+ 2832 0af8 2F       		.byte	47
+ 2833 0af9 09       		.byte	9
+ 2834 0afa 30       		.byte	48
+ 2835 0afb 80       		.byte	-128
+ 2836 0afc 31       		.byte	49
+ 2837 0afd 08       		.byte	8
+ 2838 0afe 32       		.byte	50
+ 2839 0aff 11       		.byte	17
+ 2840 0b00 33       		.byte	51
+ 2841 0b01 04       		.byte	4
+ 2842 0b02 34       		.byte	52
+ 2843 0b03 80       		.byte	-128
+ 2844 0b04 35       		.byte	53
+ 2845 0b05 42       		.byte	66
+ 2846 0b06 38       		.byte	56
+ 2847 0b07 08       		.byte	8
+ 2848 0b08 3B       		.byte	59
+ 2849 0b09 80       		.byte	-128
+ 2850 0b0a 3D       		.byte	61
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 51
+
+
+ 2851 0b0b 80       		.byte	-128
+ 2852 0b0c 3E       		.byte	62
+ 2853 0b0d 02       		.byte	2
+ 2854 0b0e 4E       		.byte	78
+ 2855 0b0f 02       		.byte	2
+ 2856 0b10 4F       		.byte	79
+ 2857 0b11 80       		.byte	-128
+ 2858 0b12 5B       		.byte	91
+ 2859 0b13 40       		.byte	64
+ 2860 0b14 5C       		.byte	92
+ 2861 0b15 20       		.byte	32
+ 2862 0b16 5E       		.byte	94
+ 2863 0b17 44       		.byte	68
+ 2864 0b18 5F       		.byte	95
+ 2865 0b19 02       		.byte	2
+ 2866 0b1a 63       		.byte	99
+ 2867 0b1b 02       		.byte	2
+ 2868 0b1c 66       		.byte	102
+ 2869 0b1d 08       		.byte	8
+ 2870 0b1e 67       		.byte	103
+ 2871 0b1f 04       		.byte	4
+ 2872 0b20 7E       		.byte	126
+ 2873 0b21 08       		.byte	8
+ 2874 0b22 83       		.byte	-125
+ 2875 0b23 40       		.byte	64
+ 2876 0b24 88       		.byte	-120
+ 2877 0b25 10       		.byte	16
+ 2878 0b26 90       		.byte	-112
+ 2879 0b27 04       		.byte	4
+ 2880 0b28 92       		.byte	-110
+ 2881 0b29 42       		.byte	66
+ 2882 0b2a 93       		.byte	-109
+ 2883 0b2b 80       		.byte	-128
+ 2884 0b2c 98       		.byte	-104
+ 2885 0b2d 04       		.byte	4
+ 2886 0b2e 99       		.byte	-103
+ 2887 0b2f 28       		.byte	40
+ 2888 0b30 9B       		.byte	-101
+ 2889 0b31 10       		.byte	16
+ 2890 0b32 9E       		.byte	-98
+ 2891 0b33 10       		.byte	16
+ 2892 0b34 A0       		.byte	-96
+ 2893 0b35 81       		.byte	-127
+ 2894 0b36 A1       		.byte	-95
+ 2895 0b37 08       		.byte	8
+ 2896 0b38 A2       		.byte	-94
+ 2897 0b39 08       		.byte	8
+ 2898 0b3a A5       		.byte	-91
+ 2899 0b3b 40       		.byte	64
+ 2900 0b3c A6       		.byte	-90
+ 2901 0b3d 02       		.byte	2
+ 2902 0b3e AC       		.byte	-84
+ 2903 0b3f 40       		.byte	64
+ 2904 0b40 B5       		.byte	-75
+ 2905 0b41 10       		.byte	16
+ 2906 0b42 B6       		.byte	-74
+ 2907 0b43 04       		.byte	4
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 52
+
+
+ 2908 0b44 C0       		.byte	-64
+ 2909 0b45 9E       		.byte	-98
+ 2910 0b46 C2       		.byte	-62
+ 2911 0b47 8D       		.byte	-115
+ 2912 0b48 C4       		.byte	-60
+ 2913 0b49 5F       		.byte	95
+ 2914 0b4a CA       		.byte	-54
+ 2915 0b4b 3F       		.byte	63
+ 2916 0b4c CC       		.byte	-52
+ 2917 0b4d 9F       		.byte	-97
+ 2918 0b4e CE       		.byte	-50
+ 2919 0b4f 9A       		.byte	-102
+ 2920 0b50 D6       		.byte	-42
+ 2921 0b51 F8       		.byte	-8
+ 2922 0b52 D8       		.byte	-40
+ 2923 0b53 68       		.byte	104
+ 2924 0b54 DE       		.byte	-34
+ 2925 0b55 20       		.byte	32
+ 2926 0b56 E6       		.byte	-26
+ 2927 0b57 05       		.byte	5
+ 2928 0b58 EA       		.byte	-22
+ 2929 0b59 01       		.byte	1
+ 2930 0b5a EE       		.byte	-18
+ 2931 0b5b 08       		.byte	8
+ 2932 0b5c 01       		.byte	1
+ 2933 0b5d 05       		.byte	5
+ 2934 0b5e 03       		.byte	3
+ 2935 0b5f 0A       		.byte	10
+ 2936 0b60 05       		.byte	5
+ 2937 0b61 10       		.byte	16
+ 2938 0b62 09       		.byte	9
+ 2939 0b63 0C       		.byte	12
+ 2940 0b64 0B       		.byte	11
+ 2941 0b65 03       		.byte	3
+ 2942 0b66 0D       		.byte	13
+ 2943 0b67 20       		.byte	32
+ 2944 0b68 11       		.byte	17
+ 2945 0b69 20       		.byte	32
+ 2946 0b6a 17       		.byte	23
+ 2947 0b6b 10       		.byte	16
+ 2948 0b6c 19       		.byte	25
+ 2949 0b6d 27       		.byte	39
+ 2950 0b6e 1D       		.byte	29
+ 2951 0b6f 0F       		.byte	15
+ 2952 0b70 23       		.byte	35
+ 2953 0b71 10       		.byte	16
+ 2954 0b72 29       		.byte	41
+ 2955 0b73 03       		.byte	3
+ 2956 0b74 2B       		.byte	43
+ 2957 0b75 0C       		.byte	12
+ 2958 0b76 2D       		.byte	45
+ 2959 0b77 0A       		.byte	10
+ 2960 0b78 2F       		.byte	47
+ 2961 0b79 05       		.byte	5
+ 2962 0b7a 31       		.byte	49
+ 2963 0b7b 20       		.byte	32
+ 2964 0b7c 33       		.byte	51
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 53
+
+
+ 2965 0b7d 10       		.byte	16
+ 2966 0b7e 37       		.byte	55
+ 2967 0b7f 0F       		.byte	15
+ 2968 0b80 39       		.byte	57
+ 2969 0b81 02       		.byte	2
+ 2970 0b82 3F       		.byte	63
+ 2971 0b83 05       		.byte	5
+ 2972 0b84 52       		.byte	82
+ 2973 0b85 80       		.byte	-128
+ 2974 0b86 54       		.byte	84
+ 2975 0b87 0F       		.byte	15
+ 2976 0b88 58       		.byte	88
+ 2977 0b89 04       		.byte	4
+ 2978 0b8a 59       		.byte	89
+ 2979 0b8b 04       		.byte	4
+ 2980 0b8c 5B       		.byte	91
+ 2981 0b8d 04       		.byte	4
+ 2982 0b8e 5C       		.byte	92
+ 2983 0b8f 01       		.byte	1
+ 2984 0b90 5F       		.byte	95
+ 2985 0b91 01       		.byte	1
+ 2986 0b92 80       		.byte	-128
+ 2987 0b93 02       		.byte	2
+ 2988 0b94 83       		.byte	-125
+ 2989 0b95 01       		.byte	1
+ 2990 0b96 85       		.byte	-123
+ 2991 0b97 01       		.byte	1
+ 2992 0b98 91       		.byte	-111
+ 2993 0b99 01       		.byte	1
+ 2994 0b9a 92       		.byte	-110
+ 2995 0b9b 0C       		.byte	12
+ 2996 0b9c 94       		.byte	-108
+ 2997 0b9d 08       		.byte	8
+ 2998 0b9e 99       		.byte	-103
+ 2999 0b9f 01       		.byte	1
+ 3000 0ba0 9D       		.byte	-99
+ 3001 0ba1 01       		.byte	1
+ 3002 0ba2 9E       		.byte	-98
+ 3003 0ba3 03       		.byte	3
+ 3004 0ba4 A1       		.byte	-95
+ 3005 0ba5 01       		.byte	1
+ 3006 0ba6 A7       		.byte	-89
+ 3007 0ba7 01       		.byte	1
+ 3008 0ba8 B0       		.byte	-80
+ 3009 0ba9 08       		.byte	8
+ 3010 0baa B2       		.byte	-78
+ 3011 0bab 04       		.byte	4
+ 3012 0bac B4       		.byte	-76
+ 3013 0bad 02       		.byte	2
+ 3014 0bae B5       		.byte	-75
+ 3015 0baf 01       		.byte	1
+ 3016 0bb0 B6       		.byte	-74
+ 3017 0bb1 01       		.byte	1
+ 3018 0bb2 BE       		.byte	-66
+ 3019 0bb3 11       		.byte	17
+ 3020 0bb4 D4       		.byte	-44
+ 3021 0bb5 0F       		.byte	15
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 54
+
+
+ 3022 0bb6 D8       		.byte	-40
+ 3023 0bb7 04       		.byte	4
+ 3024 0bb8 D9       		.byte	-39
+ 3025 0bb9 04       		.byte	4
+ 3026 0bba DB       		.byte	-37
+ 3027 0bbb 04       		.byte	4
+ 3028 0bbc DC       		.byte	-36
+ 3029 0bbd 10       		.byte	16
+ 3030 0bbe DF       		.byte	-33
+ 3031 0bbf 05       		.byte	5
+ 3032 0bc0 02       		.byte	2
+ 3033 0bc1 32       		.byte	50
+ 3034 0bc2 03       		.byte	3
+ 3035 0bc3 81       		.byte	-127
+ 3036 0bc4 06       		.byte	6
+ 3037 0bc5 19       		.byte	25
+ 3038 0bc6 08       		.byte	8
+ 3039 0bc7 02       		.byte	2
+ 3040 0bc8 09       		.byte	9
+ 3041 0bc9 40       		.byte	64
+ 3042 0bca 0A       		.byte	10
+ 3043 0bcb 10       		.byte	16
+ 3044 0bcc 0C       		.byte	12
+ 3045 0bcd 40       		.byte	64
+ 3046 0bce 0D       		.byte	13
+ 3047 0bcf 01       		.byte	1
+ 3048 0bd0 14       		.byte	20
+ 3049 0bd1 20       		.byte	32
+ 3050 0bd2 17       		.byte	23
+ 3051 0bd3 01       		.byte	1
+ 3052 0bd4 19       		.byte	25
+ 3053 0bd5 01       		.byte	1
+ 3054 0bd6 1A       		.byte	26
+ 3055 0bd7 14       		.byte	20
+ 3056 0bd8 1B       		.byte	27
+ 3057 0bd9 80       		.byte	-128
+ 3058 0bda 22       		.byte	34
+ 3059 0bdb 10       		.byte	16
+ 3060 0bdc 25       		.byte	37
+ 3061 0bdd 0A       		.byte	10
+ 3062 0bde 26       		.byte	38
+ 3063 0bdf 48       		.byte	72
+ 3064 0be0 28       		.byte	40
+ 3065 0be1 20       		.byte	32
+ 3066 0be2 2A       		.byte	42
+ 3067 0be3 05       		.byte	5
+ 3068 0be4 2C       		.byte	44
+ 3069 0be5 04       		.byte	4
+ 3070 0be6 2D       		.byte	45
+ 3071 0be7 42       		.byte	66
+ 3072 0be8 30       		.byte	48
+ 3073 0be9 40       		.byte	64
+ 3074 0bea 32       		.byte	50
+ 3075 0beb 22       		.byte	34
+ 3076 0bec 34       		.byte	52
+ 3077 0bed 02       		.byte	2
+ 3078 0bee 36       		.byte	54
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 55
+
+
+ 3079 0bef 50       		.byte	80
+ 3080 0bf0 37       		.byte	55
+ 3081 0bf1 04       		.byte	4
+ 3082 0bf2 3A       		.byte	58
+ 3083 0bf3 08       		.byte	8
+ 3084 0bf4 3B       		.byte	59
+ 3085 0bf5 02       		.byte	2
+ 3086 0bf6 3D       		.byte	61
+ 3087 0bf7 A9       		.byte	-87
+ 3088 0bf8 3F       		.byte	63
+ 3089 0bf9 80       		.byte	-128
+ 3090 0bfa 4C       		.byte	76
+ 3091 0bfb 01       		.byte	1
+ 3092 0bfc 4D       		.byte	77
+ 3093 0bfd 40       		.byte	64
+ 3094 0bfe 59       		.byte	89
+ 3095 0bff 21       		.byte	33
+ 3096 0c00 5A       		.byte	90
+ 3097 0c01 44       		.byte	68
+ 3098 0c02 5C       		.byte	92
+ 3099 0c03 89       		.byte	-119
+ 3100 0c04 5F       		.byte	95
+ 3101 0c05 10       		.byte	16
+ 3102 0c06 63       		.byte	99
+ 3103 0c07 28       		.byte	40
+ 3104 0c08 75       		.byte	117
+ 3105 0c09 02       		.byte	2
+ 3106 0c0a 7A       		.byte	122
+ 3107 0c0b 10       		.byte	16
+ 3108 0c0c 82       		.byte	-126
+ 3109 0c0d 10       		.byte	16
+ 3110 0c0e 90       		.byte	-112
+ 3111 0c0f 01       		.byte	1
+ 3112 0c10 91       		.byte	-111
+ 3113 0c11 03       		.byte	3
+ 3114 0c12 93       		.byte	-109
+ 3115 0c13 02       		.byte	2
+ 3116 0c14 94       		.byte	-108
+ 3117 0c15 02       		.byte	2
+ 3118 0c16 95       		.byte	-107
+ 3119 0c17 40       		.byte	64
+ 3120 0c18 98       		.byte	-104
+ 3121 0c19 08       		.byte	8
+ 3122 0c1a 9A       		.byte	-102
+ 3123 0c1b 0D       		.byte	13
+ 3124 0c1c 9B       		.byte	-101
+ 3125 0c1d 10       		.byte	16
+ 3126 0c1e 9C       		.byte	-100
+ 3127 0c1f 04       		.byte	4
+ 3128 0c20 A1       		.byte	-95
+ 3129 0c21 10       		.byte	16
+ 3130 0c22 A2       		.byte	-94
+ 3131 0c23 22       		.byte	34
+ 3132 0c24 A5       		.byte	-91
+ 3133 0c25 20       		.byte	32
+ 3134 0c26 A6       		.byte	-90
+ 3135 0c27 50       		.byte	80
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 56
+
+
+ 3136 0c28 A9       		.byte	-87
+ 3137 0c29 02       		.byte	2
+ 3138 0c2a B4       		.byte	-76
+ 3139 0c2b 01       		.byte	1
+ 3140 0c2c C0       		.byte	-64
+ 3141 0c2d E8       		.byte	-24
+ 3142 0c2e C2       		.byte	-62
+ 3143 0c2f 9D       		.byte	-99
+ 3144 0c30 C4       		.byte	-60
+ 3145 0c31 30       		.byte	48
+ 3146 0c32 CA       		.byte	-54
+ 3147 0c33 B3       		.byte	-77
+ 3148 0c34 CC       		.byte	-52
+ 3149 0c35 FD       		.byte	-3
+ 3150 0c36 CE       		.byte	-50
+ 3151 0c37 F3       		.byte	-13
+ 3152 0c38 D6       		.byte	-42
+ 3153 0c39 FF       		.byte	-1
+ 3154 0c3a D8       		.byte	-40
+ 3155 0c3b 06       		.byte	6
+ 3156 0c3c DE       		.byte	-34
+ 3157 0c3d 02       		.byte	2
+ 3158 0c3e E4       		.byte	-28
+ 3159 0c3f 80       		.byte	-128
+ 3160 0c40 E6       		.byte	-26
+ 3161 0c41 01       		.byte	1
+ 3162 0c42 EC       		.byte	-20
+ 3163 0c43 10       		.byte	16
+ 3164 0c44 EE       		.byte	-18
+ 3165 0c45 08       		.byte	8
+ 3166 0c46 04       		.byte	4
+ 3167 0c47 04       		.byte	4
+ 3168 0c48 06       		.byte	6
+ 3169 0c49 02       		.byte	2
+ 3170 0c4a 0A       		.byte	10
+ 3171 0c4b 06       		.byte	6
+ 3172 0c4c 0C       		.byte	12
+ 3173 0c4d 01       		.byte	1
+ 3174 0c4e 10       		.byte	16
+ 3175 0c4f 01       		.byte	1
+ 3176 0c50 1C       		.byte	28
+ 3177 0c51 06       		.byte	6
+ 3178 0c52 30       		.byte	48
+ 3179 0c53 02       		.byte	2
+ 3180 0c54 32       		.byte	50
+ 3181 0c55 01       		.byte	1
+ 3182 0c56 34       		.byte	52
+ 3183 0c57 04       		.byte	4
+ 3184 0c58 38       		.byte	56
+ 3185 0c59 08       		.byte	8
+ 3186 0c5a 3E       		.byte	62
+ 3187 0c5b 11       		.byte	17
+ 3188 0c5c 40       		.byte	64
+ 3189 0c5d 34       		.byte	52
+ 3190 0c5e 41       		.byte	65
+ 3191 0c5f 02       		.byte	2
+ 3192 0c60 49       		.byte	73
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 57
+
+
+ 3193 0c61 FF       		.byte	-1
+ 3194 0c62 4A       		.byte	74
+ 3195 0c63 FF       		.byte	-1
+ 3196 0c64 4B       		.byte	75
+ 3197 0c65 FF       		.byte	-1
+ 3198 0c66 4D       		.byte	77
+ 3199 0c67 A0       		.byte	-96
+ 3200 0c68 4F       		.byte	79
+ 3201 0c69 01       		.byte	1
+ 3202 0c6a 50       		.byte	80
+ 3203 0c6b 18       		.byte	24
+ 3204 0c6c 54       		.byte	84
+ 3205 0c6d 0F       		.byte	15
+ 3206 0c6e 58       		.byte	88
+ 3207 0c6f 04       		.byte	4
+ 3208 0c70 59       		.byte	89
+ 3209 0c71 04       		.byte	4
+ 3210 0c72 5A       		.byte	90
+ 3211 0c73 04       		.byte	4
+ 3212 0c74 5B       		.byte	91
+ 3213 0c75 04       		.byte	4
+ 3214 0c76 5C       		.byte	92
+ 3215 0c77 10       		.byte	16
+ 3216 0c78 5F       		.byte	95
+ 3217 0c79 01       		.byte	1
+ 3218 0c7a 60       		.byte	96
+ 3219 0c7b 40       		.byte	64
+ 3220 0c7c 62       		.byte	98
+ 3221 0c7d 80       		.byte	-128
+ 3222 0c7e 64       		.byte	100
+ 3223 0c7f 40       		.byte	64
+ 3224 0c80 65       		.byte	101
+ 3225 0c81 40       		.byte	64
+ 3226 0c82 66       		.byte	102
+ 3227 0c83 80       		.byte	-128
+ 3228 0c84 68       		.byte	104
+ 3229 0c85 40       		.byte	64
+ 3230 0c86 6A       		.byte	106
+ 3231 0c87 80       		.byte	-128
+ 3232 0c88 6C       		.byte	108
+ 3233 0c89 40       		.byte	64
+ 3234 0c8a 6D       		.byte	109
+ 3235 0c8b 20       		.byte	32
+ 3236 0c8c 6E       		.byte	110
+ 3237 0c8d 80       		.byte	-128
+ 3238 0c8e 80       		.byte	-128
+ 3239 0c8f 18       		.byte	24
+ 3240 0c90 81       		.byte	-127
+ 3241 0c91 02       		.byte	2
+ 3242 0c92 83       		.byte	-125
+ 3243 0c93 3C       		.byte	60
+ 3244 0c94 84       		.byte	-124
+ 3245 0c95 18       		.byte	24
+ 3246 0c96 89       		.byte	-119
+ 3247 0c97 27       		.byte	39
+ 3248 0c98 8B       		.byte	-117
+ 3249 0c99 08       		.byte	8
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 58
+
+
+ 3250 0c9a 8D       		.byte	-115
+ 3251 0c9b 25       		.byte	37
+ 3252 0c9c 8F       		.byte	-113
+ 3253 0c9d 12       		.byte	18
+ 3254 0c9e 90       		.byte	-112
+ 3255 0c9f 14       		.byte	20
+ 3256 0ca0 94       		.byte	-108
+ 3257 0ca1 0C       		.byte	12
+ 3258 0ca2 97       		.byte	-105
+ 3259 0ca3 41       		.byte	65
+ 3260 0ca4 99       		.byte	-103
+ 3261 0ca5 3B       		.byte	59
+ 3262 0ca6 9A       		.byte	-102
+ 3263 0ca7 03       		.byte	3
+ 3264 0ca8 9C       		.byte	-100
+ 3265 0ca9 01       		.byte	1
+ 3266 0caa 9D       		.byte	-99
+ 3267 0cab 1E       		.byte	30
+ 3268 0cac 9F       		.byte	-97
+ 3269 0cad 21       		.byte	33
+ 3270 0cae A9       		.byte	-87
+ 3271 0caf 06       		.byte	6
+ 3272 0cb0 AB       		.byte	-85
+ 3273 0cb1 08       		.byte	8
+ 3274 0cb2 B2       		.byte	-78
+ 3275 0cb3 1C       		.byte	28
+ 3276 0cb4 B3       		.byte	-77
+ 3277 0cb5 40       		.byte	64
+ 3278 0cb6 B4       		.byte	-76
+ 3279 0cb7 01       		.byte	1
+ 3280 0cb8 B5       		.byte	-75
+ 3281 0cb9 07       		.byte	7
+ 3282 0cba B6       		.byte	-74
+ 3283 0cbb 02       		.byte	2
+ 3284 0cbc B7       		.byte	-73
+ 3285 0cbd 3C       		.byte	60
+ 3286 0cbe B8       		.byte	-72
+ 3287 0cbf 08       		.byte	8
+ 3288 0cc0 BE       		.byte	-66
+ 3289 0cc1 10       		.byte	16
+ 3290 0cc2 C0       		.byte	-64
+ 3291 0cc3 64       		.byte	100
+ 3292 0cc4 C1       		.byte	-63
+ 3293 0cc5 02       		.byte	2
+ 3294 0cc6 C5       		.byte	-59
+ 3295 0cc7 04       		.byte	4
+ 3296 0cc8 C6       		.byte	-58
+ 3297 0cc9 E3       		.byte	-29
+ 3298 0cca C7       		.byte	-57
+ 3299 0ccb 2C       		.byte	44
+ 3300 0ccc C8       		.byte	-56
+ 3301 0ccd 3D       		.byte	61
+ 3302 0cce C9       		.byte	-55
+ 3303 0ccf FF       		.byte	-1
+ 3304 0cd0 CA       		.byte	-54
+ 3305 0cd1 FF       		.byte	-1
+ 3306 0cd2 CB       		.byte	-53
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 59
+
+
+ 3307 0cd3 FF       		.byte	-1
+ 3308 0cd4 CD       		.byte	-51
+ 3309 0cd5 AF       		.byte	-81
+ 3310 0cd6 CE       		.byte	-50
+ 3311 0cd7 07       		.byte	7
+ 3312 0cd8 CF       		.byte	-49
+ 3313 0cd9 01       		.byte	1
+ 3314 0cda D0       		.byte	-48
+ 3315 0cdb 18       		.byte	24
+ 3316 0cdc D8       		.byte	-40
+ 3317 0cdd 04       		.byte	4
+ 3318 0cde D9       		.byte	-39
+ 3319 0cdf 04       		.byte	4
+ 3320 0ce0 DA       		.byte	-38
+ 3321 0ce1 04       		.byte	4
+ 3322 0ce2 DF       		.byte	-33
+ 3323 0ce3 01       		.byte	1
+ 3324 0ce4 E0       		.byte	-32
+ 3325 0ce5 40       		.byte	64
+ 3326 0ce6 E2       		.byte	-30
+ 3327 0ce7 80       		.byte	-128
+ 3328 0ce8 E4       		.byte	-28
+ 3329 0ce9 40       		.byte	64
+ 3330 0cea E5       		.byte	-27
+ 3331 0ceb 40       		.byte	64
+ 3332 0cec E6       		.byte	-26
+ 3333 0ced 80       		.byte	-128
+ 3334 0cee E8       		.byte	-24
+ 3335 0cef 40       		.byte	64
+ 3336 0cf0 EA       		.byte	-22
+ 3337 0cf1 80       		.byte	-128
+ 3338 0cf2 EC       		.byte	-20
+ 3339 0cf3 40       		.byte	64
+ 3340 0cf4 ED       		.byte	-19
+ 3341 0cf5 20       		.byte	32
+ 3342 0cf6 EE       		.byte	-18
+ 3343 0cf7 80       		.byte	-128
+ 3344 0cf8 00       		.byte	0
+ 3345 0cf9 90       		.byte	-112
+ 3346 0cfa 03       		.byte	3
+ 3347 0cfb 10       		.byte	16
+ 3348 0cfc 04       		.byte	4
+ 3349 0cfd 02       		.byte	2
+ 3350 0cfe 06       		.byte	6
+ 3351 0cff 20       		.byte	32
+ 3352 0d00 09       		.byte	9
+ 3353 0d01 81       		.byte	-127
+ 3354 0d02 0C       		.byte	12
+ 3355 0d03 01       		.byte	1
+ 3356 0d04 0E       		.byte	14
+ 3357 0d05 A2       		.byte	-94
+ 3358 0d06 0F       		.byte	15
+ 3359 0d07 04       		.byte	4
+ 3360 0d08 18       		.byte	24
+ 3361 0d09 10       		.byte	16
+ 3362 0d0a 19       		.byte	25
+ 3363 0d0b 10       		.byte	16
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 60
+
+
+ 3364 0d0c 1A       		.byte	26
+ 3365 0d0d 80       		.byte	-128
+ 3366 0d0e 1C       		.byte	28
+ 3367 0d0f 04       		.byte	4
+ 3368 0d10 1D       		.byte	29
+ 3369 0d11 84       		.byte	-124
+ 3370 0d12 1E       		.byte	30
+ 3371 0d13 22       		.byte	34
+ 3372 0d14 24       		.byte	36
+ 3373 0d15 02       		.byte	2
+ 3374 0d16 25       		.byte	37
+ 3375 0d17 44       		.byte	68
+ 3376 0d18 27       		.byte	39
+ 3377 0d19 04       		.byte	4
+ 3378 0d1a 2A       		.byte	42
+ 3379 0d1b 05       		.byte	5
+ 3380 0d1c 2C       		.byte	44
+ 3381 0d1d 04       		.byte	4
+ 3382 0d1e 30       		.byte	48
+ 3383 0d1f 40       		.byte	64
+ 3384 0d20 32       		.byte	50
+ 3385 0d21 22       		.byte	34
+ 3386 0d22 36       		.byte	54
+ 3387 0d23 50       		.byte	80
+ 3388 0d24 37       		.byte	55
+ 3389 0d25 04       		.byte	4
+ 3390 0d26 3A       		.byte	58
+ 3391 0d27 08       		.byte	8
+ 3392 0d28 3B       		.byte	59
+ 3393 0d29 02       		.byte	2
+ 3394 0d2a 3D       		.byte	61
+ 3395 0d2b A1       		.byte	-95
+ 3396 0d2c 3E       		.byte	62
+ 3397 0d2d 20       		.byte	32
+ 3398 0d2e 41       		.byte	65
+ 3399 0d2f 0A       		.byte	10
+ 3400 0d30 43       		.byte	67
+ 3401 0d31 10       		.byte	16
+ 3402 0d32 45       		.byte	69
+ 3403 0d33 02       		.byte	2
+ 3404 0d34 47       		.byte	71
+ 3405 0d35 10       		.byte	16
+ 3406 0d36 4E       		.byte	78
+ 3407 0d37 08       		.byte	8
+ 3408 0d38 4F       		.byte	79
+ 3409 0d39 04       		.byte	4
+ 3410 0d3a 54       		.byte	84
+ 3411 0d3b 40       		.byte	64
+ 3412 0d3c 55       		.byte	85
+ 3413 0d3d 01       		.byte	1
+ 3414 0d3e 57       		.byte	87
+ 3415 0d3f 55       		.byte	85
+ 3416 0d40 58       		.byte	88
+ 3417 0d41 01       		.byte	1
+ 3418 0d42 59       		.byte	89
+ 3419 0d43 14       		.byte	20
+ 3420 0d44 5A       		.byte	90
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 61
+
+
+ 3421 0d45 80       		.byte	-128
+ 3422 0d46 60       		.byte	96
+ 3423 0d47 02       		.byte	2
+ 3424 0d48 63       		.byte	99
+ 3425 0d49 02       		.byte	2
+ 3426 0d4a 80       		.byte	-128
+ 3427 0d4b 04       		.byte	4
+ 3428 0d4c 82       		.byte	-126
+ 3429 0d4d 40       		.byte	64
+ 3430 0d4e 84       		.byte	-124
+ 3431 0d4f 44       		.byte	68
+ 3432 0d50 85       		.byte	-123
+ 3433 0d51 20       		.byte	32
+ 3434 0d52 8D       		.byte	-115
+ 3435 0d53 21       		.byte	33
+ 3436 0d54 8E       		.byte	-114
+ 3437 0d55 04       		.byte	4
+ 3438 0d56 91       		.byte	-111
+ 3439 0d57 01       		.byte	1
+ 3440 0d58 93       		.byte	-109
+ 3441 0d59 02       		.byte	2
+ 3442 0d5a 94       		.byte	-108
+ 3443 0d5b 02       		.byte	2
+ 3444 0d5c 96       		.byte	-106
+ 3445 0d5d 40       		.byte	64
+ 3446 0d5e 9A       		.byte	-102
+ 3447 0d5f 0D       		.byte	13
+ 3448 0d60 9B       		.byte	-101
+ 3449 0d61 10       		.byte	16
+ 3450 0d62 9C       		.byte	-100
+ 3451 0d63 46       		.byte	70
+ 3452 0d64 9D       		.byte	-99
+ 3453 0d65 20       		.byte	32
+ 3454 0d66 9F       		.byte	-97
+ 3455 0d67 04       		.byte	4
+ 3456 0d68 A1       		.byte	-95
+ 3457 0d69 1A       		.byte	26
+ 3458 0d6a A2       		.byte	-94
+ 3459 0d6b 6A       		.byte	106
+ 3460 0d6c A5       		.byte	-91
+ 3461 0d6d 24       		.byte	36
+ 3462 0d6e A6       		.byte	-90
+ 3463 0d6f 10       		.byte	16
+ 3464 0d70 A7       		.byte	-89
+ 3465 0d71 54       		.byte	84
+ 3466 0d72 AF       		.byte	-81
+ 3467 0d73 10       		.byte	16
+ 3468 0d74 B4       		.byte	-76
+ 3469 0d75 80       		.byte	-128
+ 3470 0d76 C0       		.byte	-64
+ 3471 0d77 37       		.byte	55
+ 3472 0d78 C2       		.byte	-62
+ 3473 0d79 F9       		.byte	-7
+ 3474 0d7a CA       		.byte	-54
+ 3475 0d7b 23       		.byte	35
+ 3476 0d7c CC       		.byte	-52
+ 3477 0d7d 7D       		.byte	125
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 62
+
+
+ 3478 0d7e CE       		.byte	-50
+ 3479 0d7f B3       		.byte	-77
+ 3480 0d80 D0       		.byte	-48
+ 3481 0d81 A7       		.byte	-89
+ 3482 0d82 D2       		.byte	-46
+ 3483 0d83 20       		.byte	32
+ 3484 0d84 D6       		.byte	-42
+ 3485 0d85 0F       		.byte	15
+ 3486 0d86 E6       		.byte	-26
+ 3487 0d87 10       		.byte	16
+ 3488 0d88 E8       		.byte	-24
+ 3489 0d89 10       		.byte	16
+ 3490 0d8a EC       		.byte	-20
+ 3491 0d8b 20       		.byte	32
+ 3492 0d8c 10       		.byte	16
+ 3493 0d8d 80       		.byte	-128
+ 3494 0d8e 16       		.byte	22
+ 3495 0d8f 80       		.byte	-128
+ 3496 0d90 30       		.byte	48
+ 3497 0d91 10       		.byte	16
+ 3498 0d92 31       		.byte	49
+ 3499 0d93 08       		.byte	8
+ 3500 0d94 35       		.byte	53
+ 3501 0d95 20       		.byte	32
+ 3502 0d96 36       		.byte	54
+ 3503 0d97 08       		.byte	8
+ 3504 0d98 38       		.byte	56
+ 3505 0d99 80       		.byte	-128
+ 3506 0d9a 3B       		.byte	59
+ 3507 0d9b 02       		.byte	2
+ 3508 0d9c 3E       		.byte	62
+ 3509 0d9d 80       		.byte	-128
+ 3510 0d9e 85       		.byte	-123
+ 3511 0d9f 20       		.byte	32
+ 3512 0da0 88       		.byte	-120
+ 3513 0da1 10       		.byte	16
+ 3514 0da2 C4       		.byte	-60
+ 3515 0da3 30       		.byte	48
+ 3516 0da4 CC       		.byte	-52
+ 3517 0da5 F0       		.byte	-16
+ 3518 0da6 CE       		.byte	-50
+ 3519 0da7 70       		.byte	112
+ 3520 0da8 E6       		.byte	-26
+ 3521 0da9 40       		.byte	64
+ 3522 0daa 03       		.byte	3
+ 3523 0dab 02       		.byte	2
+ 3524 0dac 06       		.byte	6
+ 3525 0dad 20       		.byte	32
+ 3526 0dae 30       		.byte	48
+ 3527 0daf 20       		.byte	32
+ 3528 0db0 34       		.byte	52
+ 3529 0db1 10       		.byte	16
+ 3530 0db2 5F       		.byte	95
+ 3531 0db3 80       		.byte	-128
+ 3532 0db4 63       		.byte	99
+ 3533 0db5 08       		.byte	8
+ 3534 0db6 80       		.byte	-128
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 63
+
+
+ 3535 0db7 20       		.byte	32
+ 3536 0db8 86       		.byte	-122
+ 3537 0db9 08       		.byte	8
+ 3538 0dba 89       		.byte	-119
+ 3539 0dbb 01       		.byte	1
+ 3540 0dbc 94       		.byte	-108
+ 3541 0dbd 80       		.byte	-128
+ 3542 0dbe 97       		.byte	-105
+ 3543 0dbf 02       		.byte	2
+ 3544 0dc0 98       		.byte	-104
+ 3545 0dc1 10       		.byte	16
+ 3546 0dc2 A0       		.byte	-96
+ 3547 0dc3 80       		.byte	-128
+ 3548 0dc4 A5       		.byte	-91
+ 3549 0dc5 08       		.byte	8
+ 3550 0dc6 A6       		.byte	-90
+ 3551 0dc7 08       		.byte	8
+ 3552 0dc8 C0       		.byte	-64
+ 3553 0dc9 60       		.byte	96
+ 3554 0dca CC       		.byte	-52
+ 3555 0dcb 30       		.byte	48
+ 3556 0dcc D6       		.byte	-42
+ 3557 0dcd 20       		.byte	32
+ 3558 0dce D8       		.byte	-40
+ 3559 0dcf 40       		.byte	64
+ 3560 0dd0 E2       		.byte	-30
+ 3561 0dd1 90       		.byte	-112
+ 3562 0dd2 5A       		.byte	90
+ 3563 0dd3 04       		.byte	4
+ 3564 0dd4 5E       		.byte	94
+ 3565 0dd5 04       		.byte	4
+ 3566 0dd6 61       		.byte	97
+ 3567 0dd7 02       		.byte	2
+ 3568 0dd8 62       		.byte	98
+ 3569 0dd9 04       		.byte	4
+ 3570 0dda 66       		.byte	102
+ 3571 0ddb 04       		.byte	4
+ 3572 0ddc 85       		.byte	-123
+ 3573 0ddd 02       		.byte	2
+ 3574 0dde 86       		.byte	-122
+ 3575 0ddf 04       		.byte	4
+ 3576 0de0 8B       		.byte	-117
+ 3577 0de1 20       		.byte	32
+ 3578 0de2 91       		.byte	-111
+ 3579 0de3 02       		.byte	2
+ 3580 0de4 94       		.byte	-108
+ 3581 0de5 80       		.byte	-128
+ 3582 0de6 97       		.byte	-105
+ 3583 0de7 02       		.byte	2
+ 3584 0de8 A3       		.byte	-93
+ 3585 0de9 02       		.byte	2
+ 3586 0dea A5       		.byte	-91
+ 3587 0deb 08       		.byte	8
+ 3588 0dec A7       		.byte	-89
+ 3589 0ded 04       		.byte	4
+ 3590 0dee AA       		.byte	-86
+ 3591 0def 20       		.byte	32
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 64
+
+
+ 3592 0df0 B0       		.byte	-80
+ 3593 0df1 80       		.byte	-128
+ 3594 0df2 B7       		.byte	-73
+ 3595 0df3 80       		.byte	-128
+ 3596 0df4 D6       		.byte	-42
+ 3597 0df5 C0       		.byte	-64
+ 3598 0df6 D8       		.byte	-40
+ 3599 0df7 C0       		.byte	-64
+ 3600 0df8 E2       		.byte	-30
+ 3601 0df9 40       		.byte	64
+ 3602 0dfa E8       		.byte	-24
+ 3603 0dfb 20       		.byte	32
+ 3604 0dfc 19       		.byte	25
+ 3605 0dfd 02       		.byte	2
+ 3606 0dfe 1D       		.byte	29
+ 3607 0dff 02       		.byte	2
+ 3608 0e00 80       		.byte	-128
+ 3609 0e01 40       		.byte	64
+ 3610 0e02 81       		.byte	-127
+ 3611 0e03 28       		.byte	40
+ 3612 0e04 85       		.byte	-123
+ 3613 0e05 02       		.byte	2
+ 3614 0e06 87       		.byte	-121
+ 3615 0e07 10       		.byte	16
+ 3616 0e08 89       		.byte	-119
+ 3617 0e09 02       		.byte	2
+ 3618 0e0a 91       		.byte	-111
+ 3619 0e0b 02       		.byte	2
+ 3620 0e0c 94       		.byte	-108
+ 3621 0e0d 80       		.byte	-128
+ 3622 0e0e A3       		.byte	-93
+ 3623 0e0f 22       		.byte	34
+ 3624 0e10 A5       		.byte	-91
+ 3625 0e11 08       		.byte	8
+ 3626 0e12 A7       		.byte	-89
+ 3627 0e13 04       		.byte	4
+ 3628 0e14 AB       		.byte	-85
+ 3629 0e15 01       		.byte	1
+ 3630 0e16 C6       		.byte	-58
+ 3631 0e17 30       		.byte	48
+ 3632 0e18 E2       		.byte	-30
+ 3633 0e19 B0       		.byte	-80
+ 3634 0e1a E4       		.byte	-28
+ 3635 0e1b 10       		.byte	16
+ 3636 0e1c E6       		.byte	-26
+ 3637 0e1d 20       		.byte	32
+ 3638 0e1e EE       		.byte	-18
+ 3639 0e1f 20       		.byte	32
+ 3640 0e20 75       		.byte	117
+ 3641 0e21 08       		.byte	8
+ 3642 0e22 78       		.byte	120
+ 3643 0e23 80       		.byte	-128
+ 3644 0e24 87       		.byte	-121
+ 3645 0e25 40       		.byte	64
+ 3646 0e26 DC       		.byte	-36
+ 3647 0e27 01       		.byte	1
+ 3648 0e28 DE       		.byte	-34
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 65
+
+
+ 3649 0e29 04       		.byte	4
+ 3650 0e2a 0B       		.byte	11
+ 3651 0e2b 20       		.byte	32
+ 3652 0e2c 53       		.byte	83
+ 3653 0e2d 40       		.byte	64
+ 3654 0e2e 60       		.byte	96
+ 3655 0e2f 10       		.byte	16
+ 3656 0e30 66       		.byte	102
+ 3657 0e31 08       		.byte	8
+ 3658 0e32 80       		.byte	-128
+ 3659 0e33 04       		.byte	4
+ 3660 0e34 85       		.byte	-123
+ 3661 0e35 08       		.byte	8
+ 3662 0e36 86       		.byte	-122
+ 3663 0e37 09       		.byte	9
+ 3664 0e38 87       		.byte	-121
+ 3665 0e39 20       		.byte	32
+ 3666 0e3a 97       		.byte	-105
+ 3667 0e3b 40       		.byte	64
+ 3668 0e3c 9C       		.byte	-100
+ 3669 0e3d 80       		.byte	-128
+ 3670 0e3e 9D       		.byte	-99
+ 3671 0e3f 08       		.byte	8
+ 3672 0e40 C2       		.byte	-62
+ 3673 0e41 08       		.byte	8
+ 3674 0e42 D4       		.byte	-44
+ 3675 0e43 04       		.byte	4
+ 3676 0e44 D8       		.byte	-40
+ 3677 0e45 03       		.byte	3
+ 3678 0e46 1B       		.byte	27
+ 3679 0e47 04       		.byte	4
+ 3680 0e48 27       		.byte	39
+ 3681 0e49 20       		.byte	32
+ 3682 0e4a 87       		.byte	-121
+ 3683 0e4b 10       		.byte	16
+ 3684 0e4c 90       		.byte	-112
+ 3685 0e4d 08       		.byte	8
+ 3686 0e4e 93       		.byte	-109
+ 3687 0e4f 20       		.byte	32
+ 3688 0e50 94       		.byte	-108
+ 3689 0e51 10       		.byte	16
+ 3690 0e52 96       		.byte	-106
+ 3691 0e53 01       		.byte	1
+ 3692 0e54 97       		.byte	-105
+ 3693 0e55 C0       		.byte	-64
+ 3694 0e56 9F       		.byte	-97
+ 3695 0e57 20       		.byte	32
+ 3696 0e58 B4       		.byte	-76
+ 3697 0e59 80       		.byte	-128
+ 3698 0e5a C6       		.byte	-58
+ 3699 0e5b 08       		.byte	8
+ 3700 0e5c C8       		.byte	-56
+ 3701 0e5d 01       		.byte	1
+ 3702 0e5e E8       		.byte	-24
+ 3703 0e5f 08       		.byte	8
+ 3704 0e60 0A       		.byte	10
+ 3705 0e61 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 66
+
+
+ 3706 0e62 0B       		.byte	11
+ 3707 0e63 40       		.byte	64
+ 3708 0e64 0C       		.byte	12
+ 3709 0e65 08       		.byte	8
+ 3710 0e66 44       		.byte	68
+ 3711 0e67 01       		.byte	1
+ 3712 0e68 80       		.byte	-128
+ 3713 0e69 08       		.byte	8
+ 3714 0e6a 8C       		.byte	-116
+ 3715 0e6b 10       		.byte	16
+ 3716 0e6c 90       		.byte	-112
+ 3717 0e6d 08       		.byte	8
+ 3718 0e6e 93       		.byte	-109
+ 3719 0e6f 10       		.byte	16
+ 3720 0e70 94       		.byte	-108
+ 3721 0e71 10       		.byte	16
+ 3722 0e72 96       		.byte	-106
+ 3723 0e73 01       		.byte	1
+ 3724 0e74 97       		.byte	-105
+ 3725 0e75 C0       		.byte	-64
+ 3726 0e76 9F       		.byte	-97
+ 3727 0e77 08       		.byte	8
+ 3728 0e78 AB       		.byte	-85
+ 3729 0e79 0C       		.byte	12
+ 3730 0e7a AF       		.byte	-81
+ 3731 0e7b 10       		.byte	16
+ 3732 0e7c C2       		.byte	-62
+ 3733 0e7d 0E       		.byte	14
+ 3734 0e7e D0       		.byte	-48
+ 3735 0e7f 04       		.byte	4
+ 3736 0e80 E0       		.byte	-32
+ 3737 0e81 08       		.byte	8
+ 3738 0e82 20       		.byte	32
+ 3739 0e83 80       		.byte	-128
+ 3740 0e84 51       		.byte	81
+ 3741 0e85 20       		.byte	32
+ 3742 0e86 57       		.byte	87
+ 3743 0e87 20       		.byte	32
+ 3744 0e88 5C       		.byte	92
+ 3745 0e89 40       		.byte	64
+ 3746 0e8a 83       		.byte	-125
+ 3747 0e8b 04       		.byte	4
+ 3748 0e8c 90       		.byte	-112
+ 3749 0e8d 40       		.byte	64
+ 3750 0e8e 91       		.byte	-111
+ 3751 0e8f 02       		.byte	2
+ 3752 0e90 93       		.byte	-109
+ 3753 0e91 10       		.byte	16
+ 3754 0e92 A1       		.byte	-95
+ 3755 0e93 20       		.byte	32
+ 3756 0e94 A3       		.byte	-93
+ 3757 0e95 22       		.byte	34
+ 3758 0e96 A7       		.byte	-89
+ 3759 0e97 04       		.byte	4
+ 3760 0e98 A8       		.byte	-88
+ 3761 0e99 40       		.byte	64
+ 3762 0e9a C8       		.byte	-56
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 67
+
+
+ 3763 0e9b 40       		.byte	64
+ 3764 0e9c D4       		.byte	-44
+ 3765 0e9d 60       		.byte	96
+ 3766 0e9e D6       		.byte	-42
+ 3767 0e9f 20       		.byte	32
+ 3768 0ea0 E6       		.byte	-26
+ 3769 0ea1 20       		.byte	32
+ 3770 0ea2 EA       		.byte	-22
+ 3771 0ea3 80       		.byte	-128
+ 3772 0ea4 51       		.byte	81
+ 3773 0ea5 01       		.byte	1
+ 3774 0ea6 56       		.byte	86
+ 3775 0ea7 10       		.byte	16
+ 3776 0ea8 63       		.byte	99
+ 3777 0ea9 10       		.byte	16
+ 3778 0eaa 83       		.byte	-125
+ 3779 0eab 02       		.byte	2
+ 3780 0eac 86       		.byte	-122
+ 3781 0ead 10       		.byte	16
+ 3782 0eae 91       		.byte	-111
+ 3783 0eaf 02       		.byte	2
+ 3784 0eb0 93       		.byte	-109
+ 3785 0eb1 10       		.byte	16
+ 3786 0eb2 A3       		.byte	-93
+ 3787 0eb3 02       		.byte	2
+ 3788 0eb4 B0       		.byte	-80
+ 3789 0eb5 40       		.byte	64
+ 3790 0eb6 D4       		.byte	-44
+ 3791 0eb7 C0       		.byte	-64
+ 3792 0eb8 D8       		.byte	-40
+ 3793 0eb9 40       		.byte	64
+ 3794 0eba E0       		.byte	-32
+ 3795 0ebb 20       		.byte	32
+ 3796 0ebc E2       		.byte	-30
+ 3797 0ebd 40       		.byte	64
+ 3798 0ebe 0A       		.byte	10
+ 3799 0ebf 08       		.byte	8
+ 3800 0ec0 0D       		.byte	13
+ 3801 0ec1 80       		.byte	-128
+ 3802 0ec2 5F       		.byte	95
+ 3803 0ec3 10       		.byte	16
+ 3804 0ec4 67       		.byte	103
+ 3805 0ec5 10       		.byte	16
+ 3806 0ec6 81       		.byte	-127
+ 3807 0ec7 80       		.byte	-128
+ 3808 0ec8 8B       		.byte	-117
+ 3809 0ec9 40       		.byte	64
+ 3810 0eca 90       		.byte	-112
+ 3811 0ecb 08       		.byte	8
+ 3812 0ecc 93       		.byte	-109
+ 3813 0ecd 10       		.byte	16
+ 3814 0ece 96       		.byte	-106
+ 3815 0ecf 08       		.byte	8
+ 3816 0ed0 97       		.byte	-105
+ 3817 0ed1 80       		.byte	-128
+ 3818 0ed2 9C       		.byte	-100
+ 3819 0ed3 01       		.byte	1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 68
+
+
+ 3820 0ed4 9F       		.byte	-97
+ 3821 0ed5 08       		.byte	8
+ 3822 0ed6 AE       		.byte	-82
+ 3823 0ed7 04       		.byte	4
+ 3824 0ed8 C2       		.byte	-62
+ 3825 0ed9 03       		.byte	3
+ 3826 0eda D6       		.byte	-42
+ 3827 0edb 04       		.byte	4
+ 3828 0edc D8       		.byte	-40
+ 3829 0edd 01       		.byte	1
+ 3830 0ede E4       		.byte	-28
+ 3831 0edf 01       		.byte	1
+ 3832 0ee0 13       		.byte	19
+ 3833 0ee1 08       		.byte	8
+ 3834 0ee2 70       		.byte	112
+ 3835 0ee3 04       		.byte	4
+ 3836 0ee4 90       		.byte	-112
+ 3837 0ee5 08       		.byte	8
+ 3838 0ee6 9F       		.byte	-97
+ 3839 0ee7 08       		.byte	8
+ 3840 0ee8 B0       		.byte	-80
+ 3841 0ee9 01       		.byte	1
+ 3842 0eea C4       		.byte	-60
+ 3843 0eeb 08       		.byte	8
+ 3844 0eec DC       		.byte	-36
+ 3845 0eed 01       		.byte	1
+ 3846 0eee EC       		.byte	-20
+ 3847 0eef 04       		.byte	4
+ 3848 0ef0 10       		.byte	16
+ 3849 0ef1 03       		.byte	3
+ 3850 0ef2 11       		.byte	17
+ 3851 0ef3 01       		.byte	1
+ 3852 0ef4 1A       		.byte	26
+ 3853 0ef5 03       		.byte	3
+ 3854 0ef6 1B       		.byte	27
+ 3855 0ef7 01       		.byte	1
+ 3856 0ef8 1C       		.byte	28
+ 3857 0ef9 03       		.byte	3
+ 3858 0efa 00       		.byte	0
+ 3859 0efb AB       		.byte	-85
+ 3860 0efc 01       		.byte	1
+ 3861 0efd 3F       		.byte	63
+ 3862 0efe 10       		.byte	16
+ 3863 0eff 0A       		.byte	10
+ 3864 0f00 00       		.byte	0
+ 3865 0f01 00       		.byte	0
+ 3866 0f02 00       		.byte	0
+ 3867 0f03 08       		.byte	8
+ 3868 0f04 00       		.byte	0
+ 3869 0f05 80       		.byte	-128
+ 3870 0f06 80       		.byte	-128
+ 3871 0f07 00       		.byte	0
+ 3872 0f08 00       		.byte	0
+ 3873 0f09 00       		.byte	0
+ 3874 0f0a 00       		.byte	0
+ 3875 0f0b 15       		.byte	21
+ 3876 0f0c A8       		.byte	-88
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 69
+
+
+ 3877 0f0d 80       		.byte	-128
+ 3878 0f0e 13       		.byte	19
+ 3879 0f0f 00       		.byte	0
+ 3880 0f10 00       		.byte	0
+ 3881 0f11 00       		.byte	0
+ 3882 0f12 00       		.byte	0
+ 3883 0f13 00       		.byte	0
+ 3884 0f14 A8       		.byte	-88
+ 3885 0f15 80       		.byte	-128
+ 3886 0f16 15       		.byte	21
+ 3887 0f17 00       		.byte	0
+ 3888 0f18 16       		.byte	22
+ 3889 0f19 2A       		.byte	42
+ 3890 0f1a A9       		.byte	-87
+ 3891 0f1b 04       		.byte	4
+ 3892 0f1c 00       		.byte	0
+ 3893 0f1d 00       		.byte	0
+ 3894 0f1e 00       		.byte	0
+ 3895 0f1f 40       		.byte	64
+ 3896 0f20 00       		.byte	0
+ 3897 0f21 00       		.byte	0
+ 3898 0f22 16       		.byte	22
+ 3899 0f23 40       		.byte	64
+ 3900 0f24 00       		.byte	0
+ 3901 0f25 33       		.byte	51
+ 3902 0f26 02       		.byte	2
+ 3903 0f27 0C       		.byte	12
+ 3904 0f28 40       		.byte	64
+ 3905 0f29 03       		.byte	3
+ 3906 0f2a 89       		.byte	-119
+ 3907 0f2b 04       		.byte	4
+ 3908 0f2c 00       		.byte	0
+ 3909 0f2d 33       		.byte	51
+ 3910 0f2e 00       		.byte	0
+ 3911 0f2f 04       		.byte	4
+ 3912 0f30 07       		.byte	7
+ 3913 0f31 80       		.byte	-128
+ 3914 0f32 60       		.byte	96
+ 3915 0f33 0F       		.byte	15
+ 3916 0f34 1B       		.byte	27
+ 3917 0f35 40       		.byte	64
+ 3918 0f36 80       		.byte	-128
+ 3919 0f37 30       		.byte	48
+ 3920 0f38 08       		.byte	8
+ 3921 0f39 80       		.byte	-128
+ 3922 0f3a 22       		.byte	34
+ 3923 0f3b 08       		.byte	8
+ 3924 0f3c 00       		.byte	0
+ 3925 0f3d 00       		.byte	0
+ 3926 0f3e 40       		.byte	64
+ 3927 0f3f 50       		.byte	80
+ 3928 0f40 24       		.byte	36
+ 3929 0f41 01       		.byte	1
+ 3930 0f42 03       		.byte	3
+ 3931 0f43 00       		.byte	0
+ 3932 0f44 05       		.byte	5
+ 3933 0f45 0E       		.byte	14
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 70
+
+
+ 3934 0f46 0C       		.byte	12
+ 3935 0f47 00       		.byte	0
+ 3936 0f48 05       		.byte	5
+ 3937 0f49 FF       		.byte	-1
+ 3938 0f4a FF       		.byte	-1
+ 3939 0f4b FF       		.byte	-1
+ 3940 0f4c 62       		.byte	98
+ 3941 0f4d A0       		.byte	-96
+ 3942 0f4e F0       		.byte	-16
+ 3943 0f4f 41       		.byte	65
+ 3944 0f50 0C       		.byte	12
+ 3945 0f51 00       		.byte	0
+ 3946 0f52 00       		.byte	0
+ 3947 0f53 00       		.byte	0
+ 3948 0f54 00       		.byte	0
+ 3949 0f55 00       		.byte	0
+ 3950 0f56 08       		.byte	8
+ 3951 0f57 00       		.byte	0
+ 3952 0f58 04       		.byte	4
+ 3953 0f59 04       		.byte	4
+ 3954 0f5a 04       		.byte	4
+ 3955 0f5b 04       		.byte	4
+ 3956 0f5c 22       		.byte	34
+ 3957 0f5d 92       		.byte	-110
+ 3958 0f5e 00       		.byte	0
+ 3959 0f5f 01       		.byte	1
+ 3960 0f60 00       		.byte	0
+ 3961 0f61 00       		.byte	0
+ 3962 0f62 00       		.byte	0
+ 3963 0f63 00       		.byte	0
+ 3964 0f64 00       		.byte	0
+ 3965 0f65 00       		.byte	0
+ 3966 0f66 40       		.byte	64
+ 3967 0f67 02       		.byte	2
+ 3968 0f68 00       		.byte	0
+ 3969 0f69 10       		.byte	16
+ 3970 0f6a 30       		.byte	48
+ 3971 0f6b 10       		.byte	16
+ 3972 0f6c 00       		.byte	0
+ 3973 0f6d 10       		.byte	16
+ 3974 0f6e 10       		.byte	16
+ 3975 0f6f 12       		.byte	18
+ 3976 0f70 00       		.byte	0
+ 3977 0f71 00       		.byte	0
+ 3978 0f72 00       		.byte	0
+ 3979 0f73 00       		.byte	0
+ 3980 0f74 00       		.byte	0
+ 3981 0f75 00       		.byte	0
+ 3982 0f76 00       		.byte	0
+ 3983 0f77 00       		.byte	0
+ 3984 0f78 00       		.byte	0
+ 3985 0f79 00       		.byte	0
+ 3986 0f7a 00       		.byte	0
+ 3987 0f7b 00       		.byte	0
+ 3988 0f7c 00       		.byte	0
+ 3989 0f7d 00       		.byte	0
+ 3990 0f7e 00       		.byte	0
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 71
+
+
+ 3991 0f7f 00       		.byte	0
+ 3992 0f80 07       		.byte	7
+ 3993 0f81 01       		.byte	1
+ 3994 0f82 00       		.byte	0
+ 3995 0f83 00       		.byte	0
+ 3996 0f84 00       		.byte	0
+ 3997 0f85 00       		.byte	0
+ 3998 0f86 00       		.byte	0
+ 3999 0f87 00       		.byte	0
+ 4000 0f88 03       		.byte	3
+ 4001 0f89 01       		.byte	1
+ 4002 0f8a 03       		.byte	3
+ 4003 0f8b 00       		.byte	0
+ 4004 0f8c 07       		.byte	7
+ 4005 0f8d 01       		.byte	1
+ 4006 0f8e 07       		.byte	7
+ 4007 0f8f 00       		.byte	0
+ 4008 0f90 06       		.byte	6
+ 4009 0f91 01       		.byte	1
+ 4010 0f92 01       		.byte	1
+ 4011 0f93 00       		.byte	0
+ 4012 0f94 00       		.byte	0
+ 4013 0f95 18       		.byte	24
+ 4014 0f96 18       		.byte	24
+ 4015 0f97 00       		.byte	0
+ 4016 0f98 80       		.byte	-128
+ 4017 0f99 00       		.byte	0
+ 4018 0f9a 40       		.byte	64
+ 4019 0f9b B0       		.byte	-80
+ 4020 0f9c B0       		.byte	-80
+ 4021 0f9d 00       		.byte	0
+ 4022 0f9e B0       		.byte	-80
+ 4023 0f9f 00       		.byte	0
+ 4024 0fa0 00       		.byte	0
+ 4025 0fa1 00       		.byte	0
+ 4026 0fa2 00       		.byte	0
+ 4027 0fa3 00       		.byte	0
+ 4028 0fa4 40       		.byte	64
+ 4029 0fa5 00       		.byte	0
+ 4030 0fa6 00       		.byte	0
+ 4031 0fa7 2F       		.byte	47
+ 4032 0fa8 2F       		.byte	47
+ 4033 0fa9 00       		.byte	0
+ 4034 0faa 0F       		.byte	15
+ 4035 0fab 00       		.byte	0
+ 4036 0fac C0       		.byte	-64
+ 4037 0fad 00       		.byte	0
+ 4038 0fae 00       		.byte	0
+ 4039 0faf 00       		.byte	0
+ 4040 0fb0 C0       		.byte	-64
+ 4041 0fb1 34       		.byte	52
+ 4042 0fb2 34       		.byte	52
+ 4043 0fb3 00       		.byte	0
+ 4044 0fb4 14       		.byte	20
+ 4045 0fb5 00       		.byte	0
+ 4046 0fb6 00       		.byte	0
+ 4047 0fb7 00       		.byte	0
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 72
+
+
+ 4048 0fb8 10       		.byte	16
+ 4049 0fb9 87       		.byte	-121
+ 4050 0fba 87       		.byte	-121
+ 4051 0fbb 00       		.byte	0
+ 4052 0fbc 80       		.byte	-128
+ 4053 0fbd 28       		.byte	40
+ 4054 0fbe 28       		.byte	40
+ 4055 0fbf 00       		.byte	0
+ 4056 0fc0 00       		.byte	0
+ 4057 0fc1 E0       		.byte	-32
+ 4058 0fc2 E0       		.byte	-32
+ 4059 0fc3 00       		.byte	0
+ 4060 0fc4 80       		.byte	-128
+ 4061 0fc5 03       		.byte	3
+ 4062 0fc6 03       		.byte	3
+ 4063 0fc7 00       		.byte	0
+ 4064 0fc8 00       		.byte	0
+ 4065 0fc9 01       		.byte	1
+ 4066 0fca 00       		.byte	0
+ 4067 0fcb 00       		.byte	0
+ 4068              		.global	cy_meta_custnvl
+ 4069              		.section	.cycustnvl,"a",%progbits
+ 4070              		.align	2
+ 4071              		.type	cy_meta_custnvl, %object
+ 4072              		.size	cy_meta_custnvl, 4
+ 4073              	cy_meta_custnvl:
+ 4074 0000 00       		.byte	0
+ 4075 0001 00       		.byte	0
+ 4076 0002 40       		.byte	64
+ 4077 0003 05       		.byte	5
+ 4078              		.global	cy_meta_wonvl
+ 4079              		.section	.cywolatch,"a",%progbits
+ 4080              		.align	2
+ 4081              		.type	cy_meta_wonvl, %object
+ 4082              		.size	cy_meta_wonvl, 4
+ 4083              	cy_meta_wonvl:
+ 4084 0000 BC       		.byte	-68
+ 4085 0001 90       		.byte	-112
+ 4086 0002 AC       		.byte	-84
+ 4087 0003 AF       		.byte	-81
+ 4088              		.global	cy_meta_flashprotect
+ 4089              		.section	.cyflashprotect,"a",%progbits
+ 4090              		.align	2
+ 4091              		.type	cy_meta_flashprotect, %object
+ 4092              		.size	cy_meta_flashprotect, 256
+ 4093              	cy_meta_flashprotect:
+ 4094 0000 00000000 		.space	256
+ 4094      00000000 
+ 4094      00000000 
+ 4094      00000000 
+ 4094      00000000 
+ 4095              		.global	cy_metadata
+ 4096              		.section	.cymeta,"a",%progbits
+ 4097              		.align	2
+ 4098              		.type	cy_metadata, %object
+ 4099              		.size	cy_metadata, 12
+ 4100              	cy_metadata:
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 73
+
+
+ 4101 0000 00       		.byte	0
+ 4102 0001 01       		.byte	1
+ 4103 0002 2E       		.byte	46
+ 4104 0003 16       		.byte	22
+ 4105 0004 10       		.byte	16
+ 4106 0005 69       		.byte	105
+ 4107 0006 00       		.byte	0
+ 4108 0007 01       		.byte	1
+ 4109 0008 00       		.byte	0
+ 4110 0009 00       		.byte	0
+ 4111 000a 00       		.byte	0
+ 4112 000b 00       		.byte	0
+ 4113              		.text
+ 4114              	.Letext0:
+ 4115              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 4116              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 4117              		.section	.debug_info,"",%progbits
+ 4118              	.Ldebug_info0:
+ 4119 0000 3B010000 		.4byte	0x13b
+ 4120 0004 0400     		.2byte	0x4
+ 4121 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 4122 000a 04       		.byte	0x4
+ 4123 000b 01       		.uleb128 0x1
+ 4124 000c 72000000 		.4byte	.LASF18
+ 4125 0010 01       		.byte	0x1
+ 4126 0011 00000000 		.4byte	.LASF19
+ 4127 0015 0B010000 		.4byte	.LASF20
+ 4128 0019 00000000 		.4byte	.Ldebug_line0
+ 4129 001d 02       		.uleb128 0x2
+ 4130 001e 01       		.byte	0x1
+ 4131 001f 06       		.byte	0x6
+ 4132 0020 02020000 		.4byte	.LASF0
+ 4133 0024 02       		.uleb128 0x2
+ 4134 0025 01       		.byte	0x1
+ 4135 0026 08       		.byte	0x8
+ 4136 0027 3F000000 		.4byte	.LASF1
+ 4137 002b 02       		.uleb128 0x2
+ 4138 002c 02       		.byte	0x2
+ 4139 002d 05       		.byte	0x5
+ 4140 002e E9010000 		.4byte	.LASF2
+ 4141 0032 02       		.uleb128 0x2
+ 4142 0033 02       		.byte	0x2
+ 4143 0034 07       		.byte	0x7
+ 4144 0035 5F000000 		.4byte	.LASF3
+ 4145 0039 02       		.uleb128 0x2
+ 4146 003a 04       		.byte	0x4
+ 4147 003b 05       		.byte	0x5
+ 4148 003c F9010000 		.4byte	.LASF4
+ 4149 0040 02       		.uleb128 0x2
+ 4150 0041 04       		.byte	0x4
+ 4151 0042 07       		.byte	0x7
+ 4152 0043 4D000000 		.4byte	.LASF5
+ 4153 0047 02       		.uleb128 0x2
+ 4154 0048 08       		.byte	0x8
+ 4155 0049 05       		.byte	0x5
+ 4156 004a D6010000 		.4byte	.LASF6
+ 4157 004e 02       		.uleb128 0x2
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 74
+
+
+ 4158 004f 08       		.byte	0x8
+ 4159 0050 07       		.byte	0x7
+ 4160 0051 93010000 		.4byte	.LASF7
+ 4161 0055 03       		.uleb128 0x3
+ 4162 0056 04       		.byte	0x4
+ 4163 0057 05       		.byte	0x5
+ 4164 0058 696E7400 		.ascii	"int\000"
+ 4165 005c 02       		.uleb128 0x2
+ 4166 005d 04       		.byte	0x4
+ 4167 005e 07       		.byte	0x7
+ 4168 005f 86010000 		.4byte	.LASF8
+ 4169 0063 04       		.uleb128 0x4
+ 4170 0064 F3010000 		.4byte	.LASF21
+ 4171 0068 02       		.byte	0x2
+ 4172 0069 9201     		.2byte	0x192
+ 4173 006b 24000000 		.4byte	0x24
+ 4174 006f 02       		.uleb128 0x2
+ 4175 0070 04       		.byte	0x4
+ 4176 0071 04       		.byte	0x4
+ 4177 0072 39000000 		.4byte	.LASF9
+ 4178 0076 02       		.uleb128 0x2
+ 4179 0077 08       		.byte	0x8
+ 4180 0078 04       		.byte	0x4
+ 4181 0079 26000000 		.4byte	.LASF10
+ 4182 007d 02       		.uleb128 0x2
+ 4183 007e 01       		.byte	0x1
+ 4184 007f 08       		.byte	0x8
+ 4185 0080 E4010000 		.4byte	.LASF11
+ 4186 0084 05       		.uleb128 0x5
+ 4187 0085 63000000 		.4byte	0x63
+ 4188 0089 95000000 		.4byte	0x95
+ 4189 008d 06       		.uleb128 0x6
+ 4190 008e 95000000 		.4byte	0x95
+ 4191 0092 CB0F     		.2byte	0xfcb
+ 4192 0094 00       		.byte	0
+ 4193 0095 02       		.uleb128 0x2
+ 4194 0096 04       		.byte	0x4
+ 4195 0097 07       		.byte	0x7
+ 4196 0098 CD010000 		.4byte	.LASF12
+ 4197 009c 07       		.uleb128 0x7
+ 4198 009d 74010000 		.4byte	.LASF13
+ 4199 00a1 01       		.byte	0x1
+ 4200 00a2 1F       		.byte	0x1f
+ 4201 00a3 AD000000 		.4byte	0xad
+ 4202 00a7 05       		.uleb128 0x5
+ 4203 00a8 03       		.byte	0x3
+ 4204 00a9 00000000 		.4byte	cy_meta_configecc
+ 4205 00ad 08       		.uleb128 0x8
+ 4206 00ae 84000000 		.4byte	0x84
+ 4207 00b2 05       		.uleb128 0x5
+ 4208 00b3 63000000 		.4byte	0x63
+ 4209 00b7 C2000000 		.4byte	0xc2
+ 4210 00bb 09       		.uleb128 0x9
+ 4211 00bc 95000000 		.4byte	0x95
+ 4212 00c0 03       		.byte	0x3
+ 4213 00c1 00       		.byte	0
+ 4214 00c2 0A       		.uleb128 0xa
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 75
+
+
+ 4215 00c3 64010000 		.4byte	.LASF14
+ 4216 00c7 01       		.byte	0x1
+ 4217 00c8 2602     		.2byte	0x226
+ 4218 00ca D4000000 		.4byte	0xd4
+ 4219 00ce 05       		.uleb128 0x5
+ 4220 00cf 03       		.byte	0x3
+ 4221 00d0 00000000 		.4byte	cy_meta_custnvl
+ 4222 00d4 08       		.uleb128 0x8
+ 4223 00d5 B2000000 		.4byte	0xb2
+ 4224 00d9 0A       		.uleb128 0xa
+ 4225 00da BF010000 		.4byte	.LASF15
+ 4226 00de 01       		.byte	0x1
+ 4227 00df 3402     		.2byte	0x234
+ 4228 00e1 EB000000 		.4byte	0xeb
+ 4229 00e5 05       		.uleb128 0x5
+ 4230 00e6 03       		.byte	0x3
+ 4231 00e7 00000000 		.4byte	cy_meta_wonvl
+ 4232 00eb 08       		.uleb128 0x8
+ 4233 00ec B2000000 		.4byte	0xb2
+ 4234 00f0 05       		.uleb128 0x5
+ 4235 00f1 63000000 		.4byte	0x63
+ 4236 00f5 00010000 		.4byte	0x100
+ 4237 00f9 09       		.uleb128 0x9
+ 4238 00fa 95000000 		.4byte	0x95
+ 4239 00fe FF       		.byte	0xff
+ 4240 00ff 00       		.byte	0
+ 4241 0100 0A       		.uleb128 0xa
+ 4242 0101 AA010000 		.4byte	.LASF16
+ 4243 0105 01       		.byte	0x1
+ 4244 0106 4202     		.2byte	0x242
+ 4245 0108 12010000 		.4byte	0x112
+ 4246 010c 05       		.uleb128 0x5
+ 4247 010d 03       		.byte	0x3
+ 4248 010e 00000000 		.4byte	cy_meta_flashprotect
+ 4249 0112 08       		.uleb128 0x8
+ 4250 0113 F0000000 		.4byte	0xf0
+ 4251 0117 05       		.uleb128 0x5
+ 4252 0118 63000000 		.4byte	0x63
+ 4253 011c 27010000 		.4byte	0x127
+ 4254 0120 09       		.uleb128 0x9
+ 4255 0121 95000000 		.4byte	0x95
+ 4256 0125 0B       		.byte	0xb
+ 4257 0126 00       		.byte	0
+ 4258 0127 0A       		.uleb128 0xa
+ 4259 0128 2D000000 		.4byte	.LASF17
+ 4260 012c 01       		.byte	0x1
+ 4261 012d 6F02     		.2byte	0x26f
+ 4262 012f 39010000 		.4byte	0x139
+ 4263 0133 05       		.uleb128 0x5
+ 4264 0134 03       		.byte	0x3
+ 4265 0135 00000000 		.4byte	cy_metadata
+ 4266 0139 08       		.uleb128 0x8
+ 4267 013a 17010000 		.4byte	0x117
+ 4268 013e 00       		.byte	0
+ 4269              		.section	.debug_abbrev,"",%progbits
+ 4270              	.Ldebug_abbrev0:
+ 4271 0000 01       		.uleb128 0x1
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 76
+
+
+ 4272 0001 11       		.uleb128 0x11
+ 4273 0002 01       		.byte	0x1
+ 4274 0003 25       		.uleb128 0x25
+ 4275 0004 0E       		.uleb128 0xe
+ 4276 0005 13       		.uleb128 0x13
+ 4277 0006 0B       		.uleb128 0xb
+ 4278 0007 03       		.uleb128 0x3
+ 4279 0008 0E       		.uleb128 0xe
+ 4280 0009 1B       		.uleb128 0x1b
+ 4281 000a 0E       		.uleb128 0xe
+ 4282 000b 10       		.uleb128 0x10
+ 4283 000c 17       		.uleb128 0x17
+ 4284 000d 00       		.byte	0
+ 4285 000e 00       		.byte	0
+ 4286 000f 02       		.uleb128 0x2
+ 4287 0010 24       		.uleb128 0x24
+ 4288 0011 00       		.byte	0
+ 4289 0012 0B       		.uleb128 0xb
+ 4290 0013 0B       		.uleb128 0xb
+ 4291 0014 3E       		.uleb128 0x3e
+ 4292 0015 0B       		.uleb128 0xb
+ 4293 0016 03       		.uleb128 0x3
+ 4294 0017 0E       		.uleb128 0xe
+ 4295 0018 00       		.byte	0
+ 4296 0019 00       		.byte	0
+ 4297 001a 03       		.uleb128 0x3
+ 4298 001b 24       		.uleb128 0x24
+ 4299 001c 00       		.byte	0
+ 4300 001d 0B       		.uleb128 0xb
+ 4301 001e 0B       		.uleb128 0xb
+ 4302 001f 3E       		.uleb128 0x3e
+ 4303 0020 0B       		.uleb128 0xb
+ 4304 0021 03       		.uleb128 0x3
+ 4305 0022 08       		.uleb128 0x8
+ 4306 0023 00       		.byte	0
+ 4307 0024 00       		.byte	0
+ 4308 0025 04       		.uleb128 0x4
+ 4309 0026 16       		.uleb128 0x16
+ 4310 0027 00       		.byte	0
+ 4311 0028 03       		.uleb128 0x3
+ 4312 0029 0E       		.uleb128 0xe
+ 4313 002a 3A       		.uleb128 0x3a
+ 4314 002b 0B       		.uleb128 0xb
+ 4315 002c 3B       		.uleb128 0x3b
+ 4316 002d 05       		.uleb128 0x5
+ 4317 002e 49       		.uleb128 0x49
+ 4318 002f 13       		.uleb128 0x13
+ 4319 0030 00       		.byte	0
+ 4320 0031 00       		.byte	0
+ 4321 0032 05       		.uleb128 0x5
+ 4322 0033 01       		.uleb128 0x1
+ 4323 0034 01       		.byte	0x1
+ 4324 0035 49       		.uleb128 0x49
+ 4325 0036 13       		.uleb128 0x13
+ 4326 0037 01       		.uleb128 0x1
+ 4327 0038 13       		.uleb128 0x13
+ 4328 0039 00       		.byte	0
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 77
+
+
+ 4329 003a 00       		.byte	0
+ 4330 003b 06       		.uleb128 0x6
+ 4331 003c 21       		.uleb128 0x21
+ 4332 003d 00       		.byte	0
+ 4333 003e 49       		.uleb128 0x49
+ 4334 003f 13       		.uleb128 0x13
+ 4335 0040 2F       		.uleb128 0x2f
+ 4336 0041 05       		.uleb128 0x5
+ 4337 0042 00       		.byte	0
+ 4338 0043 00       		.byte	0
+ 4339 0044 07       		.uleb128 0x7
+ 4340 0045 34       		.uleb128 0x34
+ 4341 0046 00       		.byte	0
+ 4342 0047 03       		.uleb128 0x3
+ 4343 0048 0E       		.uleb128 0xe
+ 4344 0049 3A       		.uleb128 0x3a
+ 4345 004a 0B       		.uleb128 0xb
+ 4346 004b 3B       		.uleb128 0x3b
+ 4347 004c 0B       		.uleb128 0xb
+ 4348 004d 49       		.uleb128 0x49
+ 4349 004e 13       		.uleb128 0x13
+ 4350 004f 3F       		.uleb128 0x3f
+ 4351 0050 19       		.uleb128 0x19
+ 4352 0051 02       		.uleb128 0x2
+ 4353 0052 18       		.uleb128 0x18
+ 4354 0053 00       		.byte	0
+ 4355 0054 00       		.byte	0
+ 4356 0055 08       		.uleb128 0x8
+ 4357 0056 26       		.uleb128 0x26
+ 4358 0057 00       		.byte	0
+ 4359 0058 49       		.uleb128 0x49
+ 4360 0059 13       		.uleb128 0x13
+ 4361 005a 00       		.byte	0
+ 4362 005b 00       		.byte	0
+ 4363 005c 09       		.uleb128 0x9
+ 4364 005d 21       		.uleb128 0x21
+ 4365 005e 00       		.byte	0
+ 4366 005f 49       		.uleb128 0x49
+ 4367 0060 13       		.uleb128 0x13
+ 4368 0061 2F       		.uleb128 0x2f
+ 4369 0062 0B       		.uleb128 0xb
+ 4370 0063 00       		.byte	0
+ 4371 0064 00       		.byte	0
+ 4372 0065 0A       		.uleb128 0xa
+ 4373 0066 34       		.uleb128 0x34
+ 4374 0067 00       		.byte	0
+ 4375 0068 03       		.uleb128 0x3
+ 4376 0069 0E       		.uleb128 0xe
+ 4377 006a 3A       		.uleb128 0x3a
+ 4378 006b 0B       		.uleb128 0xb
+ 4379 006c 3B       		.uleb128 0x3b
+ 4380 006d 05       		.uleb128 0x5
+ 4381 006e 49       		.uleb128 0x49
+ 4382 006f 13       		.uleb128 0x13
+ 4383 0070 3F       		.uleb128 0x3f
+ 4384 0071 19       		.uleb128 0x19
+ 4385 0072 02       		.uleb128 0x2
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 78
+
+
+ 4386 0073 18       		.uleb128 0x18
+ 4387 0074 00       		.byte	0
+ 4388 0075 00       		.byte	0
+ 4389 0076 00       		.byte	0
+ 4390              		.section	.debug_aranges,"",%progbits
+ 4391 0000 14000000 		.4byte	0x14
+ 4392 0004 0200     		.2byte	0x2
+ 4393 0006 00000000 		.4byte	.Ldebug_info0
+ 4394 000a 04       		.byte	0x4
+ 4395 000b 00       		.byte	0
+ 4396 000c 0000     		.2byte	0
+ 4397 000e 0000     		.2byte	0
+ 4398 0010 00000000 		.4byte	0
+ 4399 0014 00000000 		.4byte	0
+ 4400              		.section	.debug_line,"",%progbits
+ 4401              	.Ldebug_line0:
+ 4402 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 4402      02004900 
+ 4402      00000201 
+ 4402      FB0E0D00 
+ 4402      01010101 
+ 4403              	.LASF19:
+ 4404 0000 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 4404      6E657261 
+ 4404      7465645F 
+ 4404      536F7572 
+ 4404      63655C50 
+ 4405              	.LASF10:
+ 4406 0026 646F7562 		.ascii	"double\000"
+ 4406      6C6500
+ 4407              	.LASF17:
+ 4408 002d 63795F6D 		.ascii	"cy_metadata\000"
+ 4408      65746164 
+ 4408      61746100 
+ 4409              	.LASF9:
+ 4410 0039 666C6F61 		.ascii	"float\000"
+ 4410      7400
+ 4411              	.LASF1:
+ 4412 003f 756E7369 		.ascii	"unsigned char\000"
+ 4412      676E6564 
+ 4412      20636861 
+ 4412      7200
+ 4413              	.LASF5:
+ 4414 004d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4414      20756E73 
+ 4414      69676E65 
+ 4414      6420696E 
+ 4414      7400
+ 4415              	.LASF3:
+ 4416 005f 73686F72 		.ascii	"short unsigned int\000"
+ 4416      7420756E 
+ 4416      7369676E 
+ 4416      65642069 
+ 4416      6E7400
+ 4417              	.LASF18:
+ 4418 0072 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 4418      4320342E 
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 79
+
+
+ 4418      392E3320 
+ 4418      32303135 
+ 4418      30333033 
+ 4419 00a5 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 4419      20726576 
+ 4419      6973696F 
+ 4419      6E203232 
+ 4419      31323230 
+ 4420 00d8 30202D73 		.ascii	"0 -std=gnu99 -ffunction-sections -ffat-lto-objects\000"
+ 4420      74643D67 
+ 4420      6E753939 
+ 4420      202D6666 
+ 4420      756E6374 
+ 4421              	.LASF20:
+ 4422 010b 5C5C756F 		.ascii	"\\\\uoa.auckland.ac.nz\\engdfs\\home\\jpat331\\Desk"
+ 4422      612E6175 
+ 4422      636B6C61 
+ 4422      6E642E61 
+ 4422      632E6E7A 
+ 4423 0138 746F705C 		.ascii	"top\\CS301_Class.cydsn (4)\\CS301_Class.cydsn\000"
+ 4423      43533330 
+ 4423      315F436C 
+ 4423      6173732E 
+ 4423      63796473 
+ 4424              	.LASF14:
+ 4425 0164 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 4425      6574615F 
+ 4425      63757374 
+ 4425      6E766C00 
+ 4426              	.LASF13:
+ 4427 0174 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 4427      6574615F 
+ 4427      636F6E66 
+ 4427      69676563 
+ 4427      6300
+ 4428              	.LASF8:
+ 4429 0186 756E7369 		.ascii	"unsigned int\000"
+ 4429      676E6564 
+ 4429      20696E74 
+ 4429      00
+ 4430              	.LASF7:
+ 4431 0193 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4431      206C6F6E 
+ 4431      6720756E 
+ 4431      7369676E 
+ 4431      65642069 
+ 4432              	.LASF16:
+ 4433 01aa 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 4433      6574615F 
+ 4433      666C6173 
+ 4433      6870726F 
+ 4433      74656374 
+ 4434              	.LASF15:
+ 4435 01bf 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 4435      6574615F 
+ 4435      776F6E76 
+ 4435      6C00
+ARM GAS  C:\Users\jpat331\AppData\Local\Temp\ccWTUtlw.s 			page 80
+
+
+ 4436              	.LASF12:
+ 4437 01cd 73697A65 		.ascii	"sizetype\000"
+ 4437      74797065 
+ 4437      00
+ 4438              	.LASF6:
+ 4439 01d6 6C6F6E67 		.ascii	"long long int\000"
+ 4439      206C6F6E 
+ 4439      6720696E 
+ 4439      7400
+ 4440              	.LASF11:
+ 4441 01e4 63686172 		.ascii	"char\000"
+ 4441      00
+ 4442              	.LASF2:
+ 4443 01e9 73686F72 		.ascii	"short int\000"
+ 4443      7420696E 
+ 4443      7400
+ 4444              	.LASF21:
+ 4445 01f3 75696E74 		.ascii	"uint8\000"
+ 4445      3800
+ 4446              	.LASF4:
+ 4447 01f9 6C6F6E67 		.ascii	"long int\000"
+ 4447      20696E74 
+ 4447      00
+ 4448              	.LASF0:
+ 4449 0202 7369676E 		.ascii	"signed char\000"
+ 4449      65642063 
+ 4449      68617200 
+ 4450              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
